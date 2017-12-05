@@ -1,0 +1,61 @@
+<aside  class="sidebar sidebar-left">
+  <div class="sidebar-header bg-info text-white">
+  <div class="sidebar-brand">
+    <div class="title">
+      Simplify Admin
+    </div>
+    <div class="logo">
+      <i class="material-icons">all_inclusive</i>
+    </div>
+
+  </div>
+</div>
+<div class="">
+  <ul class="list-nav sidebar-nav" appCollapsibleNav>
+    <ng-container *ngFor="let item of menu">
+      <li class="list-nav-group-title" *ngIf="item.isLabel">
+          <span>
+            {{item.label}}
+          </span>
+      </li>
+      <li class="list-nav-item" routerLinkActive="active" *ngIf="!item.isLabel">
+        <a *ngIf="!(item.children && item.children.length)" routerLink="{{ item.path }}" class="list-nav-link">
+
+          <span class="list-nav-icon">
+            <i class="{{ item.icon.class }}">{{ item.icon.content }}</i>
+          </span>
+          <span class="list-nav-label">{{ item.label }}</span>
+          <span class="list-nav-expand" *ngIf="item.children && item.children.length">
+            <i class="material-icons">add</i>
+          </span>
+
+        </a>
+        <a href="#" *ngIf="(item.children && item.children.length)" class="list-nav-link">
+
+          <span class="list-nav-icon">
+            <i class="{{ item.icon.class }}">{{ item.icon.content }}</i>
+          </span>
+          <span class="list-nav-label">{{ item.label }}</span>
+          <span class="list-nav-expand" *ngIf="item.children && item.children.length">
+            <i class="material-icons">add</i>
+          </span>
+
+        </a>
+        <ul class="list-nav list-nav-child" *ngIf="item.children && item.children.length">
+          <li class="list-nav-item list-nav-child-item" *ngFor="let subitem of item.children" routerLinkActive="active">
+            <a routerLink="{{ subitem.path }}" class="list-nav-link">
+              <span class="list-nav-icon list-nav-icon-sm">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </span>
+              <span class="list-nav-label">{{ subitem.label }}</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+
+    </ng-container>
+
+
+  </ul>
+</div>
+</aside>

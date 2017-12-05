@@ -1,0 +1,13 @@
+/* Base Styling for Simplify Admin
+ Should be included after bootstrap
+ Depends on bootstrap mixins
+*/
+
+/* Import Custom Mixins */
+:root {
+  font-size: 14px;
+}
+@import "mixins/mixins";
+@import "components/components";
+@import "icons/icons";
+@import "layout";
