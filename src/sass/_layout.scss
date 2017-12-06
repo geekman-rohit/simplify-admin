@@ -1,18 +1,18 @@
 .sidebar-left {
-  width: 20rem;
-  min-width: 20rem;
-  max-width: 20rem;
+  width: 19rem;
+  min-width: 19rem;
+  max-width: 19rem;
   position: fixed;
   left: 0;
   top: 0;
 }
 .page {
-  margin-left: 20rem;
+  margin-left: 19rem;
 
 }
 .page-content {
   padding: $grid-gutter-width ($grid-gutter-width/2);
   .card {
-    margin-bottom: $grid-gutter-width; 
+    margin-bottom: $grid-gutter-width;
   }
 }

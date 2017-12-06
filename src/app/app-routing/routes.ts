@@ -11,6 +11,10 @@ export const routes: Routes = [
     path: 'ui',
     loadChildren: 'app/routes/components/components.module#ComponentsModule'
   },
+  {
+    path: 'charts',
+    loadChildren: 'app/routes/charts/charts.module#ChartsModule'
+  },
 
   /* Redirect Default Page to Dashboard */
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },

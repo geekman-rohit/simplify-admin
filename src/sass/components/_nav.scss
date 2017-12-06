@@ -1,9 +1,52 @@
+@mixin nav-theme-generate($color, $background, $hovercolor) {
+
+  color: $color;
+
+  .list-nav-child {
+    background-color: $hovercolor;
+  }
+
+  >.list-nav-item {
+    &.active {
+      background-color: $hovercolor;
+      >.list-nav-link {
+        background-color: $hovercolor;
+        >.list-nav-icon {
+          background: $background;
+          color: white;
+        }
+      }
+    }
+  }
+  .list-nav-link {
+    &:hover {
+      background-color: $hovercolor;
+    }
+
+  }
+  .list-nav-child {
+    .list-nav-item {
+      &.active {
+        .list-nav-link {
+          color: $background;
+          .list-nav-icon {
+            color: $background;
+            .material-icons {
+              color: $background;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .list-nav {
   display: block;
   margin:0;
   padding: 0;
+
   &.list-nav-child {
-    background-color: $gray-100;
+
   }
 }
 
@@ -14,31 +57,19 @@
 
   .list-nav-child {
     display: none;
-  }
-  &.open {
-    background-color: $gray-100;
 
   }
+
   &.active {
     >.list-nav-link {
       font-weight: 500;
-      background-color: $gray-100;
-      .list-nav-icon {
-        background: #826cf1;
-        background: $blue;
-      }
-      .material-icons {
-        color:white;
-        opacity: 1;
-      }
     }
     .list-nav-child {
+
       display: block;
 
     }
-
   }
-
   &.list-nav-child-item {
     border-bottom: none;
   }
@@ -47,15 +78,10 @@
   .list-nav-item {
     &.active {
       .list-nav-link {
-        color: $blue;
+
         .list-nav-icon {
           background: none;
           font-weight: inherit;
-          color: $blue;
-          .material-icons {
-            color: $blue;
-            opacity: 1;
-          }
         }
       }
     }
@@ -68,13 +94,13 @@
 }
 .list-nav-link {
   display: flex;
-  line-height: 2.4;
-  padding: 0.6rem 1.4rem;
+  line-height: 2.4rem;
+  padding: 0.7rem 1.4rem;
   text-decoration: none;
   color: inherit;
   transition: background-color 0.5s ease;
   &:hover {
-    background-color: $gray-100;
+
     text-decoration: none;
     color: inherit;
   }
@@ -121,7 +147,7 @@
   background-color: rgba(100, 120, 140, 0.1);
 
   .material-icons {
-    opacity: 0.8;
+
     font-size: 1.35em;
   }
 
@@ -134,13 +160,21 @@
   }
 }
 .list-nav-expand {
-  height: 2.8rem;
-  color: #767a81;
-  line-height: 2.8rem;
+  height: 2.4rem;
+  color: inherit;
+  line-height: 2.4rem;
   padding-right: 0.25rem;
+  font-size: 0.7em;
+
 }
 .list-nav-label {
   display: block;
   width: 100%;
   padding-left: 1.2rem;
+}
+.list-nav-light {
+  @include nav-theme-generate(darken($gray-600,5%), $primary, $gray-100);
+}
+.list-nav-dark {
+  @include nav-theme-generate($gray-400, $primary, darken($dark,4%));
 }

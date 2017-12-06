@@ -42,14 +42,15 @@ export const menu = [
     label: 'Charts',
     icon: { class: 'material-icons', content: 'multiline_chart' },
     children: [
-      { path: '/project/dashboard', label: 'Email Inbox' },
-      { path: '/project/progress', label: 'Chat' },
-      { path: '/project/cards', label: 'Email Compose' },
+      { path: '/charts/chartjs', label: 'Chart.js' },
+      { path: '/charts/chartist', label: 'Chartist' },
+      { path: '/charts/plotly', label: 'Plotly.js' },
+      { path: '/charts/cthree', label: 'C3 Charts' },
     ]
   },
   {
     label: 'Tables',
-    icon: { class: 'material-icons', content: 'multiline_chart' },
+    icon: { class: 'material-icons', content: 'view_column' },
     children: [
       { path: '/project/dashboard', label: 'Email Inbox' },
       { path: '/project/progress', label: 'Chat' },

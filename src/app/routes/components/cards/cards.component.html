@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <div class="card" appCard #card="card">
+        <div class="card-header">
+          <h5>
+            Card Header
+          </h5>
+        </div>
+        <ul class="card-actions">
+          <li><button class="card-action"><i class="material-icons">fullscreen</i></button></li>
+          <li><button class="card-action" (click)= "card.toggleCollapse()"><i class="material-icons">expand_more</i></button></li>
+        </ul>
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

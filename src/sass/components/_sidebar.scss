@@ -4,11 +4,13 @@
   color: inherit;
   min-height: 100vh;
   border-right: 1px solid $gray-200;
-  
+
 }
 
 
-
+.sidebar-dark {
+  background: darken($dark,6%);
+}
 .sidebar-brand {
   position: relative;
   padding: 0.3rem 1.3rem;

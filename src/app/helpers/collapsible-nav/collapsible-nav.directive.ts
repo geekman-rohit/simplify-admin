@@ -1,11 +1,11 @@
-import { Directive, Input, OnChanges, ElementRef, HostListener, HostBinding, OnInit } from '@angular/core';
+import { Directive, Input, OnChanges, ElementRef, HostListener } from '@angular/core';
 
 import * as $ from 'jquery';
 
 @Directive({
   selector: '[appCollapsibleNav]',
 })
-export class CollapsibleNavDirective implements OnInit {
+export class CollapsibleNavDirective {
 
   @Input() appColor: string;
 

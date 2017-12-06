@@ -10,4 +10,10 @@
 @import "mixins/mixins";
 @import "components/components";
 @import "icons/icons";
+@import "media";
 @import "layout";
+
+.progress-thin {
+  height: 5px;
+  border-radius: 0;
+}

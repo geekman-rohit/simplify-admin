@@ -1,0 +1,97 @@
+@mixin button-flat-variant($color, $bgcolor-hover: $gray-100) {
+  color: $color;
+  background-color: transparent;
+  background-image: none;
+  border-color: none;
+
+  @include hover {
+    background-color: $bgcolor-hover;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .5);
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+  }
+
+  &:not([disabled]):not(.disabled):active,
+  &:not([disabled]):not(.disabled).active,
+  .show > &.dropdown-toggle {
+
+    background-color: $bgcolor-hover;
+    box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .5);
+  }
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.btn-pill {
+  border-radius: 10em;
+}
+.btn.btn-icon {
+  width: 3rem;
+  height: 2.7rem;
+  padding: 0;
+  line-height: 2.6rem;
+}
+.btn.btn-fab {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  line-height: 4rem;
+  font-size: 1.2rem;
+  box-shadow: 0 1px 1px 2px rgba(0,0,0,0.1);
+
+  &.btn-lg {
+    width: 5.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    font-size: 2.2rem;
+  }
+  &.btn-sm {
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+.btn-warning {
+  color: #333;
+}
+.btn-flat {
+  border: none !important;
+  background: none;
+  box-shadow: none;
+  &.btn-primary {
+    color: $primary;
+  }
+  &.btn-secondary {
+    color: $secondary;
+  }
+  &.btn-dark {
+    color: $dark;
+  }
+  &:hover {
+    background-color: $gray-100;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
+  }
+  .btn-flat-#{$color} {
+    @include button-flat-variant($value);
+  }
+
+}

@@ -1,0 +1,32 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            Bar Chart
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <div appChartist="bar" [chartdata]="demodata[0]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            Area Chart
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <div appChartist="area" [chartdata]="demodata[0]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

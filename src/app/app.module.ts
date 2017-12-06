@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
 import { NotFoundComponent } from './error-pages/not-found/not-found.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
-import { CollapsibleNavDirective } from './helpers/collapsible-nav/collapsible-nav.directive';
+import { HelpersModule } from './helpers/helpers.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,12 +14,13 @@ import { CollapsibleNavDirective } from './helpers/collapsible-nav/collapsible-n
     NotFoundComponent,
     SidebarComponent,
     TopbarComponent,
-    CollapsibleNavDirective
+
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
-
+    HelpersModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
