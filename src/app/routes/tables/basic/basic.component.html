@@ -1,0 +1,36 @@
+<div class="container-fluid">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h5>Basic Table</h5>
+      </div>
+      <div class="card-body">
+        <table class="table">
+          <thead>
+            <tr>
+              <th *ngFor="let label of demodata[0].labels" >{{ label }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let row of demodata[0].data">
+              <td *ngFor="let col of row; let i = index">
+                <ng-container *ngIf="i !== 4">
+                  {{ col }}
+                </ng-container>
+                <ng-container *ngIf="i == 4">
+                  <div class="progress progress-thin">
+                    <div *ngIf="col <= 40" class="progress-bar bg-danger" role="progressbar" [style.width]="col+'%'" [attr.aria-valuenow]="col" [attr.aria-valuemin]="0" [attr.aria-valuemax]="100"></div>
+                      <div *ngIf="col > 40 && col <= 60" class="progress-bar bg-primary" role="progressbar" [style.width]="col+'%'" [attr.aria-valuenow]="col" [attr.aria-valuemin]="0" [attr.aria-valuemax]="100"></div>
+                      <div *ngIf="col > 60" class="progress-bar bg-success" role="progressbar" [style.width]="col+'%'" [attr.aria-valuenow]="col" [attr.aria-valuemin]="0" [attr.aria-valuemax]="100"></div>
+
+                  </div>
+                </ng-container>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>

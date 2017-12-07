@@ -78,6 +78,10 @@ $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-700 !default;
 
+
+$table-cell-padding: 1rem;
+$table-cell-padding-sm: .5rem;
+
 $theme-colors: () !default;
 $theme-colors: map-merge((
 "primary": $primary,

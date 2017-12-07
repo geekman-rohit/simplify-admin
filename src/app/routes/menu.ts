@@ -52,9 +52,9 @@ export const menu = [
     label: 'Tables',
     icon: { class: 'material-icons', content: 'view_column' },
     children: [
-      { path: '/project/dashboard', label: 'Email Inbox' },
-      { path: '/project/progress', label: 'Chat' },
-      { path: '/project/cards', label: 'Email Compose' },
+      { path: '/tables/basic', label: 'Basic' },
+      { path: '/tables/data', label: 'Datatable' },
+      { path: '/tables/aggrid', label: 'Advance Grid' },
     ]
   },
   {

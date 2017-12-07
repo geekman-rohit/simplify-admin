@@ -1,0 +1,17 @@
+.table {
+  thead {
+    tr {
+      td,th {
+        border-bottom-width: 1px;
+
+      }
+    }
+  }
+  thead,tbody {
+    tr {
+      th {
+        font-weight: 500;
+      }
+    }
+  }
+}
