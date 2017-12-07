@@ -1,4 +1,4 @@
-export const demodata= [
+export const demodata = [
   {
     labels: [ '#', 'Name', 'Project', 'Department', 'Skill Level'],
     data: [
@@ -10,4 +10,4 @@ export const demodata= [
 
     ]
   }
-]
+];

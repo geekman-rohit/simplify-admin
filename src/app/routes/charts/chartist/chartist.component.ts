@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { demodata } from './demodata'
+import { demodata } from './demodata';
 @Component({
   selector: 'app-chartist',
   templateUrl: './chartist.component.html',

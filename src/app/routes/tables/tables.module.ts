@@ -4,13 +4,13 @@ import { BasicComponent } from './basic/basic.component';
 import { DataComponent } from './data/data.component';
 import { AggridComponent } from './aggrid/aggrid.component';
 import { RouterModule, Routes } from '@angular/router';
-import { AgGridModule } from "ag-grid-angular/main";
+import { AgGridModule } from 'ag-grid-angular/main';
 const routes: Routes = [
   { path: 'aggrid', component: AggridComponent },
   { path: 'data', component: DataComponent },
   { path: 'basic', component: BasicComponent },
 
-]
+];
 @NgModule({
   imports: [
     CommonModule,

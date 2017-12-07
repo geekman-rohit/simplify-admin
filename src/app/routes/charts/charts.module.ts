@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'chartist', component: ChartistComponent },
   { path: 'cthree', component: CthreeComponent },
   { path: 'plotly', component: PlotlyComponent },
-]
+];
 @NgModule({
   imports: [
     CommonModule,

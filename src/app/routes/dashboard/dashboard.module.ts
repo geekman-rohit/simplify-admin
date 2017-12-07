@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChartHelpersModule } from '../../helpers/chart-helpers/chart-helpers.module';
 const routes: Routes = [
   { path: '', component: DashboardComponent }
-]
+];
 @NgModule({
   imports: [
     CommonModule,

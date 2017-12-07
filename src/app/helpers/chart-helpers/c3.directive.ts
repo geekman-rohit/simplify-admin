@@ -4,7 +4,7 @@ import * as c3 from 'c3';
   selector: '[appC3]'
 })
 export class C3Directive implements OnInit {
-  @Input('appC3') fullchartdata;
+  @Input() appC3;
   ele: ElementRef;
   native: any;
   constructor(ele: ElementRef) {
@@ -12,8 +12,8 @@ export class C3Directive implements OnInit {
     this.native = ele.nativeElement;
   }
   ngOnInit() {
-    console.log(this.fullchartdata);
-    var chart = c3.generate({
+    console.log(this.appC3);
+    const chart = c3.generate({
     bindto: this.native,
     data: {
       columns: [

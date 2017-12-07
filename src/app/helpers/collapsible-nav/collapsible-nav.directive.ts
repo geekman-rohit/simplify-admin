@@ -15,39 +15,39 @@ export class CollapsibleNavDirective {
 
   @HostListener('click', ['$event']) navClick(event) {
 
-    let target = event.target;
+    const target = event.target;
     let targetLink;
-    if(target.nodeName.toLowerCase() == 'li') {
+    if (target.nodeName.toLowerCase() === 'li') {
 
       targetLink = target;
 
 
-    } else if (target.parentNode.nodeName.toLowerCase() == 'li') {
+    } else if (target.parentNode.nodeName.toLowerCase() === 'li') {
 
       targetLink = target.parentNode;
 
 
-    } else if ( target.parentNode.parentNode.nodeName.toLowerCase() == 'li' ) {
+    } else if ( target.parentNode.parentNode.nodeName.toLowerCase() === 'li' ) {
 
       targetLink = target.parentNode.parentNode;
 
-    }  else if ( target.parentNode.parentNode.parentNode.nodeName.toLowerCase() == 'li' ) {
+    }  else if ( target.parentNode.parentNode.parentNode.nodeName.toLowerCase() === 'li' ) {
 
       targetLink = target.parentNode.parentNode.parentNode;
 
     }
-    if(targetLink) {
-      return this.linkClicked(targetLink);;
+    if (targetLink) {
+      return this.linkClicked(targetLink);
     }
     return true;
   }
   linkClicked(el) {
 
-    let element = $(el);
+    const element = $(el);
 
-    if(element.children('ul').length > 0) {
+    if (element.children('ul').length > 0) {
 
-      if(element.hasClass('active')) {
+      if (element.hasClass('active')) {
         this.close(element);
       } else {
         this.open(element);
@@ -61,12 +61,12 @@ export class CollapsibleNavDirective {
   open(element) {
 
     element.addClass('active');
-    var siblings = element.siblings('li');
+    const siblings = element.siblings('li');
     siblings.removeClass('active');
   }
   close(element) {
     element.removeClass('active');
-    var children = element.find('active');
+    const children = element.find('active');
     children.removeClass('active');
 
   }

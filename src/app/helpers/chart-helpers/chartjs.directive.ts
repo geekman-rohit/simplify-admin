@@ -5,7 +5,7 @@ import { Chart } from 'chart.js';
 })
 export class ChartjsDirective implements OnInit {
 
-  @Input('appChartjs') fullchartdata;
+  @Input() appChartjs;
   ele: ElementRef;
   chart: Chart;
   native: any;
@@ -14,7 +14,7 @@ export class ChartjsDirective implements OnInit {
     this.native = ele.nativeElement;
   }
   ngOnInit() {
-    this.renderChart(this.fullchartdata);
+    this.renderChart(this.appChartjs);
   }
   renderChart(data) {
     this.chart = new Chart(this.native, data);

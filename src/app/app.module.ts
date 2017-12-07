@@ -7,7 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { HelpersModule } from './helpers/helpers.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AgGridModule } from "ag-grid-angular/main";
+import { AgGridModule } from 'ag-grid-angular/main';
 @NgModule({
   declarations: [
     AppComponent,

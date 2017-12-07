@@ -1,4 +1,11 @@
-export const menu = [
+interface MenuItem {
+  label: string;
+  path?: string;
+  icon?: { class: string, content: string };
+  isLabel?: boolean;
+  children?: MenuItem[];
+}
+export const menu: MenuItem[] = [
   {
     label: 'DASHBOARDS',
     isLabel: true
@@ -106,5 +113,5 @@ export const menu = [
       { path: '/project/progress', label: 'Signup' },
       { path: '/project/cards', label: 'Lock' },
     ]
-  },
-]
+  }
+];

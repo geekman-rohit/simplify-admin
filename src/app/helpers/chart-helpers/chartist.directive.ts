@@ -6,8 +6,8 @@ import * as Chartist from 'chartist';
 export class ChartistDirective implements OnInit {
 
   @HostBinding('class') eleClass = 'ct-chart ct-major-sixth';
-  @Input('appChartist') type: string;
-  @Input('chartdata') fullchartdata;
+  @Input() appChartist: string;
+  @Input() chartdata;
   ele: ElementRef;
   chart: Chartist;
   native: any;
@@ -17,9 +17,9 @@ export class ChartistDirective implements OnInit {
   }
   ngOnInit() {
 
-    let data = this.fullchartdata;
-    console.log(this.type);
-    switch(this.type) {
+    const data = this.chartdata;
+
+    switch (this.appChartist) {
       case 'bar':
         this.renderBarChart(data);
         break;
@@ -38,7 +38,7 @@ export class ChartistDirective implements OnInit {
     this.chart = new Chartist.Line(this.native, data);
   }
   renderAreaChart(data) {
-    let options = {
+    const options = {
       lineSmooth: Chartist.Interpolation.none(),
       high: 5,
       low: 0,
@@ -48,7 +48,7 @@ export class ChartistDirective implements OnInit {
     this.chart = new Chartist.Line(this.native, data, options);
   }
   renderBarChart(data) {
-    let options = {
+    const options = {
       seriesBarDistance: 35
     };
     this.chart = new Chartist.Bar(this.native, data, options);

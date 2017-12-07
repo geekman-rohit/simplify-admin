@@ -20,10 +20,10 @@ export const routes: Routes = [
     loadChildren: 'app/routes/tables/tables.module#TablesModule'
   },
 
-  /* Redirect Default Page to Dashboard */
+  /* Redirect Default Page to */
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 
   /* 404 Error Page */
   { path: '**', component: NotFoundComponent, }
 
-]
+];

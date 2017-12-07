@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { menu } from '../routes/menu';
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',

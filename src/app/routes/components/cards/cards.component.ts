@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsComponent implements OnInit {
 
-  bodyVisible: boolean = true;
+  bodyVisible = true;
 
   constructor() { }
 
