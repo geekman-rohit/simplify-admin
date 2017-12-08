@@ -17,13 +17,11 @@ export const menu: MenuItem[] = [
   },
 
   {
-    label: 'Project',
+    label: 'Projects',
     icon: { class: 'material-icons', content: 'folder_open' },
     children: [
-      { path: '/project/dashboard', label: 'Buttons' },
-      { path: '/project/progress', label: 'Progress Bars' },
-      { path: '/project/cards', label: 'Cards' },
-      { path: '/project/badges', label: 'Badges' },
+      { path: '/projects/all', label: 'All Projects' },
+      { path: '/projects/single', label: 'Project Page' },
     ]
   },
   {

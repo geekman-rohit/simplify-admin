@@ -1,5 +1,5 @@
 .sidebar {
-  width: 21rem;
+  width: $sidebar-size;
   background: white;
   color: inherit;
   min-height: 100vh;
@@ -11,27 +11,31 @@
 .sidebar-dark {
   background: darken($dark,6%);
 }
+$sidebar-padding-y : 0.3rem;
 .sidebar-brand {
   position: relative;
+  height: $topbar-size;
   padding: 0.3rem 1.3rem;
-  line-height: 3;
-  font-size: 1.25em;
+  line-height: ($topbar-size - (2 * $sidebar-padding-y));
+  font-size: 1.3em;
 
 }
+$logo-size: 2.5rem;
+
 .sidebar-header {
   font-weight: 400;
   .logo {
-    top:0.8rem;
-    right: 1.5rem;
+    top: ($topbar-size - $logo-size)/2;
+    right: 1.4rem;
     position:absolute;
-    height: 2.8rem;
-    width: 2.8rem;
+    height: $logo-size;
+    width: $logo-size;
     text-align: center;
-    line-height: 2.8rem;
+    line-height: $logo-size;
     background-color: rgba(255,255,255,0.1);
     border-radius: 2px;
     .material-icons {
-      line-height: 2.8rem;
+      line-height: $logo-size;
       font-size: 1.6rem;
     }
   }

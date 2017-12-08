@@ -4,18 +4,18 @@
       <div class="card">
         <div class="card-body">
           <div class="card-feature float-right">
-            <div class="media-box bg-success text-white">
+            <div class="media-box bg-primary text-white">
               <i class="material-icons">file_download</i>
             </div>
           </div>
-          <h4 class="card-title">
+          <h5 class="card-title">
             Downloads
-          </h4>
+          </h5>
           <p class="text-secondary text-small">
             Monthly Downloads Trend on App Store
           </p>
           <div class="chart-container">
-            <canvas id="myChart" width="400" height="100"></canvas>
+            <canvas id="myChart" width="400" height="100" [appChartjs]="demodata.charts[0]"></canvas>
           </div>
         </div>
       </div>
@@ -24,9 +24,9 @@
         <div class="card-body">
           <div class="card-feature float-right">
           </div>
-          <h4 class="card-title">
+          <h5 class="card-title">
             Project Miami
-          </h4>
+          </h5>
           <p class="text-secondary text-small"  style="margin-bottom: 2rem">
             Progress Report
           </p>
@@ -61,14 +61,14 @@
               $
             </div>
           </div>
-          <h4 class="card-title">
+          <h5 class="card-title">
             Revenue
-          </h4>
+          </h5>
           <p class="text-secondary text-small">
             Revenue Generation Trend (Quarterly) (In $ thousands )
           </p>
           <div class="chart-container" style="padding-top:0.5rem">
-            <canvas id="my-chart-2" width="400" height="150"></canvas>
+            <canvas id="my-chart-2" width="400" height="150" [appChartjs]="demodata.charts[1]"></canvas>
           </div>
         </div>
       </div>
@@ -80,10 +80,10 @@
     <div class="col-8">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title">
+          <h5 class="card-title">
             My People
-          </h4>
-          <table class="table" style="margin-top:2rem">
+          </h5>
+          <table class="table table-middle" style="margin-top:2rem">
             <thead>
               <tr>
                 <th>
@@ -105,9 +105,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr *ngFor="let person of demodata">
+              <tr *ngFor="let person of demodata.people; let i = index">
                 <td>
-                  1
+                  {{ i+1 }}
                 </td>
                 <td>
                   <img src="{{person.photo}}" class="" style="width:3.5rem; height: 3.5rem; border-radius: 50%; margin-right:0.7rem" alt="">
@@ -137,9 +137,9 @@
       <div class="card">
         <img class="card-img-top" src="assets/img/mountains.jpeg" alt="Card image cap">
         <div class="card-body">
-          <h4 class="card-title mb-4">
+          <h5 class="card-title mb-4">
             The Beach Trip
-          </h4>
+          </h5>
           <p>
             We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore.
 

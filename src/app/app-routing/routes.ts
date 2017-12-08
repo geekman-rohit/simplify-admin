@@ -19,6 +19,10 @@ export const routes: Routes = [
     path: 'tables',
     loadChildren: 'app/routes/tables/tables.module#TablesModule'
   },
+  {
+    path: 'projects',
+    loadChildren: 'app/routes/projects/projects.module#ProjectsModule'
+  },
 
   /* Redirect Default Page to */
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },

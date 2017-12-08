@@ -1,13 +1,13 @@
 .sidebar-left {
-  width: 19rem;
-  min-width: 19rem;
-  max-width: 19rem;
+  width: $sidebar-size;
+  min-width: $sidebar-size;
+  max-width: $sidebar-size;
   position: fixed;
   left: 0;
   top: 0;
 }
 .page {
-  margin-left: 19rem;
+  margin-left: $sidebar-size;
 
 }
 .page-content {

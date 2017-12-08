@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { demodata } from './demodata';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  demodata = [];
-  constructor() { }
+  demodata;
+  constructor() {
+    this.demodata = demodata;
+  }
 
   ngOnInit() {
   }
