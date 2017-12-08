@@ -4,20 +4,20 @@
 }
 .card-body {
   position: relative;
-  padding: 1.5rem 1.7rem;
+  padding: 1.25rem 1.5rem;
 }
 .card-header {
   position: relative;
   border: none;
   background: none;
-  padding: 1.2rem 1.7rem;
+  padding: 1.25rem 1.5rem;
   h1,h2,h3,h4,h5 {
     margin: 0;
   }
 }
 .card.collpased {
   .card-body {
-    
+
   }
 }
 .card-actions {
@@ -54,4 +54,7 @@
       }
     }
   }
+}
+.card-footer {
+  background: none;
 }
