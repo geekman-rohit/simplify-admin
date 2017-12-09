@@ -25,7 +25,7 @@ export const routes: Routes = [
   },
 
   /* Redirect Default Page to */
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/dashboard/pro', pathMatch: 'full' },
 
   /* 404 Error Page */
   { path: '**', component: NotFoundComponent, }

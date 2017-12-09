@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ChartHelpersModule } from '../../helpers/chart-helpers/chart-helpers.module';
+import { HelpersModule } from '../../helpers/helpers.module'
 const routes: Routes = [
-  { path: '', component: DashboardComponent }
+  { path: 'pro', component: DashboardComponent }
 ];
 @NgModule({
   imports: [
     CommonModule,
     RouterModule.forChild( routes ),
-    ChartHelpersModule
+    ChartHelpersModule,
+    HelpersModule
   ],
   exports: [
     RouterModule

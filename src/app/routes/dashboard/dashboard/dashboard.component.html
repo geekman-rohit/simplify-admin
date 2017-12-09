@@ -1,5 +1,60 @@
+<button class="btn btn-success btn-fab fixed-bottom-right" title="New Task"><i class="material-icons">chat_bubble_outline</i></button>
+
 <div class="container-fluid">
   <div class="row">
+    <div class="col-12">
+      <h4 class="mb-3 py-2 pb-3 px-2" style="font-weight:300">
+        Welcome Sarah! You have <a href="" class="text-warning">75</a> new Notifications
+      </h4>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <h5>
+            Your Day
+          </h5>
+          <p class="text-secondary text-small">
+            Get Started, You have a lot to do today!
+          </p>
+          <ul class="list-group list-group-borderless list-group-sm">
+
+            <li class="list-group-item pl-0 text-secondary" style="">
+              <span class="text-secondary">
+                <i class="material-icons">event</i>
+                <span class="time mr-1">08:00</span>
+              </span>
+              <span class="" style="">Team Meeting</span>
+              <span class="ml-2"><i class="material-icons text-success">check</i></span>
+            </li>
+            <li class="list-group-item pl-0" style="">
+              <span class=" text-warning">
+                <i class="material-icons">mail_outline</i>
+                <span class="time mr-1">09:00</span>
+              </span>
+              <span class="" style="">Email Meeting Minutes</span>
+            </li>
+            <li class="list-group-item pl-0 " style="">
+              <span class="text">
+                <i class="material-icons">mail_outline</i>
+                <span class="time mr-1">13:00</span>
+              </span>
+              <span class="" style="">Technical Report</span>
+            </li>
+            <li class="list-group-item pl-0 " style="">
+              <span class="text">
+                <i class="material-icons">event</i>
+                <span class="time mr-1">17:00</span>
+              </span>
+              <span class="" style="">Meeting with <a href="">John</a></span>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="col-4">
       <div class="card">
         <div class="card-body">
@@ -11,26 +66,64 @@
           <h5 class="card-title">
             Downloads
           </h5>
+          <h3 style="font-weight:300">200,000</h3>
+          <p class="text-secondary text-small">
+            Monthly Downloads Trend on App Store
+          </p>
+
+          <div class="chart-container">
+            <canvas id="myChart" width="400" height="110" [appChartjs]="demodata.charts[0]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-feature float-right">
+            <div class="media-box bg-success text-white">
+              <i class="material-icons">file_download</i>
+            </div>
+          </div>
+          <h5 class="card-title">
+            Downloads
+          </h5>
+          <h3 style="font-weight:300">$11,000,000</h3>
           <p class="text-secondary text-small">
             Monthly Downloads Trend on App Store
           </p>
           <div class="chart-container">
-            <canvas id="myChart" width="400" height="100" [appChartjs]="demodata.charts[0]"></canvas>
+            <canvas id="myChart" width="400" height="110" [appChartjs]="demodata.charts[2]"></canvas>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+
+
+
+
 
       <div class="card">
+
         <div class="card-body">
+          <div class="card-feature float-right">
+            <div class="media-box media-box-sm bg-info text-white">
+              <i class="material-icons">bookmark</i>
+            </div>
+          </div>
           <div class="card-feature float-right">
           </div>
           <h5 class="card-title">
             Project Miami
           </h5>
-          <p class="text-secondary text-small mb-4"  style="">
+          <p class="text-secondary mb-4"  style="">
             Progress Report
           </p>
-          <h6 class="mb-2">
+          <h6 class="mb-2 text-secondary">
             Create a Presentation
           </h6>
           <div class="mb-4" style="">
@@ -39,7 +132,7 @@
             </div>
           </div>
           <div class="py-1">
-            <h6 clas="mb-2">
+            <h6 class="mb-2 text-secondary">
               Discuss Full Doc Requirements
             </h6>
             <div class="mb-4" style="">
@@ -49,13 +142,50 @@
 
               </div>
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
 
+      <div class="card">
+        <div class="card-header">
+          <h5 class="card-title">
+            New Teammates!
+          </h5>
+          <p class="text-secondary mt-2 mb-0"  style="">
+            Say Hello!
+          </p>
+        </div>
+        <div class="card-body py-0 px-0">
+
+          <div class="media align-items-center py-3 px-3" style="border-top: 1px solid #eee">
+            <img class="mr-3" src="/assets/img/face4.jpeg" alt="Generic placeholder image" style="width:2.5rem; height: 2.5rem; border-radius:50%">
+            <div class="media-body d-flex align-items-center">
+              <h6 class="mb-0">Lianna Parker</h6>
+            </div>
+
+          </div>
+          <div class="media align-items-center py-3 px-3" style="border-top: 1px solid #eee">
+            <img class="mr-3" src="/assets/img/face3.jpeg" alt="Generic placeholder image" style="width:2.5rem; height: 2.5rem; border-radius:50%">
+            <div class="media-body d-flex align-items-center">
+              <h6 class="mb-0">Joane Kirk</h6>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
     </div>
     <div class="col-8">
+      <div class="row">
+
+
+
+      </div>
       <div class="card">
         <div class="card-body">
           <div class="card-feature float-right">
@@ -63,14 +193,17 @@
               $
             </div>
           </div>
-          <h5 class="card-title">
+          <h5 class="card-title" class="mb-3">
             Revenue
+          </h5>
+          <h5 style="font-weight:300" class="mb-3">
+            $19% Average Quarterly Rise
           </h5>
           <p class="text-secondary text-small">
             Revenue Generation Trend (Quarterly) (In $ thousands )
           </p>
           <div class="chart-container" style="padding-top:0.5rem">
-            <canvas id="my-chart-2" width="400" height="150" [appChartjs]="demodata.charts[1]"></canvas>
+            <canvas id="my-chart-2" width="400" height="137" [appChartjs]="demodata.charts[1]"></canvas>
           </div>
         </div>
       </div>

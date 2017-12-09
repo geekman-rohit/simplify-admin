@@ -181,20 +181,3 @@
 .list-nav-dark {
   @include nav-theme-generate($gray-300, $primary, darken($dark,8%), $gray-400);
 }
-
-.nav-link {
-  position: relative;
-  span.badge {
-    float: right;
-    position: relative;
-    right: 0.75rem;
-    top:($topbar-size/2)-1.3rem;
-    border-radius: 50%;
-    font-size: 0.6rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    line-height: 1.1rem;
-    padding: 0;
-    text-align: center;
-  }
-}

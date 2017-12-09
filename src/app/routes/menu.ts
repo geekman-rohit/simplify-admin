@@ -11,7 +11,7 @@ export const menu: MenuItem[] = [
     isLabel: true
   },
   {
-    path: '/dashboard',
+    path: '/dashboard/pro',
     label: 'Dashboard Pro',
     icon: { class: 'material-icons', content: 'home' }
   },
@@ -20,15 +20,11 @@ export const menu: MenuItem[] = [
     label: 'Projects',
     icon: { class: 'material-icons', content: 'folder_open' },
     children: [
-      { path: '/projects/all', label: 'All Projects' },
       { path: '/projects/single', label: 'Project Page' },
+      { path: '/projects/all', label: 'All Projects' }
     ]
   },
-  {
-    path: '/analytics',
-    label: 'Analytics',
-    icon: { class: 'material-icons', content: 'timeline' }
-  },
+
   {
     label: 'COMPONENTS',
     isLabel: true
@@ -40,7 +36,7 @@ export const menu: MenuItem[] = [
       { path: '/ui/buttons', label: 'Buttons' },
       { path: '/ui/progress', label: 'Progress Bars' },
       { path: '/ui/cards', label: 'Cards' },
-      { path: '/ui/badges', label: 'Badges' },
+      { path: '/ui/badges', label: 'Badges' }
     ]
   },
   {
@@ -50,7 +46,7 @@ export const menu: MenuItem[] = [
       { path: '/charts/chartjs', label: 'Chart.js' },
       { path: '/charts/chartist', label: 'Chartist' },
       { path: '/charts/plotly', label: 'Plotly.js' },
-      { path: '/charts/cthree', label: 'C3 Charts' },
+      { path: '/charts/cthree', label: 'C3 Charts' }
     ]
   },
   {
@@ -59,7 +55,7 @@ export const menu: MenuItem[] = [
     children: [
       { path: '/tables/basic', label: 'Basic' },
       { path: '/tables/data', label: 'Datatable' },
-      { path: '/tables/aggrid', label: 'Advance Grid' },
+      { path: '/tables/aggrid', label: 'Advance Grid' }
     ]
   },
   {
@@ -68,7 +64,7 @@ export const menu: MenuItem[] = [
     children: [
       { path: '/project/dashboard', label: 'Email Inbox' },
       { path: '/project/progress', label: 'Chat' },
-      { path: '/project/cards', label: 'Email Compose' },
+      { path: '/project/cards', label: 'Email Compose' }
     ]
   },
   {
@@ -81,7 +77,7 @@ export const menu: MenuItem[] = [
     children: [
       { path: '/project/dashboard', label: 'Email Inbox' },
       { path: '/project/progress', label: 'Chat' },
-      { path: '/project/cards', label: 'Email Compose' },
+      { path: '/project/cards', label: 'Email Compose' }
     ]
   },
   {
@@ -109,7 +105,7 @@ export const menu: MenuItem[] = [
     children: [
       { path: '/project/dashboard', label: 'Login' },
       { path: '/project/progress', label: 'Signup' },
-      { path: '/project/cards', label: 'Lock' },
+      { path: '/project/cards', label: 'Lock' }
     ]
   }
 ];

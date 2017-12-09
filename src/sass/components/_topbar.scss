@@ -1,4 +1,23 @@
 .topbar {
   height: $topbar-size;
-  line-height: $topbar-size;
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+}
+.nav-link {
+  position: relative;
+  span.badge {
+    float: right;
+    position: relative;
+    right: 0.75rem;
+    top:-0.25rem;
+    border-radius: 50%;
+    font-size: 0.6rem;
+    width: 1.1rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+    padding: 0;
+    text-align: center;
+  }
 }

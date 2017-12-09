@@ -6,7 +6,11 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-
+//
+// Layout
+//
+$sidebar-size: 17rem;
+$topbar-size: 3.8rem;
 //
 // Color system
 //
@@ -23,11 +27,7 @@ $gray-700: lighten(#435057,4%) !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
-$gray-800: #303a44;
 
-$gray-400: #c7d1df !default;
-
-$gray-500: #adb5bd !default;
 $grays: () !default;
 $grays: map-merge((
 "100": $gray-100,
@@ -41,15 +41,15 @@ $grays: map-merge((
 "900": $gray-900
 ), $grays);
 
-$blue: lighten(#117bff,8%); //Modified
+$blue: lighten(#117bff,8%) !default;
 $indigo: #6610f2 !default;
-$purple: lighten(#7259EF, 6%); //Modified
+$purple: lighten(#7259EF, 6%) !default;
 $pink: #e83e8c !default;
-$red: lighten(#dc3545,8%); //Modified
-$orange: darken(#fd7e14,2%);
-$yellow: lighten(#ffc107,2%); //Modified
+$red: darken(#ec5565,2%) !default;
+$orange: darken(#fd7e14,2%) !default;
+$yellow: lighten(#ffc107,2%) !default;
 $green: lighten(#1bb934,1%) !default;
-$teal: #26c1b2; //Modified
+$teal: #26c1b2 !default;
 $cyan: #17a2b8 !default;
 $code-color: lighten(#bd4147,10%) !default;
 $colors: () !default;
@@ -69,18 +69,17 @@ $colors: map-merge((
 "gray-dark": $gray-800
 ), $colors);
 
-$primary: $purple;// Modified
+$primary: $purple !default;
 $secondary: $gray-600 !default;
-$success: $green; // Modified
+$success: $green !default;
 $info: $blue !default;
 $warning: $orange !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-700 !default;
-$link-color: $blue;
+$link-color: $blue !default;
 
-$table-cell-padding: 1rem;
-$table-cell-padding-sm: .5rem;
+
 
 $theme-colors: () !default;
 $theme-colors: map-merge((
@@ -275,8 +274,9 @@ $mark-bg: #fcf8e3 !default;
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
 
-$table-cell-padding: .75rem !default;
-$table-cell-padding-sm: .3rem !default;
+$table-cell-padding: 1rem !default;
+;
+$table-cell-padding-sm: .5rem !default;
 
 $table-bg: transparent !default;
 $table-accent-bg: rgba($black,.05) !default;

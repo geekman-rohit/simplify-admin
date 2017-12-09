@@ -1,6 +1,6 @@
 import { Directive, Input, OnChanges, ElementRef, HostListener } from '@angular/core';
 
-import * as $ from 'jquery';
+declare var $: any;
 
 @Directive({
   selector: '[appCollapsibleNav]',

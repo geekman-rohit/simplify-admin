@@ -33,7 +33,7 @@ export const demodata = {
         datasets: [
           {
           label: '# of Votes',
-          data: [6, 7, 3, 5, 2, 3],
+          data: [6, 7, 3, 5, 2, 4],
           lineTension: 0,
           backgroundColor: 'rgba(138, 117, 242,0.2)',
           borderColor: 'rgb(138, 117, 242)',
@@ -68,7 +68,7 @@ export const demodata = {
             label: 'Revenue this year',
             data: [6, 17, 11, 5, 12, 3],
             lineTension: 0.3,
-            backgroundColor: 'rgba(68,151,255,0.9)',
+            backgroundColor: 'rgba(68,151,255,1)',
             borderColor: 'rgba(68,151,255,1)',
             borderWidth: 2,
             pointRadius: 1,
@@ -86,7 +86,6 @@ export const demodata = {
         },
         options: {
 
-          barPercentage: 0.5,
           scales: {
             yAxes: [{
               display: true,
@@ -97,7 +96,7 @@ export const demodata = {
             }],
             xAxes: [{
               barPercentage: 0.7,
-              categoryPercentage: 0.5,
+              categoryPercentage: 0.4,
               display: true,
             }]
           },
@@ -105,6 +104,39 @@ export const demodata = {
             display: false,
           }
         }
-      }
+      },
+      {
+        type: 'line',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [
+            {
+            label: '# of Votes',
+            data: [3, 4, 3, 6, 4, 7],
+            lineTension: 0,
+            backgroundColor: 'rgba(28, 189, 53,0.2)',
+            borderColor: 'rgb(28, 189, 53)',
+            borderWidth: 2,
+            pointRadius: 0,
+          },
+        ]
+        },
+        options: {
+          scales: {
+            yAxes: [{
+              display: false,
+              ticks: {
+                beginAtZero: true
+              }
+            }],
+            xAxes: [{
+              display: false,
+            }]
+          },
+          legend: {
+            display: false,
+          }
+        }
+      },
   ]
 };

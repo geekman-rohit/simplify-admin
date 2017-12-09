@@ -4,25 +4,10 @@
 */
 
 /* Import Custom Mixins */
-:root {
-  font-size: 16px;
-}
-$sidebar-size: 17.5rem;
-$topbar-size: 3.8rem;
 @import "mixins/mixins";
+
+@import "typography";
 @import "components/components";
 @import "icons/icons";
 @import "media";
 @import "layout";
-
-
-.progress-thin {
-  height: 5px;
-  border-radius: 0;
-}
-h1,h2,h3,h4,h5,h6 {
-  font-weight: 400;
-}
-.text-sm {
-  font-size: 0.8rem;
-}
