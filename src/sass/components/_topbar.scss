@@ -4,9 +4,12 @@
     display: flex;
     align-items: center;
   }
+  border-bottom: 1px solid $gray-200;
 }
 .nav-link {
   position: relative;
+  color: inherit;
+  cursor: pointer;
   span.badge {
     float: right;
     position: relative;
@@ -20,4 +23,18 @@
     padding: 0;
     text-align: center;
   }
+}
+
+.dropdown-menu {
+  padding: 0;
+  border-color: $gray-200;
+  box-shadow: 0 2px 2px 1px rgba(0,0,0,0.1);
+  .dropdown-item {
+    padding: 0.75rem 1rem;
+    color: $gray-700;
+    &:hover {
+      background: $gray-100;
+    }
+  }
+
 }
