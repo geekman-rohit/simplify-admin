@@ -36,7 +36,7 @@ export const menu: MenuItem[] = [
       { path: '/ui/buttons', label: 'Buttons' },
       { path: '/ui/progress', label: 'Progress Bars' },
       { path: '/ui/cards', label: 'Cards' },
-      { path: '/ui/nav', label: 'Navigation & Tabs' }
+      { path: '/ui/nav', label: 'Navigation & Tabs' },
       { path: '/ui/dropdown', label: 'Dropdown' },
       { path: '/ui/alert', label: 'Alerts' },
       { path: '/ui/collapse', label: 'Collapse' },

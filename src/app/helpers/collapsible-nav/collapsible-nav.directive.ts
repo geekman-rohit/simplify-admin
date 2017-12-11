@@ -11,6 +11,7 @@ export class CollapsibleNavDirective {
 
 
   constructor( public el: ElementRef  ) {
+    console.log($);
   }
 
   @HostListener('click', ['$event']) navClick(event) {
