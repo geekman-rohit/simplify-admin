@@ -1,29 +1,35 @@
 .topbar {
   height: $topbar-size;
   .nav-item {
-    display: flex;
-    align-items: center;
+
   }
   border-bottom: 1px solid $gray-200;
 }
-.nav-link {
-  position: relative;
-  color: inherit;
-  cursor: pointer;
-  span.badge {
-    float: right;
+.navbar {
+  .nav-link {
     position: relative;
-    right: 0.75rem;
-    top:-0.25rem;
-    border-radius: 50%;
-    font-size: 0.6rem;
-    width: 1.1rem;
-    height: 1.1rem;
-    line-height: 1.1rem;
-    padding: 0;
-    text-align: center;
+    color: inherit;
+    display: inline-block;
+    height: $topbar-size;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    span.badge {
+      float: right;
+      position: relative;
+      right: 0.75rem;
+      bottom:0.55rem;
+      border-radius: 50%;
+      font-size: 0.6rem;
+      width: 1.1rem;
+      height: 1.1rem;
+      line-height: 1.1rem;
+      padding: 0;
+      text-align: center;
+    }
   }
 }
+
 
 .dropdown-menu {
   padding: 0;

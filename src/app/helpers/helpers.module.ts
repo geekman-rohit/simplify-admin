@@ -4,20 +4,23 @@ import { CollapsibleNavDirective } from './collapsible-nav/collapsible-nav.direc
 import { CardDirective } from './card/card.directive';
 import { AlertModule } from 'ngx-bootstrap';
 import { AccordionModule } from 'ngx-bootstrap';
-import { BsDropdownModule } from 'ngx-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ScrollbarDirective } from './scrollbar/scrollbar.directive';
 @NgModule({
   imports: [
     CommonModule,
-    BsDropdownModule
+    NgbModule
   ],
   declarations: [
     CollapsibleNavDirective,
-    CardDirective
+    CardDirective,
+    ScrollbarDirective
   ],
   exports: [
     CollapsibleNavDirective,
     CardDirective,
-    BsDropdownModule
+    NgbModule,
+    ScrollbarDirective
   ]
 })
 export class HelpersModule { }

@@ -5,7 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ChartHelpersModule } from '../../helpers/chart-helpers/chart-helpers.module';
 import { HelpersModule } from '../../helpers/helpers.module'
 const routes: Routes = [
-  { path: 'pro', component: DashboardComponent }
+  { path: 'pro', component: DashboardComponent },
+  { path: '', redirectTo: '/dashboard/pro', pathMatch: 'full' }
 ];
 @NgModule({
   imports: [

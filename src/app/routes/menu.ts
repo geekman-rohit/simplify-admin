@@ -36,7 +36,16 @@ export const menu: MenuItem[] = [
       { path: '/ui/buttons', label: 'Buttons' },
       { path: '/ui/progress', label: 'Progress Bars' },
       { path: '/ui/cards', label: 'Cards' },
-      { path: '/ui/badges', label: 'Badges' }
+      { path: '/ui/nav', label: 'Navigation & Tabs' }
+      { path: '/ui/dropdown', label: 'Dropdown' },
+      { path: '/ui/alert', label: 'Alerts' },
+      { path: '/ui/collapse', label: 'Collapse' },
+      { path: '/ui/tooltip', label: 'Tooltips' },
+      { path: '/ui/accordian', label: 'Accordians' },
+      { path: '/ui/pagination', label: 'Pagination' },
+      { path: '/ui/carousel', label: 'Carousel' },
+      { path: '/ui/modal', label: 'Modals' },
+      { path: '/ui/rating', label: 'Rating' }
     ]
   },
   {

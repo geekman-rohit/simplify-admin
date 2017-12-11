@@ -11,7 +11,7 @@ import { AgGridModule } from 'ag-grid-angular/main';
 import { AlertModule } from 'ngx-bootstrap';
 import { AccordionModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +26,7 @@ import { BsDropdownModule } from 'ngx-bootstrap';
     AppRoutingModule,
     AlertModule.forRoot(),
     BsDropdownModule.forRoot(),
+    NgbModule.forRoot(),
     HelpersModule
   ],
   providers: [],
