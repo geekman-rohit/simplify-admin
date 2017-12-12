@@ -4,6 +4,7 @@ import { BasicComponent } from './basic/basic.component';
 import { DataComponent } from './data/data.component';
 import { AggridComponent } from './aggrid/aggrid.component';
 import { RouterModule, Routes } from '@angular/router';
+import { HelpersModule } from '../../helpers/helpers.module';
 import { AgGridModule } from 'ag-grid-angular/main';
 const routes: Routes = [
   { path: 'aggrid', component: AggridComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild( routes ),
+    HelpersModule,
     AgGridModule.withComponents([])
   ],
   declarations: [BasicComponent, DataComponent, AggridComponent]

@@ -1,3 +1,35 @@
-<p>
-  pagination works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">
+            Pagination
+          </h5>
+          <p class="text-secondary">
+            Use <code>ngb-pagination</code> for bootstrap pagination with Angular
+          </p>
+          <div class="mb-1">Default pagination</div>
+          <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+
+          <div class="mb-1">directionLinks = false</div>
+          <ngb-pagination [collectionSize]="70" [(page)]="page" [directionLinks]="false"></ngb-pagination>
+
+          <div class="mb-1">boundaryLinks = true</div>
+          <ngb-pagination [collectionSize]="70" [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
+
+
+
+
+        </div>
+        <div *ngIf="page" class="card-footer">
+          <pre >Current page: {{page}}</pre>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

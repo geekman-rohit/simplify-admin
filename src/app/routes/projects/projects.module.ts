@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SingleComponent } from './single/single.component';
 import { AllComponent } from './all/all.component';
 import { ChartHelpersModule } from '../../helpers/chart-helpers/chart-helpers.module';
+import { HelpersModule } from '../../helpers/helpers.module';
 const routes: Routes = [
   { path: 'all', component: AllComponent },
   { path: 'single', component: SingleComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild( routes ),
-    ChartHelpersModule
+    ChartHelpersModule,
+    HelpersModule
   ],
   exports: [
     RouterModule

@@ -24,7 +24,48 @@ export const menu: MenuItem[] = [
       { path: '/projects/all', label: 'All Projects' }
     ]
   },
-
+  {
+    label: 'PAGES',
+    isLabel: true
+  },
+  {
+    path: '/user/profile',
+    label: 'User Profile',
+    icon: { class: 'material-icons', content: 'person' }
+  },
+  {
+    label: 'Email',
+    icon: { class: 'material-icons', content: 'mail' },
+    children: [
+      { path: '/project/dashboard', label: 'Email Inbox' },
+      { path: '/project/progress', label: 'Chat' },
+      { path: '/project/cards', label: 'Email Compose' }
+    ]
+  },
+  {
+    path: '/chat',
+    label: 'Chat',
+    icon: { class: 'material-icons', content: 'chat_bubble_outline' }
+  },
+  {
+    path: '/analytics',
+    label: 'Timeline',
+    icon: { class: 'material-icons', content: 'timeline' }
+  },
+  {
+    path: '/security',
+    label: 'Account',
+    icon: { class: 'material-icons', content: 'security' }
+  },
+  {
+    label: 'Login & Signup',
+    icon: { class: 'material-icons', content: 'https' },
+    children: [
+      { path: '/project/dashboard', label: 'Login' },
+      { path: '/project/progress', label: 'Signup' },
+      { path: '/project/cards', label: 'Lock' }
+    ]
+  },
   {
     label: 'COMPONENTS',
     isLabel: true
@@ -45,7 +86,7 @@ export const menu: MenuItem[] = [
       { path: '/ui/pagination', label: 'Pagination' },
       { path: '/ui/carousel', label: 'Carousel' },
       { path: '/ui/modal', label: 'Modals' },
-      { path: '/ui/rating', label: 'Rating' }
+
     ]
   },
   {
@@ -71,50 +112,16 @@ export const menu: MenuItem[] = [
     label: 'Forms',
     icon: { class: 'material-icons', content: 'multiline_chart' },
     children: [
-      { path: '/project/dashboard', label: 'Email Inbox' },
-      { path: '/project/progress', label: 'Chat' },
-      { path: '/project/cards', label: 'Email Compose' }
+      { path: '/forms/basic', label: 'Form Elements' },
+      { path: '/forms/custom', label: 'Custom Elements' },
+      { path: '/forms/date', label: 'Date & Time Picker' },
+      { path: '/forms/typeahead', label: 'Typeahead' },
+      { path: '/forms/templates', label: 'Readymade Templates' },
     ]
   },
   {
-    label: 'PAGES',
-    isLabel: true
-  },
-  {
-    label: 'Messaging',
-    icon: { class: 'material-icons', content: 'chat_bubble_outline' },
-    children: [
-      { path: '/project/dashboard', label: 'Email Inbox' },
-      { path: '/project/progress', label: 'Chat' },
-      { path: '/project/cards', label: 'Email Compose' }
-    ]
-  },
-  {
-    label: 'ACCOUNT',
-    isLabel: true
-  },
-  {
-    path: '/analytics',
-    label: 'User Profile',
-    icon: { class: 'material-icons', content: 'person' }
-  },
-  {
-    path: '/analytics',
-    label: 'Timeline & Feed',
-    icon: { class: 'material-icons', content: 'timeline' }
-  },
-  {
-    path: '/security',
-    label: 'Account Settings',
-    icon: { class: 'material-icons', content: 'security' }
-  },
-  {
-    label: 'Login & Signup',
-    icon: { class: 'material-icons', content: 'https' },
-    children: [
-      { path: '/project/dashboard', label: 'Login' },
-      { path: '/project/progress', label: 'Signup' },
-      { path: '/project/cards', label: 'Lock' }
-    ]
+    path: '/calendar',
+    label: 'Calendar',
+    icon: { class: 'material-icons', content: 'event' }
   }
 ];

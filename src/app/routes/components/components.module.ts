@@ -14,7 +14,6 @@ import { AlertComponent } from './alert/alert.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
-import { RatingComponent } from './rating/rating.component';
 const routes: Routes = [
   { path: '', redirectTo: '/ui/buttons', pathMatch: 'full' },
   { path: 'buttons', component: ButtonsComponent },
@@ -28,8 +27,7 @@ const routes: Routes = [
   { path: 'accordian', component: AccordianComponent },
   { path: 'pagination', component: PaginationComponent },
   { path: 'carousel', component: CarouselComponent },
-  { path: 'modal', component: ModalComponent },
-  { path: 'rating', component: RatingComponent }
+  { path: 'modal', component: ModalComponent }
 ];
 @NgModule({
   imports: [
@@ -40,6 +38,6 @@ const routes: Routes = [
   exports: [
     RouterModule
   ],
-  declarations: [ButtonsComponent, ProgressComponent, CardsComponent, DropdownComponent, NavComponent, AccordianComponent, PaginationComponent, TooltipComponent, AlertComponent, CollapseComponent, CarouselComponent, ModalComponent, RatingComponent]
+  declarations: [ButtonsComponent, ProgressComponent, CardsComponent, DropdownComponent, NavComponent, AccordianComponent, PaginationComponent, TooltipComponent, AlertComponent, CollapseComponent, CarouselComponent, ModalComponent ]
 })
 export class ComponentsModule { }

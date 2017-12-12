@@ -23,6 +23,14 @@ export const routes: Routes = [
     path: 'projects',
     loadChildren: 'app/routes/projects/projects.module#ProjectsModule'
   },
+  {
+    path: 'forms',
+    loadChildren: 'app/routes/forms/forms.module#FormsModule'
+  },
+  {
+    path: 'user',
+    loadChildren: 'app/routes/user/user.module#UserModule'
+  },
 
   /* Redirect Default Page to */
   { path: '', redirectTo: '/dashboard/pro', pathMatch: 'full' },

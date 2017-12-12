@@ -179,11 +179,12 @@
   @include nav-theme-generate(lighten($gray-700,8%), $primary, $gray-100, $gray-600);
 }
 .list-nav-dark {
-  @include nav-theme-generate(darken($gray-300,5%), $primary, darken($dark,8%), $gray-400);
+  @include nav-theme-generate(darken($gray-400,0%), $primary, darken($dark,8%), $gray-400);
 }
 
 .nav-material {
     border-bottom: 1px solid $gray-200;
+    padding-left: 0.25rem;
     .nav-item {
     margin-bottom: -1px;
         .nav-link {

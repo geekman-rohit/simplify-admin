@@ -6,10 +6,12 @@ import { AlertModule } from 'ngx-bootstrap';
 import { AccordionModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScrollbarDirective } from './scrollbar/scrollbar.directive';
+import { FormsModule, EmailValidator } from '@angular/forms';
 @NgModule({
   imports: [
     CommonModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   declarations: [
     CollapsibleNavDirective,
@@ -20,7 +22,9 @@ import { ScrollbarDirective } from './scrollbar/scrollbar.directive';
     CollapsibleNavDirective,
     CardDirective,
     NgbModule,
-    ScrollbarDirective
+    ScrollbarDirective,
+    FormsModule,
+    EmailValidator
   ]
 })
 export class HelpersModule { }
