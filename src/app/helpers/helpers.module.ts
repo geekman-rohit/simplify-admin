@@ -7,16 +7,21 @@ import { AccordionModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScrollbarDirective } from './scrollbar/scrollbar.directive';
 import { FormsModule, EmailValidator } from '@angular/forms';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { DropzoneDirective } from './forms/dropzone.directive';
 @NgModule({
   imports: [
     CommonModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    FroalaEditorModule,
+    FroalaViewModule
   ],
   declarations: [
     CollapsibleNavDirective,
     CardDirective,
-    ScrollbarDirective
+    ScrollbarDirective,
+    DropzoneDirective
   ],
   exports: [
     CollapsibleNavDirective,
@@ -24,7 +29,10 @@ import { FormsModule, EmailValidator } from '@angular/forms';
     NgbModule,
     ScrollbarDirective,
     FormsModule,
-    EmailValidator
+    EmailValidator,
+    FroalaEditorModule,
+    FroalaViewModule,
+    DropzoneDirective
   ]
 })
 export class HelpersModule { }

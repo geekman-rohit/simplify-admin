@@ -37,25 +37,29 @@ export const menu: MenuItem[] = [
     label: 'Email',
     icon: { class: 'material-icons', content: 'mail' },
     children: [
-      { path: '/project/dashboard', label: 'Email Inbox' },
-      { path: '/project/progress', label: 'Chat' },
-      { path: '/project/cards', label: 'Email Compose' }
+      { path: '/email/inbox', label: 'Email Inbox' },
+      { path: '/email/compose', label: 'Email Compose' }
     ]
   },
   {
-    path: '/chat',
+    path: '/email/chat',
     label: 'Chat',
     icon: { class: 'material-icons', content: 'chat_bubble_outline' }
-  },
-  {
-    path: '/analytics',
-    label: 'Timeline',
-    icon: { class: 'material-icons', content: 'timeline' }
   },
   {
     path: '/security',
     label: 'Account',
     icon: { class: 'material-icons', content: 'security' }
+  },
+  {
+    label: 'Commerce',
+    icon: { class: 'material-icons', content: 'attach_money' },
+    children: [
+      { path: '/shop/pricing', label: 'Pricing' },
+      { path: '/shop/invoice', label: 'Invoice' },
+      { path: '/shop/cart', label: 'Cart' },
+
+    ]
   },
   {
     label: 'Login & Signup',
@@ -65,6 +69,11 @@ export const menu: MenuItem[] = [
       { path: '/project/progress', label: 'Signup' },
       { path: '/project/cards', label: 'Lock' }
     ]
+  },
+  {
+    path: '/front',
+    label: 'Landing Page',
+    icon: { class: 'material-icons', content: 'language' }
   },
   {
     label: 'COMPONENTS',

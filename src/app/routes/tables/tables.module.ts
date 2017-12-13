@@ -15,7 +15,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     CommonModule,
-    RouterModule.forChild( routes ),
+    RouterModule.forChild(routes),
     HelpersModule,
     AgGridModule.withComponents([])
   ],

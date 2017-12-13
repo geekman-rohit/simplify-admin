@@ -1,0 +1,98 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="bg-white card" style=" margin-bottom:0px;">
+        <div class="d-flex">
+          <div class="" style="width:17rem; min-width:17rem; min-height:95vh; border-right: 1px solid #eee">
+            <div class="pt-4 px-4 mr-1">
+              <h5 class="my-0">Simplify Email</h5>
+            </div>
+            <div class="py-4 px-4 mr-1">
+              <button class="btn btn-outline-info btn-block">Compose</button>
+            </div>
+            <div class="inbox-menu text-secondary">
+              <ul class="list-nav sidebar-nav list-nav-light">
+                  <li class="list-nav-item active">
+                    <a class="list-nav-link d-flex align-items-center">
+                        <i class="fa fa-inbox" style=""></i><span class="list-nav-label">Inbox</span>
+                    </a>
+                  </li>
+                  <li class="list-nav-item">
+                    <a class="list-nav-link d-flex align-items-center">
+                        <i class="fa fa-folder " style=""></i><span class="list-nav-label">Drafts</span>
+                    </a>
+                  </li>
+                  <li class="list-nav-item">
+                    <a class="list-nav-link d-flex align-items-center">
+                        <i class="fa fa-inbox" style=""></i><span class="list-nav-label">Spam</span>
+                    </a>
+                  </li>
+                  <li class="list-nav-item">
+                    <a class="list-nav-link d-flex align-items-center">
+                        <i class="fa fa-trash" style=""></i><span class="list-nav-label">Trash</span>
+                    </a>
+                  </li>
+                  <li class="list-nav-item">
+                    <a class="list-nav-link d-flex align-items-center">
+                        <i class="fa fa-calendar" style=""></i><span class="list-nav-label">Calendar</span>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          <div style="width: 100%" class="">
+            <div class="d-flex py-3 align-items-center justify-content-between">
+              <div class="mr-1">
+                <h5 class="my-0 px-4 text-info">Compose</h5>
+              </div>
+              <div class="actions px-4" style="text-align: right;">
+
+                  <button class="btn btn-sm btn-outline-danger mr-2"><i class="fa fa-send mr-2"></i> Send</button>
+                  <button class="btn btn-sm btn-outline-info"><i class="fa fa-archive mr-2"></i> Draft</button>
+
+
+              </div>
+            </div>
+
+            <div class="email-compose px-4 py-2">
+              <form>
+                <div>
+                  <input type="text" class="form-control mb-4" placeholder="To">
+                </div>
+                <div>
+                  <input type="text" class="form-control mb-4" placeholder="Subject" value="Space Shuttle Driving License Test Test Slot">
+                </div>
+                <div class="editor-wrapper">
+                  <div class="mb-4">
+                    <textarea name="name" rows="8" cols="80" class="editable" placeholder="Subject">
+                      <p>The Space Shuttle Driving License Test team is pleased to Inform you that you can take the test on <strong>Sunday 12 Jan</strong></p>
+                      <strong>Select Message Text to Format it</strong><br><br><strong>You can also drag and drop images into the message</strong>
+                    </textarea>
+                  </div>
+
+                </div>
+              </form>
+              <h5 class="py-3 px-1">
+                Attachments:
+              </h5>
+              <form action="/file-upload" class="filedrop dropzone" appDropzone>
+                <div class="fallback">
+                  <input name="file" type="file" multiple />
+                </div>
+              </form>
+            </div>
+            <div class="actions px-4 py-4" style="text-align: left;">
+
+                <button class="btn btn-outline-danger mr-2"><i class="fa fa-send mr-2"></i> Send</button>
+                <button class="btn btn-outline-info"><i class="fa fa-archive mr-2"></i> Draft</button>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

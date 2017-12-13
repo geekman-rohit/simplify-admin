@@ -12,6 +12,7 @@
 }
 .page-content {
   padding: $grid-gutter-width ($grid-gutter-width/2);
+  padding-bottom: 0;
   .card {
     margin-bottom: $grid-gutter-width;
   }

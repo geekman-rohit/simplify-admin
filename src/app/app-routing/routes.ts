@@ -31,6 +31,14 @@ export const routes: Routes = [
     path: 'user',
     loadChildren: 'app/routes/user/user.module#UserModule'
   },
+  {
+    path: 'email',
+    loadChildren: 'app/routes/email/email.module#EmailModule'
+  },
+  {
+    path: 'shop',
+    loadChildren: 'app/routes/shop/shop.module#ShopModule'
+  },
 
   /* Redirect Default Page to */
   { path: '', redirectTo: '/dashboard/pro', pathMatch: 'full' },

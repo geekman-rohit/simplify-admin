@@ -30,7 +30,12 @@
   }
 
 }
-
+.form-control-clear{
+  border: 0;
+  &:focus {
+    box-shadow: none;
+  }
+}
 .form-control.is-warning {
   border-color: $warning;
   &:focus {
@@ -39,6 +44,26 @@
 }
 .ngb-tp .btn-link {
   color: $primary;
+}
+.medium-editor-element {
+  border: 1px solid $gray-400;
+  padding: 1rem;
+  min-height: 15rem !important;
+  margin-bottom: 1rem;
+  &:focus {
+    outline: 0;
+  }
+}
+.medium-editor-action {
+  .fa {
+    font-size: 0.9em !important;
+  }
+}
+.dropzone {
+  background: $gray-100 !important;
+  border: 1px solid $gray-400 !important;
+  min-height: 120px !important;
+  text-transform: uppercase;
 }
 @include form-validation-state-ng("invalid", $form-feedback-invalid-color)
 @include form-validation-state-ng("valid", $form-feedback-valid-color)

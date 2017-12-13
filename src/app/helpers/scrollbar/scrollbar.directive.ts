@@ -5,6 +5,7 @@ import PerfectScrollbar from 'perfect-scrollbar';
 })
 export class ScrollbarDirective implements OnInit {
   @Input() appScrollbar;
+  @Input() currentPosition;
   el: ElementRef;
   native;
 
@@ -15,7 +16,10 @@ export class ScrollbarDirective implements OnInit {
   ngOnInit() {
 
     const ps = new PerfectScrollbar(this.native, { suppressScrollX: true });
-    console.log(ps);
+    if(this.currentPosition == "end") {
+      this.native.scrollTop = this.native.scrollHeight;
+    }
+
   }
 
 }

@@ -25,8 +25,8 @@
   border-radius: 50%;
 }
 .img-thumb-xs {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
 }
 .img-thumb-lg {
@@ -39,4 +39,31 @@
 .pull-up-lg {
 
   margin-top: -4rem;
+}
+
+.list-group-linked {
+  border: 1px solid $gray-100;
+  margin: 0;
+  padding: 0;
+  .list-group-item {
+    border-bottom: 1px solid $gray-100;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+
+    a {
+      padding: 1rem;
+      cursor: pointer;
+      &:hover {
+        text-decoration: none;
+        background-color: $gray-100;
+      }
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
 }

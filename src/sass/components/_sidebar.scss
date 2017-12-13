@@ -10,6 +10,7 @@
 
 .sidebar-dark {
   background: darken($dark,10%);
+  border-right: 0;
 }
 $sidebar-padding-y : 0.3rem;
 .sidebar-brand {
