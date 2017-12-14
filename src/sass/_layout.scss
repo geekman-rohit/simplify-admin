@@ -17,3 +17,22 @@
     margin-bottom: $grid-gutter-width;
   }
 }
+/* Layout Utilities */
+
+.display-hover-only-container {
+  .display-hover-only-item {
+    visibility: hidden;
+  }
+  &:hover {
+    .display-hover-only-item {
+      visibility: visible;
+    }
+
+  }
+}
+.ps__thumb-y {
+  width: 3px !important;
+}
+.ps__rail-y:hover .ps__thumb-y {
+  width: 9px !important;
+}

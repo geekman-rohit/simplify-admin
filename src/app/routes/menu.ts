@@ -57,7 +57,7 @@ export const menu: MenuItem[] = [
     children: [
       { path: '/shop/pricing', label: 'Pricing' },
       { path: '/shop/invoice', label: 'Invoice' },
-      { path: '/shop/cart', label: 'Cart' },
+      //{ path: '/shop/cart', label: 'Cart' },
 
     ]
   },
@@ -65,9 +65,9 @@ export const menu: MenuItem[] = [
     label: 'Login & Signup',
     icon: { class: 'material-icons', content: 'https' },
     children: [
-      { path: '/project/dashboard', label: 'Login' },
-      { path: '/project/progress', label: 'Signup' },
-      { path: '/project/cards', label: 'Lock' }
+      { path: '/front/login', label: 'Login' },
+      { path: '/front/signup', label: 'Signup' },
+      { path: '/front/lock', label: 'Lock' }
     ]
   },
   {

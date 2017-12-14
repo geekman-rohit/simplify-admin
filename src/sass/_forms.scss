@@ -1,8 +1,12 @@
+@import "../../node_modules/bootstrap/scss/forms";
 .form-control {
   padding-left: 1rem;
   padding-right: 1rem;
+  &::placeholder {
+    color: $gray-500;
+  }
 }
-
+@import "../../node_modules/bootstrap/scss/custom-forms";
 .custom-control {
   padding-left: 2rem;
 }

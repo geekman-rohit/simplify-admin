@@ -3,8 +3,10 @@ import { CommonModule } from '@angular/common';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HelpersModule } from '../../helpers/helpers.module';
+import { PricingComponent } from './pricing/pricing.component';
 const routes: Routes = [
   { path: 'invoice', component: InvoiceComponent },
+  { path: 'pricing', component: PricingComponent }
 ];
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ const routes: Routes = [
   exports: [
     RouterModule
   ],
-  declarations: [InvoiceComponent]
+  declarations: [InvoiceComponent, PricingComponent]
 })
 export class ShopModule { }

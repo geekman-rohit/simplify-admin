@@ -1,3 +1,5 @@
+@import "../../../node_modules/bootstrap/scss/nav";
+
 @mixin nav-theme-generate($color, $background, $hovercolor, $faded-color) {
 
   color: $color;
@@ -42,6 +44,7 @@
     }
   }
 }
+
 .list-nav {
   display: block;
   margin:0;
@@ -97,8 +100,9 @@
 }
 .list-nav-link {
   display: flex;
-  line-height: 2.25rem;
-  padding: 0.5rem 1.25rem;
+  line-height: 2.2rem;
+
+  padding: 0.6rem 1rem;
   text-decoration: none;
   color: inherit;
   transition: background-color 0.5s ease;
@@ -110,6 +114,7 @@
   &:focus,&:active {
     outline:none;
   }
+
 
 }
 
@@ -139,10 +144,10 @@
   color: inherit;
   transition: background-color 0.5s ease;
   display: block;
-  width: 2.25rem;
-  height: 2.25rem;
-  min-width: 2.25rem;
-  line-height: 2.25rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  min-width: 2.2rem;
+  line-height: 2.2rem;
 
   text-align: center;
   border-radius: 2px;
@@ -151,7 +156,7 @@
 
   .material-icons {
 
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
 }
@@ -163,9 +168,9 @@
   }
 }
 .list-nav-expand {
-  height: 2.4rem;
+  height: 2.2rem;
   color: inherit;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
   padding-right: 0.25rem;
   font-size: 0.7em;
 
@@ -173,13 +178,13 @@
 .list-nav-label {
   display: block;
   width: 100%;
-  padding-left: 1.2rem;
+  padding-left: 1rem;
 }
 .list-nav-light {
-  @include nav-theme-generate(lighten($gray-700,8%), $primary, $gray-100, $gray-600);
+  @include nav-theme-generate(lighten($gray-700,12%), $primary, $gray-100, $gray-600);
 }
 .list-nav-dark {
-  @include nav-theme-generate(darken($gray-400,0%), $primary, darken($dark,8%), $gray-400);
+  @include nav-theme-generate(darken($gray-300,5%), $primary, darken($dark,6%), $gray-400);
 }
 
 .nav-material {

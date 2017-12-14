@@ -4,15 +4,11 @@
   color: inherit;
   min-height: 100vh;
   border-right: 1px solid $gray-200;
-
 }
-
-
 .sidebar-dark {
-  background: darken($dark,10%);
+  background: darken($dark,9%);
   border-right: 0;
 }
-$sidebar-padding-y : 0.3rem;
 .sidebar-brand {
   position: relative;
   height: $topbar-size;
@@ -21,22 +17,20 @@ $sidebar-padding-y : 0.3rem;
   font-size: 1.3em;
 
 }
-$logo-size: 2.5rem;
-
 .sidebar-header {
   font-weight: 400;
   .logo {
-    top: ($topbar-size - $logo-size)/2;
+    top: ($topbar-size - $sidebar-logo-size)/2;
     right: 1.4rem;
     position:absolute;
-    height: $logo-size;
-    width: $logo-size;
+    height: $sidebar-logo-size;
+    width: $sidebar-logo-size;
     text-align: center;
-    line-height: $logo-size;
+    line-height: $sidebar-logo-size;
     background-color: rgba(255,255,255,0.1);
     border-radius: 2px;
     .material-icons {
-      line-height: $logo-size;
+      line-height: $sidebar-logo-size;
       font-size: 1.6rem;
     }
   }

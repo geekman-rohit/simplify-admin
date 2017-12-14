@@ -14,12 +14,14 @@ import { AccordionModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+import { LayoutComponent } from './layout/layout.component';
 @NgModule({
   declarations: [
     AppComponent,
     NotFoundComponent,
     SidebarComponent,
     TopbarComponent,
+    LayoutComponent,
 
   ],
   imports: [
