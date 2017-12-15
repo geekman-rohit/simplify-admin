@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date.component.scss']
 })
 export class DateComponent implements OnInit {
-
+  model;
+  time;
+  date;
   constructor() { }
 
   ngOnInit() {

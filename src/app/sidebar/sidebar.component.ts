@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { menu } from '../routes/menu';
-
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -9,9 +9,12 @@ import { menu } from '../routes/menu';
 export class SidebarComponent implements OnInit {
 
   menu = menu;
-  constructor() { }
+
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit() {
+
   }
 
 

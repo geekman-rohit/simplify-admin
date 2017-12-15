@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
@@ -7,9 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor() { }
+  title = "Home";
+  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit() {
+  this.routeChange(this.activatedRoute);
+  this.router.events.filter((event) => event instanceof NavigationEnd)
+    .subscribe(() => this.routeChange(this.activatedRoute))
+  }
+
+  routeChange(route: ActivatedRoute) {
+    while(route.firstChild) route = route.firstChild;
+    let data = route.data
+    data.subscribe((d)=> {
+      this.title = d.title || "Home";
+    });
   }
 
 }

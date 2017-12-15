@@ -6,9 +6,9 @@ import { HelpersModule } from '../../helpers/helpers.module';
 import { ComposeComponent } from './compose/compose.component';
 import { ChatComponent } from './chat/chat.component';
 const routes: Routes = [
-  { path: 'inbox', component: InboxComponent },
-  { path: 'compose', component: ComposeComponent },
-  { path: 'chat', component: ChatComponent }
+  { path: 'inbox', component: InboxComponent, data: { title: 'Inbox' } },
+  { path: 'compose', component: ComposeComponent, data: { title: 'Compose' } },
+  { path: 'chat', component: ChatComponent, data: { title: 'Chat' } }
 ];
 @NgModule({
   imports: [

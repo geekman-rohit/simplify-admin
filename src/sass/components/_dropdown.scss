@@ -1,0 +1,9 @@
+@import "../../../node_modules/bootstrap/scss/dropdown";
+.dropdown.no-caret {
+  >.dropdown-toggle {
+    &::after {
+      content: none;
+      display: none;
+    }
+  }
+}

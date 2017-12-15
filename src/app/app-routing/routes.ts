@@ -48,6 +48,9 @@ export const routes: Routes = [
         path: 'shop',
         loadChildren: 'app/routes/shop/shop.module#ShopModule'
       },
+      { path: '', redirectTo: '/dashboard/pro', pathMatch: 'full' },
+      /* 404 Error Page */
+      { path: '**', component: NotFoundComponent, }
 
     ]
   },
