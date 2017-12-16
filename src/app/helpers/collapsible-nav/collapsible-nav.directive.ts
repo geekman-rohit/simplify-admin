@@ -61,14 +61,48 @@ export class CollapsibleNavDirective {
   }
   open(element) {
 
-    element.addClass('active');
+    let list = element.children('ul');
+    let height = list.prop('scrollHeight');
+    const self = this;
+    if(list.length > 0) {
+      list.animate(
+        {
+          height: height,
+        },
+        200,
+        function() {
+          element.addClass('active');
+        }
+      );
+    } else {
+        element.addClass('active');
+    }
     const siblings = element.siblings('li');
-    siblings.removeClass('active');
+    siblings.each(function(){
+      console.log(this);
+      self.close($(this));
+    });
   }
   close(element) {
-    element.removeClass('active');
-    const children = element.find('active');
-    children.removeClass('active');
+
+    let list = element.children('ul');
+    if(list.length > 0) {
+      list.animate(
+        {
+          height: 0,
+        },
+        200,
+        function() {
+          element.removeClass('active');
+          const children = element.find('active');
+          children.removeClass('active');
+        }
+      );
+    } else {
+      element.removeClass('active');
+    }
+
+
 
   }
 

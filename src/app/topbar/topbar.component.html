@@ -1,73 +1,71 @@
 <nav class="navbar navbar-expand-lg bg-white py-0 topbar">
 
-  <button class="btn btn-flat-secondary btn-sm btn-icon" style="margin-right:1rem">
+  <button class="btn btn-flat-secondary btn-sm btn-icon mr-4 no-shadow">
     <i class="material-icons">menu</i>
   </button>
 
-    <div class="navbar-text">
-      <h5 style="margin:0; line-height: inherit">{{ title }}</h5>
-    </div>
-  <div class="d-flex justify-content-end" style="width:100%">
-    <ul class="navbar-nav" style="color:#a1a9b1">
+  <div class="navbar-text">
+    <h5 class="m-0">{{ title }}</h5>
+  </div>
+  <div class="ml-auto">
+    <ul class="navbar-nav">
       <li class="nav-item dropdown no-caret mr-4" ngbDropdown placement="bottom-right">
-        <a ngbDropdownToggle style="color:inherit; font-size:1em" class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="material-icons" style="vertical-align:middle">apps</i>
+        <a ngbDropdownToggle class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">apps</i>
         </a>
         <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right py-0" style="width:16rem" aria-labelledby="navbarDropdown">
-          <div class="row p-0 no-gutter">
+          <div class="row p-0 no-gutters">
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4 ">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5 ">
                 <i class="material-icons">event</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4 ">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5 ">
                 <i class="material-icons">home</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4 ">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5 ">
                 <i class="material-icons">mail</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4 ">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5 ">
                 <i class="material-icons">message</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4 ">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5 ">
                 <i class="material-icons">notifications</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5">
                 <i class="material-icons">person</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5">
                 <i class="material-icons">settings</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5">
                 <i class="material-icons">network_cell</i>
               </button>
             </div>
             <div class="col-4">
-              <button class="btn btn-block btn-flat-secondary text-center py-4">
+              <button class="btn btn-block btn-flat-secondary no-shadow text-center py-5">
                 <i class="material-icons">widgets</i>
               </button>
             </div>
           </div>
         </div>
       </li>
-
-
       <li class="nav-item dropdown no-caret mr-1" ngbDropdown placement="bottom-right">
-        <a ngbDropdownToggle style="color:inherit; font-size:1em" class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="material-icons" style="vertical-align:middle">notifications</i>
+        <a ngbDropdownToggle class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">notifications</i>
           <span class="badge badge-warning">2</span>
         </a>
         <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right py-0" style="width:20rem" aria-labelledby="navbarDropdown">
@@ -78,10 +76,10 @@
               </div>
             </li>
             <li class="list-group-item">
-              <a href="" class="media py-2 px-3" style="color: inherit; width:100%">
+              <a class="media py-2 px-3">
                 <div class="media-box media-box-xs rounded-circle bg-info text-white mt-1"><i class="material-icons">event</i></div>
-                <div class="media-body ml-3" style="overflow: hidden">
-                  <p class="text-sm" style="width:auto">
+                <div class="media-body ml-3">
+                  <p class="text-sm">
                     Alex has invited you to an event on<br>
                     <span class="text-secondary ">12 jan 2012</span>
                   </p>
@@ -89,10 +87,10 @@
               </a>
             </li>
             <li class="list-group-item">
-              <a href="" class="media py-2 px-3" style="color: inherit; width:100%">
+              <a class="media py-2 px-3">
                 <div class="media-box media-box-xs rounded-circle bg-success text-white mt-1"><i class="material-icons">mail</i></div>
-                <div class="media-body ml-3" style="overflow: hidden">
-                  <p class="text-sm" style="width:auto">
+                <div class="media-body ml-3">
+                  <p class="text-sm">
                     New Company Policy for Holiday Season Parties<br>
                     <span class="text-secondary ">12 jan 2012</span>
                   </p>
@@ -100,10 +98,10 @@
               </a>
             </li>
             <li class="list-group-item">
-              <a href="" class="media py-2 px-3" style="color: inherit; width:100%">
+              <a class="media py-2 px-3">
                 <div class="media-box media-box-xs rounded-circle bg-secondary text-white mt-1"><i class="material-icons">event</i></div>
-                <div class="media-body ml-3" style="overflow: hidden">
-                  <p class="text-sm" style="width:auto">
+                <div class="media-body ml-3">
+                  <p class="text-sm">
                     Your Leave application has been approved<br>
                     <span class="text-secondary ">12 jan 2012</span>
                   </p>
@@ -112,15 +110,14 @@
             </li>
 
             <li class="list-group-item text-center">
-              <a class="dropdown-item empty-link text-info" style="padding:0.6rem; padding-bottom:0.8rem">Load More</a>
+              <a class="dropdown-item empty-link text-info px-3 py-3">Load More</a>
             </li>
-
           </ul>
         </div>
       </li>
       <li class="nav-item dropdown no-caret mr-1" ngbDropdown placement="bottom-right">
-        <a ngbDropdownToggle style="color:inherit; font-size:1em" class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="material-icons" style="vertical-align:middle">person_outline</i>
+        <a ngbDropdownToggle class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">person_outline</i>
           <span class="badge badge-warning">2</span>
         </a>
         <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right py-0" style="width:20rem" aria-labelledby="navbarDropdown">
@@ -136,7 +133,7 @@
                   <img class="mr-3" src="/assets/img/face1.jpeg" alt="Generic placeholder image" class="img-thumb-sm ml-1 mt-1">
                   <h6 class="ml-3 mb-0">James Kirk</h6>
                 </div>
-                <div style="overflow: hidden">
+                <div>
                   <div class="py-1 px-1">
                     <button class="btn btn-sm btn-flat-info btn-fab"><i class="material-icons">done</i></button>
                     <button class="btn btn-sm btn-flat-secondary btn-fab"><i class="material-icons">clear</i></button>
@@ -150,7 +147,7 @@
                   <img class="mr-3" src="/assets/img/face4.jpeg" alt="Generic placeholder image" class="img-thumb-sm ml-1 mt-1">
                   <h6 class="ml-3 mb-0">Lt. Uhura</h6>
                 </div>
-                <div style="overflow: hidden">
+                <div>
                   <div class="py-1 px-1">
                     <button class="btn btn-sm btn-flat-info btn-fab"><i class="material-icons">done</i></button>
                     <button class="btn btn-sm btn-flat-secondary btn-fab"><i class="material-icons">clear</i></button>
@@ -164,7 +161,7 @@
                   <img class="mr-3" src="/assets/img/face5.jpeg" alt="Generic placeholder image" class="img-thumb-sm ml-1 mt-1">
                   <h6 class="ml-3 mb-0">Tiberius Kirk</h6>
                 </div>
-                <div style="overflow: hidden">
+                <div>
                   <div class="py-1 px-1">
                     <button class="btn btn-sm btn-flat-info btn-fab"><i class="material-icons">done</i></button>
                     <button class="btn btn-sm btn-flat-secondary btn-fab"><i class="material-icons">clear</i></button>
@@ -174,15 +171,15 @@
             </li>
 
             <li class="list-group-item text-center">
-              <a class="dropdown-item empty-link text-info" style="padding:0.6rem; padding-bottom:0.8rem">Load More</a>
+              <a class="dropdown-item empty-link text-info px-3 py-3">Load More</a>
             </li>
 
           </ul>
         </div>
       </li>
       <li class="nav-item dropdown no-caret mr-4" ngbDropdown placement="bottom-right">
-        <a ngbDropdownToggle style="color:inherit; font-size:1em" class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="material-icons" style="vertical-align:middle">mail_outline</i>
+        <a ngbDropdownToggle class="text-secondary dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="material-icons">mail_outline</i>
           <span class="badge badge-warning">2</span>
         </a>
         <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right py-0" style="width:19rem" aria-labelledby="navbarDropdown">
@@ -193,48 +190,48 @@
               </div>
             </li>
             <li class="list-group-item">
-              <a href="" class="media py-2 px-3" style="color: inherit; width:100%">
+              <a href="" class="media py-2 px-3">
                 <img class="mr-3" src="/assets/img/face1.jpeg" alt="Generic placeholder image" class="img-thumb ml-1 mt-1">
-                <div class="media-body ml-3" style="overflow: hidden">
+                <div class="media-body ml-3" style="overflow:hidden">
                   <h6 class="mt-1 mb-1">James Kirk</h6>
-                  <p class="text-secondary text-sm text-truncate mb-1" style="width:auto">
+                  <p class="text-secondary text-sm text-truncate mb-1">
                     Problems look mighty small from 150 miles up.
                   </p>
                 </div>
               </a>
             </li>
             <li class="list-group-item">
-              <a href="" class="media py-2 px-3" style="color: inherit; width:100%">
+              <a href="" class="media py-2 px-3">
                 <img class="mr-3" src="/assets/img/face3.jpeg" alt="Generic placeholder image" class="img-thumb ml-1 mt-1">
                 <div class="media-body ml-3" style="overflow: hidden">
                   <h6 class="mt-1 mb-1">Ambassador Spock</h6>
-                  <p class="text-secondary  text-sm text-truncate mb-1" style="width:auto">
+                  <p class="text-secondary  text-sm text-truncate mb-1">
                     Problems look mighty small from 150 miles up.
                   </p>
                 </div>
               </a>
             </li>
             <li class="list-group-item">
-              <a href="" class="media py-2 px-3" style="color: inherit; width:100%">
+              <a href="" class="media py-2 px-3">
                 <img class="mr-3" src="/assets/img/face4.jpeg" alt="Generic placeholder image" class="img-thumb ml-1 mt-1">
                 <div class="media-body ml-3" style="overflow: hidden">
                   <h6 class="mt-1 mb-1">Nyota Uhur</h6>
-                  <p class="text-secondary  text-sm text-truncate mb-1" style="width:auto">
+                  <p class="text-secondary  text-sm text-truncate mb-1">
                     Problems look mighty small from 150 miles up.
                   </p>
                 </div>
               </a>
             </li>
             <li class="list-group-item text-center">
-              <a class="dropdown-item empty-link text-info" style="padding:0.6rem; padding-bottom:0.8rem">Load More</a>
+              <a class="dropdown-item empty-link text-info px-3 py-3">Load More</a>
             </li>
 
           </ul>
         </div>
       </li>
       <li class="nav-item dropdown no-caret" ngbDropdown  placement="bottom-right">
-        <a ngbDropdownToggle style="color:inherit; font-size:0.85em" class="nav-link text-secondary dropdown-toggle btn-link" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="assets/img/face3.jpeg" class="img-thumb-sm mr-1"  style="vertical-align:middle"  alt="">
+        <a ngbDropdownToggle class="text-xs nav-link text-secondary dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img src="assets/img/face3.jpeg" class="img-thumb-sm mr-1 align-middle"  alt="">
           <i class="material-icons">expand_more</i>
         </a>
         <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">

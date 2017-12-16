@@ -27,6 +27,11 @@
     background-color: $bgcolor-hover;
     box-shadow: 0 0 0 $input-btn-focus-width rgba($color, .5);
   }
+  &.no-shadow {
+    @include hover {
+      box-shadow: none;
+    }
+  }
 }
 @mixin form-validation-state-ng($state, $color) {
   .form-control,
