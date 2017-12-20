@@ -1,13 +1,17 @@
-<aside  class="sidebar sidebar-dark sidebar-left">
+<aside  class="sidebar sidebar-dark sidebar-left" [ngClass]="{collapsed: settings.sidebar.left.collapsed, visible: settings.sidebar.left.visible  }">
   <div [appScrollbar]="" style="height:100vh; overflow:hidden; position: relative">
     <div class="sidebar-header bg-primary text-white">
-    <div class="sidebar-brand">
-      <div class="title">
+    <div class="sidebar-brand d-flex justify-content-between align-items-center">
+      <div class="title text-truncate">
         Simplify Admin
       </div>
-      <div class="logo">
+      <div class="logo d-none d-xl-block">
         <i class="material-icons">all_inclusive</i>
       </div>
+      <button class="btn btn-primary btn-outline-primary text-white btn-icon mr-1 btn-sm d-xl-none no-shadow" (click)="toggleSidebarVisibility()">
+        <i class="material-icons">keyboard_backspace</i>
+      </button>
+
 
     </div>
   </div>

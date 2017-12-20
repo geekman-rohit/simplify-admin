@@ -6,7 +6,7 @@
     }
   </style>
   <div class="row">
-    <div class="col-7">
+    <div class="col-lg-7 col-12">
       <div class="card">
 
             <div class="card-header">
@@ -43,7 +43,7 @@
 
       </div>
     </div>
-    <div class="col-5">
+    <div class="col-lg-5 col-12">
       <div class="card">
         <div class="card-header">
           <h5>People Involved</h5>
@@ -98,7 +98,7 @@
         Pinned Tasks
       </h5>
       <div class="row">
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="card">
             <div class="card-body">
               <div class="card-feature float-right">
@@ -112,7 +112,7 @@
                   Jan 31 2018
               </p>
               <p class="text-secondary" style="max-width:80%">
-                The path of a cosmonaut is not an easy, triumphant march to glory.
+                The path of a cosmonaut is not easy.
               </p>
               <div class="subtasks ">
                 <div class="subtask py-3">
@@ -158,7 +158,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="card">
             <div class="card-body">
               <div class="card-feature float-right">
@@ -172,7 +172,7 @@
                   Jan 31 2018
               </p>
               <p class="text-secondary" style="max-width:80%">
-                We have an infinite amount to learn both from nature and from each other.
+                We have an infinite amount to learn from nature.
               </p>
               <div class="subtasks ">
                 <div class="subtask py-3">
@@ -218,7 +218,7 @@
           </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-lg-4 col-12">
           <div class="card">
             <div class="card-body">
               <div class="card-feature float-right">
@@ -232,7 +232,7 @@
                   Jan 31 2018
               </p>
               <p class="text-secondary" style="max-width:80%">
-                We have an infinite amount to learn both from nature and from each other.
+                We have an infinite amount to learn from nature.
               </p>
               <div class="subtasks ">
                 <div class="subtask py-3">
@@ -282,21 +282,23 @@
   </div>
   <div class="row">
     <div class="col-12">
-      <h5 class="mb-3 py-2 px-2">
-        Tasks
-        <button class="btn btn-link text-primary float-right"><i class="material-icons mr-1">add_circle</i> Add New Task</button>
-      </h5>
+      <div class="d-flex justify-content-between align-items-center">
+        <h5 class="mb-3 py-2 px-2 clearfix">
+          Tasks
+
+        </h5>
+        <button class="btn btn-link text-primary"><i class="material-icons mr-1">add_circle</i> Add New Task</button>
+      </div>
+
       <div class="card">
         <div class="card-header">
           <h5>All Tasks</h5>
         </div>
-        <div class="card-body px-0">
-          <table class="table table-middle table-material">
-            <thead>
+        <div class="card-body px-0 pt-0" >
+          <table class="table table-middle table-material rt-md">
+            <thead class="rt-table-hide">
               <tr>
-                <th class="text-secondary">
-                  Priority
-                </th>
+
                 <th>
                   Task and Description
                 </th>
@@ -321,81 +323,32 @@
             </thead>
             <tbody>
               <tr>
-                <td>
-                  <i class="material-icons text-secondary">info</i>
-                </td>
-                <td>
+                <td class="rt-header">
+                  <i class="material-icons text-secondary mr-3">info</i>
                   Technical Documentation
                 </td>
-                <td>
-                  <i class="material-icons text-secondary" style="vertical-align:middle; line-height: 1">event</i>
-                    Jan 12 2018
+                <td class="rt-full text-sm">
+                  <i class="material-icons text-secondary mr-1" style="vertical-align:middle; line-height: 1">event</i>
+                    Jan 12 2018 <span class="text-secondary ml-1 d-none rt-table-inline">Due Date</span>
                 </td>
-                <td>
-                  14
+                <td class="rt-full">
+                  14 <span class="text-secondary ml-1 d-none rt-table-inline">Subtasks</span>
                 </td>
-                <td>
-                  <a href="#">Quality Control</a>, <a href="#">R&D</a>
+                <td class="rt-full">
+                  <div class="text-secondary mb-2 d-none rt-table-block">
+                    Teams
+                  </div>
+                  <span><a href="#">Quality Control</a>, <a href="#">R&D</a></span>
                 </td>
-                <td>
+                <td class="rt-full">
+                  <div class="text-secondary mb-2 d-none rt-table-block">
+                    Leader
+                  </div>
                   <a href="#"> Trisha Nimoy</a>
                 </td>
-                <td style="width: 15rem">
+                <td style="width: 15rem" class="rt-full">
                   <div class="progress progress-thin">
                     <div class="progress-bar bg-success" style="width:70%"></div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <i class="material-icons text-warning">info</i>
-                </td>
-                <td>
-                  Development Env Setup
-                </td>
-                <td>
-                  <i class="material-icons text-secondary" style="vertical-align:middle; line-height: 1">event</i>
-                    Jan 31 2018
-                </td>
-                <td>
-                  14
-                </td>
-                <td>
-                  <a href="#">Development</a>, <a href="#">Quality Control</a>, <a href="#">R&D</a>
-                </td>
-                <td>
-                  <a href="#"> Sarah Connor</a>
-                </td>
-                <td style="width: 15rem">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-success" style="width:90%"></div>
-                  </div>
-                </td>
-              </tr>
-
-              <tr>
-                <td>
-                  <i class="material-icons text-secondary">info</i>
-                </td>
-                <td>
-                  Improved Search Algo
-                </td>
-                <td>
-                  <i class="material-icons text-warning" style="vertical-align:middle; line-height: 1">event</i>
-                    Jan 2 2018
-                </td>
-                <td>
-                  14
-                </td>
-                <td>
-                   <a href="#">R&D</a>
-                </td>
-                <td>
-                  <a href="#"> Lisa Joe</a>
-                </td>
-                <td style="width: 15rem">
-                  <div class="progress progress-thin">
-                    <div class="progress-bar bg-warning" style="width:50%"></div>
                   </div>
                 </td>
               </tr>

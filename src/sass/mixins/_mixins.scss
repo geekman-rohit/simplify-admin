@@ -52,3 +52,9 @@
     }
   }
 }
+$sidebar-expand-breakpoint: 1200px;
+@mixin media-breakpoint-sidebar-collapse() {
+  @media (min-width: $sidebar-expand-breakpoint) {
+    @content;
+  }
+}

@@ -1,3 +1,4 @@
+import { Color, colors } from '../../../helpers/colors';
 export const demodata = {
   people: [
     {
@@ -35,14 +36,15 @@ export const demodata = {
           label: '# of Votes',
           data: [6, 7, 3, 5, 2, 4],
           lineTension: 0,
-          backgroundColor: 'rgba(138, 117, 242,0.2)',
-          borderColor: 'rgb(138, 117, 242)',
+          backgroundColor: colors['purple'].alpha(0.2),
+          borderColor: colors['purple'],
           borderWidth: 2,
           pointRadius: 0,
         },
       ]
       },
       options: {
+        maintainAspectRatio: false,
         scales: {
           yAxes: [{
             display: false,
@@ -62,42 +64,58 @@ export const demodata = {
     {
         type: 'bar',
         data: {
+
           labels: ['Jan', 'Feb', 'March', 'June', 'July', 'April'],
           datasets: [
+              {
+                type: 'line',
+                label: 'Revenue this year',
+                data: [6, 9, 4, 5, 12, 3],
+                lineTension: 0.4,
+                backgroundColor: colors['purple'].alpha(0.1),
+                borderColor: colors['purple'],
+                borderWidth: 2,
+                pointRadius: 1,
+                fill: true,
+            },
             {
-            label: 'Revenue this year',
-            data: [6, 17, 11, 5, 12, 3],
-            lineTension: 0.3,
-            backgroundColor: 'rgba(68,151,255,1)',
-            borderColor: 'rgba(68,151,255,1)',
-            borderWidth: 2,
-            pointRadius: 1,
+              type: 'bar',
+              label: 'Revenue last year',
+              data: [3, 10, 5, 9, 10, 4],
+              lineTension: 0.3,
+              backgroundColor: colors['blue'].alpha(0.8),
+              borderColor: colors['blue'],
+              borderWidth: 2,
+              pointRadius: 1,
           },
           {
-          label: 'Revenue last year',
-          data: [3, 10, 5, 9, 10, 4],
-          lineTension: 0.3,
-          backgroundColor: 'rgba(200,200,200,0.9)',
-          borderColor: 'rgba(200,200,200,1)',
-          borderWidth: 2,
-          pointRadius: 1,
-        }
+            type: 'bar',
+            label: 'Revenue last year',
+            data: [5, 9, 7, 11, 6, 4],
+            lineTension: 0.3,
+            backgroundColor: colors['green'].alpha(0.8),
+            borderColor: colors['green'],
+            borderWidth: 2,
+            pointRadius: 1,
+          }
         ]
         },
         options: {
-
+          maintainAspectRatio: false,
           scales: {
             yAxes: [{
               display: true,
               ticks: {
-
                 beginAtZero: true
               }
             }],
             xAxes: [{
-              barPercentage: 0.7,
+              barPercentage: 0.6,
               categoryPercentage: 0.4,
               display: true,
+              ticks: {
+                beginAtZero: true
+              }
             }]
           },
           legend: {
@@ -114,14 +132,15 @@ export const demodata = {
             label: '# of Votes',
             data: [3, 4, 3, 6, 4, 7],
             lineTension: 0,
-            backgroundColor: 'rgba(28, 189, 53,0.2)',
-            borderColor: 'rgb(28, 189, 53)',
+            backgroundColor: colors['green'].alpha(0.2),
+            borderColor: colors['green'],
             borderWidth: 2,
             pointRadius: 0,
           },
         ]
         },
         options: {
+          maintainAspectRatio: false,
           scales: {
             yAxes: [{
               display: false,

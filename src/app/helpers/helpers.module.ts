@@ -7,21 +7,26 @@ import { AccordionModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ScrollbarDirective } from './scrollbar/scrollbar.directive';
 import { FormsModule, EmailValidator } from '@angular/forms';
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 import { DropzoneDirective } from './forms/dropzone.directive';
+import { SettingsService } from './settings.service';
+import { ResponsiveTableComponent } from './responsive-table/responsive-table.component';
+import { FullCalendarDirective } from './calendar/full-calendar.directive';
+import { FullCalendarEventDirective } from './calendar/full-calendar-event.directive';
 @NgModule({
   imports: [
     CommonModule,
     NgbModule,
     FormsModule,
-    FroalaEditorModule,
-    FroalaViewModule
   ],
   declarations: [
     CollapsibleNavDirective,
     CardDirective,
     ScrollbarDirective,
-    DropzoneDirective
+    DropzoneDirective,
+    ResponsiveTableComponent,
+    FullCalendarDirective,
+    FullCalendarEventDirective
+
   ],
   exports: [
     CollapsibleNavDirective,
@@ -30,9 +35,12 @@ import { DropzoneDirective } from './forms/dropzone.directive';
     ScrollbarDirective,
     FormsModule,
     EmailValidator,
-    FroalaEditorModule,
-    FroalaViewModule,
-    DropzoneDirective
+    DropzoneDirective,
+    FullCalendarDirective,
+    FullCalendarEventDirective
+  ],
+  providers: [
+    SettingsService
   ]
 })
 export class HelpersModule { }

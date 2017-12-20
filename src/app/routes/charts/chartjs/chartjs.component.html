@@ -1,6 +1,9 @@
 <div class="container-fluid">
+  <h5 class="px-2 py-4">
+    Basic Charts
+  </h5>
   <div class="row">
-    <div class="col-6">
+    <div class="col-lg-6 col-12">
       <div class="card">
         <div class="card-header">
           <h5>
@@ -14,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div class="col-6">
+    <div class="col-lg-6 col-12">
       <div class="card">
         <div class="card-header">
           <h5>
@@ -24,6 +27,86 @@
         <div class="card-body">
           <div class="chart-container">
             <canvas width="" height="" [appChartjs]="demodata[0]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            Pie Chart
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas width="" height="" [appChartjs]="demodata[3]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            Area Chart
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas width="" height="" [appChartjs]="demodata[4]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h5 class="px-2 py-4">
+    Advanced Charts
+  </h5>
+  <div class="row">
+    <div class="col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            Line and Bar Chart
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas width="" height="" [appChartjs]="demodata[2]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            Scatter Chart
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas width="" height="" [appChartjs]="demodata[5]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-lg-6 col-12">
+      <div class="card">
+        <div class="card-header">
+          <h5>
+            Bubble Chart
+          </h5>
+        </div>
+        <div class="card-body">
+          <div class="chart-container">
+            <canvas width="500" height="400" [appChartjs]="demodata[6]"></canvas>
           </div>
         </div>
       </div>

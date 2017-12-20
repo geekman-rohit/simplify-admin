@@ -13,7 +13,6 @@ import { AlertModule } from 'ngx-bootstrap';
 import { AccordionModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 import { LayoutComponent } from './layout/layout.component';
 @NgModule({
   declarations: [
@@ -32,9 +31,7 @@ import { LayoutComponent } from './layout/layout.component';
     BsDropdownModule.forRoot(),
     NgbModule.forRoot(),
     HelpersModule,
-    FormsModule,
-    FroalaEditorModule.forRoot(),
-    FroalaViewModule.forRoot()
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

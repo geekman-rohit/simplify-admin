@@ -124,14 +124,14 @@
 }
 .list-nav-child-item {
   .list-nav-link {
-    padding: 0.4rem 1.4rem;
+    padding: 0.4rem 1rem;
     font-size: 1em;
 
 
   }
   &.active {
     .list-nav-link {
-      padding: 0.4rem 1.4rem;
+      padding: 0.4rem 1rem;
       font-size: 1em;
 
 
@@ -161,7 +161,7 @@
 }
 .list-nav-icon-sm {
   background: none;
-  text-align: right;
+  text-align: center;
   .material-icons {
     font-size: 1em;
   }
@@ -180,10 +180,10 @@
   padding-left: 1rem;
 }
 .list-nav-light {
-  @include nav-theme-generate(lighten($gray-700,12%), $primary, $gray-100, $gray-600);
+  @include nav-theme-generate(lighten($gray-700, 12%), $primary, $gray-100, $gray-600);
 }
 .list-nav-dark {
-  @include nav-theme-generate(darken($gray-300,5%), $primary, darken($dark,6%), $gray-400);
+  @include nav-theme-generate(darken($gray-400, 5%), $primary, darken($dark, 8%), $gray-400);
 }
 
 .nav-material {

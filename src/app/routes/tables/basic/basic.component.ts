@@ -7,6 +7,7 @@ import { demodata } from './demodata';
 })
 export class BasicComponent implements OnInit {
   demodata;
+
   constructor() {
     this.demodata = demodata;
   }

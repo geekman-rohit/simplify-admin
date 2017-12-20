@@ -8,7 +8,7 @@ $sidebar-logo-size: 2.5rem;
 
 // stylelint-disable
 $white: #ffffff !default;
-$gray-100: #f3f6f9 !default;
+$gray-100: #f3f6fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -32,14 +32,14 @@ $grays: map-merge((
 "900": $gray-900
 ), $grays);
 
-$blue: lighten(#117bff,8%) !default;
+$blue: #3a92ff !default;
 $indigo: #6610f2 !default;
-$purple: lighten(#7259EF, 6%) !default;
+$purple: #8a75f2 !default;
 $pink: #e83e8c !default;
-$red: darken(#ec5565,2%) !default;
-$orange: darken(#fd7e14,2%) !default;
-$yellow: lighten(#ffc107,2%) !default;
-$green: lighten(#1bb934,1%) !default;
+$red: #eb4c5d !default;
+$orange: #fd780a !default;
+$yellow: #ffc411 !default;
+$green: #1cbd35 !default;
 $teal: #26c1b2 !default;
 $cyan: #17a2b8 !default;
 $code-color: lighten(#bd4147,10%) !default;
@@ -92,7 +92,7 @@ $theme-colors: map-merge((
 
 
 $body-bg: $gray-100; //Modified
-$body-color: lighten($gray-700,4%);
+$body-color: lighten($gray-700,2%);
 $grid-gutter-width: 30px;
 
 
@@ -138,7 +138,7 @@ $headings-font-weight: 300 !default;
 $input-btn-padding-y: .5rem;
 $input-btn-padding-x: 1.5rem;
 $input-btn-line-height: $line-height-base !default;
-$input-btn-focus-width: 2px !default;
+$input-btn-focus-width: 0px !default;
 
 
 $input-btn-padding-y-sm: .4rem; //Modified

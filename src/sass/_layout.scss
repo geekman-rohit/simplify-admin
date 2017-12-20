@@ -1,20 +1,53 @@
 .sidebar-left {
   width: $sidebar-size;
-  min-width: $sidebar-size;
-  max-width: $sidebar-size;
   position: fixed;
   left: 0;
   top: 0;
-}
-.page {
-  margin-left: $sidebar-size;
+  transition: margin-left 0.3s, width 0.3s;
+  overflow: hidden;
+  z-index:10;
+  margin-left: -$sidebar-size;
 
+  &.visible {
+    margin-left: 0;
+  }
+  @include media-breakpoint-sidebar-collapse() {
+    margin-left: 0;
+    &.visible {
+      margin-left: 0;
+    }
+  }
+
+}
+
+
+.page {
+
+  margin-left: 0;
+  position: relative;
+  transition: 0.3s margin-left;
+
+  @include media-breakpoint-sidebar-collapse() {
+    margin-left: $sidebar-size;
+    &.no-sidebar {
+      margin-left: 4.5rem;
+    }
+  }
 }
 .page-content {
   padding: $grid-gutter-width ($grid-gutter-width/2);
   padding-bottom: 0;
+
+  position: relative;
+  top: $topbar-size;
   .card {
     margin-bottom: $grid-gutter-width;
+  }
+  @include media-breakpoint-down(xs) {
+    padding: $grid-gutter-width 0;
+    .card {
+      margin-bottom: $grid-gutter-width/2;
+    }
   }
 }
 /* Layout Utilities */

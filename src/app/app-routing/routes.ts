@@ -48,6 +48,10 @@ export const routes: Routes = [
         path: 'shop',
         loadChildren: 'app/routes/shop/shop.module#ShopModule'
       },
+      {
+        path: 'calendar',
+        loadChildren: 'app/routes/calendar/calendar.module#CalendarModule'
+      },
       { path: '', redirectTo: '/dashboard/pro', pathMatch: 'full' },
       /* 404 Error Page */
       { path: '**', component: NotFoundComponent, }

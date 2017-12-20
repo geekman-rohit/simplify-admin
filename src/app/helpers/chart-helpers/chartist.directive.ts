@@ -1,5 +1,6 @@
 import { Directive, OnInit, ElementRef, Input, HostBinding } from '@angular/core';
 import * as Chartist from 'chartist';
+import { Utility } from '../utility';
 @Directive({
   selector: '[appChartist]'
 })
@@ -8,6 +9,7 @@ export class ChartistDirective implements OnInit {
   @HostBinding('class') eleClass = 'ct-chart ct-major-sixth';
   @Input() appChartist: string;
   @Input() chartdata;
+  @Input() options;
   ele: ElementRef;
   chart: Chartist;
   native: any;
@@ -29,22 +31,33 @@ export class ChartistDirective implements OnInit {
       case 'area':
         this.renderAreaChart(data);
         break;
+      case 'pie':
+        this.renderPieChart(data);
+        break;
+      case 'scatter':
+        this.renderScatterChart(data);
+        break;
       default:
       this.renderLineChart(data);
     }
 
   }
   renderLineChart(data) {
-    this.chart = new Chartist.Line(this.native, data);
+    const options = {
+      fullWidth: true
+    }
+    this.chart = new Chartist.Line(this.native, data, options);
   }
   renderAreaChart(data) {
-    const options = {
-      lineSmooth: Chartist.Interpolation.none(),
-      high: 5,
-      low: 0,
+    let options = {
+
       fullWidth: true,
       showArea: true,
     };
+
+    if(this.options) {
+      options = Utility.mergeOverwrite(options, this.options);
+    }
     this.chart = new Chartist.Line(this.native, data, options);
   }
   renderBarChart(data) {
@@ -52,6 +65,15 @@ export class ChartistDirective implements OnInit {
       seriesBarDistance: 35
     };
     this.chart = new Chartist.Bar(this.native, data, options);
+  }
+  renderPieChart(data) {
+    this.chart = new Chartist.Pie(this.native, data);
+  }
+  renderScatterChart(data) {
+    const options = {
+      showLine: false,
+    }
+    this.chart = new Chartist.Line(this.native, data, options);
   }
 
 }

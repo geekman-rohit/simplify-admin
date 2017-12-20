@@ -2,7 +2,7 @@
   <div class="sidebar-container">
     <app-sidebar></app-sidebar>
   </div>
-  <div class="page">
+  <div class="page" [ngClass]="{'no-sidebar': settings.sidebar.left.collapsed}">
     <div class="topbar-container">
       <app-topbar></app-topbar>
     </div>

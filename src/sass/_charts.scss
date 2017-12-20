@@ -1,3 +1,6 @@
+.chart-container {
+  position: relative;
+}
 /* Import Chart Styles */
 $ct-line-width: 2px;
 $ct-bar-width: 30px;
@@ -6,15 +9,16 @@ $ct-grid-width: 0.2px;
 $ct-grid-color: rgba(50, 50, 50, 0.9);
 $ct-point-size: 6px;
 $ct-series-colors: (
-  $primary,
-  $success,
-  $info,
-  $warning,
-  $danger,
-  #59922b,
-  #0544d3,
-  #6b0392,
-  #f05b4f,
+  rgba($primary,0.9),
+  rgba($teal,0.9),
+  rgba($success,0.9),
+  rgba($info,0.9),
+  rgba($warning,0.9),
+  rgba($danger,0.9),
+  rgba($cyan,0.9),
+  rgba($indigo,0.9),
+  rgba($yellow,0.9),
+  rgba($pink,0.9),
   #dda458,
   #eacf7d,
   #86797d,
@@ -43,10 +47,6 @@ $ct-series-colors: (
     visibility: hidden;
   }
 }
-.c3-axis-y-label {
-}
-
-.c3-axis-y2 .tick {
-}
-.c3-axis-y2-label {
+.ct-label {
+  fill: white;
 }

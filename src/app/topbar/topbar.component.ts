@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+import { SettingsService } from '../helpers/settings.service';
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
@@ -8,7 +9,7 @@ import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 export class TopbarComponent implements OnInit {
 
   title = "Home";
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {
+  constructor(private router: Router, private activatedRoute: ActivatedRoute, public settings: SettingsService) {
   }
 
   ngOnInit() {
@@ -23,6 +24,12 @@ export class TopbarComponent implements OnInit {
     data.subscribe((d)=> {
       this.title = d.title || "Home";
     });
+  }
+  toggleSidebar() {
+    this.settings.sidebar.left.collapsed = !this.settings.sidebar.left.collapsed;
+  }
+  toggleSidebarVisibility() {
+    this.settings.sidebar.left.visible = !this.settings.sidebar.left.visible;
   }
 
 }

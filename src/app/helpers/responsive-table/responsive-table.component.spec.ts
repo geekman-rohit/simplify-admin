@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AggridComponent } from './aggrid.component';
+import { ResponsiveTableComponent } from './responsive-table.component';
 
-describe('AggridComponent', () => {
-  let component: AggridComponent;
-  let fixture: ComponentFixture<AggridComponent>;
+describe('ResponsiveTableComponent', () => {
+  let component: ResponsiveTableComponent;
+  let fixture: ComponentFixture<ResponsiveTableComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AggridComponent ]
+      declarations: [ ResponsiveTableComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AggridComponent);
+    fixture = TestBed.createComponent(ResponsiveTableComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

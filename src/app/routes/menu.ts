@@ -47,17 +47,11 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'chat_bubble_outline' }
   },
   {
-    path: '/security',
-    label: 'Account',
-    icon: { class: 'material-icons', content: 'security' }
-  },
-  {
     label: 'Commerce',
     icon: { class: 'material-icons', content: 'attach_money' },
     children: [
       { path: '/shop/pricing', label: 'Pricing' },
       { path: '/shop/invoice', label: 'Invoice' },
-      //{ path: '/shop/cart', label: 'Cart' },
 
     ]
   },
@@ -69,11 +63,6 @@ export const menu: MenuItem[] = [
       { path: '/front/signup', label: 'Signup' },
       { path: '/front/lock', label: 'Lock' }
     ]
-  },
-  {
-    path: '/front',
-    label: 'Landing Page',
-    icon: { class: 'material-icons', content: 'language' }
   },
   {
     label: 'COMPONENTS',
@@ -113,8 +102,7 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'view_column' },
     children: [
       { path: '/tables/basic', label: 'Basic' },
-      { path: '/tables/data', label: 'Datatable' },
-      { path: '/tables/aggrid', label: 'Advance Grid' }
+      { path: '/tables/data', label: 'Datatable' }
     ]
   },
   {
@@ -129,7 +117,7 @@ export const menu: MenuItem[] = [
     ]
   },
   {
-    path: '/calendar',
+    path: '/calendar/full',
     label: 'Calendar',
     icon: { class: 'material-icons', content: 'event' }
   }

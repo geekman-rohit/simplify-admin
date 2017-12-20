@@ -69,3 +69,7 @@
 }
 @include form-validation-state-ng("invalid", $form-feedback-invalid-color)
 @include form-validation-state-ng("valid", $form-feedback-valid-color)
+
+.form-control:focus {
+  border-color: $info;
+}

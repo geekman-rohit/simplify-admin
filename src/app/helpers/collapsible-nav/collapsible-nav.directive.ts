@@ -11,7 +11,7 @@ export class CollapsibleNavDirective {
 
 
   constructor( public el: ElementRef  ) {
-    console.log($);
+
   }
 
   @HostListener('click', ['$event']) navClick(event) {
@@ -79,7 +79,6 @@ export class CollapsibleNavDirective {
     }
     const siblings = element.siblings('li');
     siblings.each(function(){
-      console.log(this);
       self.close($(this));
     });
   }
