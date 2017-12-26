@@ -183,7 +183,7 @@
   @include nav-theme-generate(lighten($gray-700, 12%), $primary, $gray-100, $gray-600);
 }
 .list-nav-dark {
-  @include nav-theme-generate(darken($gray-400, 5%), $primary, darken($dark, 8%), $gray-400);
+  @include nav-theme-generate(darken($gray-400, 5%), $primary, darken($dark, 10%), $gray-400);
 }
 
 .nav-material {
@@ -218,7 +218,7 @@
                 border: 0;
                 position: relative;
                 font-weight: 500;
-                border-bottom: 2px solid $primary;
+                border-bottom: 2px solid $info;
             }
         }
     }
@@ -250,7 +250,7 @@
               color: $gray-500;
             }
             &.active {
-              background: $primary;
+              background: $info;
               color: white;
             }
         }

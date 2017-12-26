@@ -21,32 +21,32 @@
           </p>
           <ul class="list-group list-group-borderless list-group-sm">
 
-            <li class="list-group-item pl-0 text-secondary" style="">
+            <li class="list-group-item pl-0 py-2 text-secondary" style="">
               <span class="text-secondary">
                 <i class="material-icons">event</i>
-                <span class="time mr-1">08:00</span>
+                <span class="time mr-2">08:00</span>
               </span>
               <span class="" style="">Team Meeting</span>
               <span class="ml-2"><i class="material-icons text-success">check</i></span>
             </li>
-            <li class="list-group-item pl-0" style="">
+            <li class="list-group-item pl-0 py-2" style="">
               <span class=" text-warning">
                 <i class="material-icons">mail_outline</i>
-                <span class="time mr-1">09:00</span>
+                <span class="time mr-2">09:00</span>
               </span>
               <span class="" style="">Email Meeting Minutes</span>
             </li>
-            <li class="list-group-item pl-0 " style="">
+            <li class="list-group-item pl-0 py-2 " style="">
               <span class="text">
                 <i class="material-icons">mail_outline</i>
-                <span class="time mr-1">13:00</span>
+                <span class="time mr-2">13:00</span>
               </span>
               <span class="" style="">Technical Report</span>
             </li>
-            <li class="list-group-item pl-0 " style="">
+            <li class="list-group-item pl-0 py-2" style="">
               <span class="text">
                 <i class="material-icons">event</i>
-                <span class="time mr-1">17:00</span>
+                <span class="time mr-2">17:00</span>
               </span>
               <span class="" style="">Meeting with <a href="">John</a></span>
             </li>
@@ -71,8 +71,8 @@
             Monthly Downloads Trend on App Store
           </p>
 
-          <div class="chart-container">
-            <canvas id="myChart" width="400" height="110" [appChartjs]="demodata.charts[0]"></canvas>
+          <div class="chart-container" style="width: 100%; height: 8.5rem">
+            <canvas id="myChart" width="400" height="120" [appChartjs]="demodata.charts[0]"></canvas>
           </div>
         </div>
       </div>
@@ -93,8 +93,8 @@
           <p class="text-secondary text-small mb-2">
             Monthly Downloads Trend on App Store
           </p>
-          <div class="chart-container">
-            <canvas id="myChart" width="400" height="110" [appChartjs]="demodata.charts[2]"></canvas>
+          <div class="chart-container" style="width: 100%; height: 8.5rem">
+            <canvas id="myChart" [appChartjs]="demodata.charts[2]"></canvas>
           </div>
         </div>
       </div>
@@ -158,17 +158,24 @@
         </div>
         <div class="card-body py-0 px-0">
 
-          <div class="media align-items-center py-3 px-3" style="border-top: 1px solid #eee">
+          <div class="media align-items-center py-3 px-4" style="border-top: 1px solid #eee">
             <img class="mr-3" src="/assets/img/face4.jpeg" alt="Generic placeholder image" style="width:2.5rem; height: 2.5rem; border-radius:50%">
             <div class="media-body d-flex align-items-center">
               <h6 class="mb-0">Lianna Parker</h6>
             </div>
 
           </div>
-          <div class="media align-items-center py-3 px-3" style="border-top: 1px solid #eee">
+          <div class="media align-items-center py-3 px-4" style="border-top: 1px solid #eee">
             <img class="mr-3" src="/assets/img/face3.jpeg" alt="Generic placeholder image" style="width:2.5rem; height: 2.5rem; border-radius:50%">
             <div class="media-body d-flex align-items-center">
               <h6 class="mb-0">Joane Kirk</h6>
+            </div>
+
+          </div>
+          <div class="media align-items-center py-3 px-4" style="border-top: 1px solid #eee">
+            <img class="mr-3" src="/assets/img/face5.jpeg" alt="Generic placeholder image" style="width:2.5rem; height: 2.5rem; border-radius:50%">
+            <div class="media-body d-flex align-items-center">
+              <h6 class="mb-0">Scotty Johnson</h6>
             </div>
 
           </div>
@@ -202,7 +209,7 @@
           <p class="text-secondary text-small">
             Revenue Generation Trend (Quarterly) (In $ thousands )
           </p>
-          <div class="chart-container" style="width:100%; height:20rem">
+          <div class="chart-container" style="width:100%; height:24rem">
             <canvas id="my-chart-2" [appChartjs]="demodata.charts[1]"></canvas>
           </div>
         </div>
@@ -214,55 +221,77 @@
   <div class="row">
     <div class="col-12 col-lg-8">
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">
-            My People
+        <div class="card-body px-0">
+          <h5 class="card-title px-6 mb-6">
+            My Tasks
           </h5>
-          <table class="table table-middle" style="margin-top:2rem">
-            <thead>
-              <tr>
-                <th>
-                  #
-                </th>
-                <th>
+          <div class="media align-items-center py-4 px-6" style="border-top: 1px solid #eee">
+            <label class="custom-control custom-checkbox m-0">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator custom-control-material"></span>
+            </label>
+            <div class="media-body d-flex align-items-center pl-3 d-flex justify-content-between">
+              <p class="mb-0">Check Warp Speed Beam Capabilities</p>
+              <span class="text-sm text-warning ">Tomorrow</span>
+            </div>
 
-                  Name
-                </th>
-                <th>
-                  Position
-                </th>
-                <th>
-                  Department
-                </th>
-                <th>
+          </div>
+          <div class="media align-items-center py-4 px-6" style="border-top: 1px solid #eee">
+            <label class="custom-control custom-checkbox m-0">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator custom-control-material"></span>
+            </label>
+            <div class="media-body d-flex align-items-center pl-3 d-flex justify-content-between">
+              <p class="mb-0">Repair Forward Defence Shield</p>
+              <span class="text-sm text-secondary ">12 Jan 2017</span>
+            </div>
 
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr *ngFor="let person of demodata.people; let i = index">
-                <td>
-                  {{ i+1 }}
-                </td>
-                <td>
-                  <img src="{{person.photo}}" class="" style="width:2.25rem; height: 2.25rem; border-radius: 50%; margin-right:0.5rem" alt="">
-                  {{person.name}}
-                </td>
-                <td>
-                  {{person.title}}
-                </td>
-                <td>
-                  {{person.team}}
-                </td>
-                <td>
+          </div>
+          <div class="media align-items-center py-4 px-6" style="border-top: 1px solid #eee">
+            <label class="custom-control custom-checkbox m-0">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator custom-control-material"></span>
+            </label>
+            <div class="media-body d-flex align-items-center pl-3 d-flex justify-content-between">
+              <p class="mb-0">Restock Proton Torpedos</p>
+              <span class="text-sm text-warning ">1 Jan 2017</span>
+            </div>
 
-                </td>
-              </tr>
+          </div>
+          <div class="media align-items-center py-4 px-6" style="border-top: 1px solid #eee">
+            <label class="custom-control custom-checkbox m-0">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator custom-control-material"></span>
+            </label>
+            <div class="media-body d-flex align-items-center pl-3 d-flex justify-content-between">
+              <p class="mb-0">Restock Space Sickness Medicine</p>
+              <span class="text-sm text-secondary ">11 Jan 2017</span>
+            </div>
 
+          </div>
+          <div class="media align-items-center py-4 px-6" style="border-top: 1px solid #eee">
+            <label class="custom-control custom-checkbox m-0">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator custom-control-material"></span>
+            </label>
+            <div class="media-body d-flex align-items-center pl-3 d-flex justify-content-between">
+              <p class="mb-0">Repair Forward Defence Shield</p>
+              <span class="text-sm text-secondary ">12 Jan 2017</span>
+            </div>
 
-            </tbody>
+          </div>
+          <div class="media align-items-center py-4 px-6" style="border-top: 1px solid #eee">
+            <label class="custom-control custom-checkbox m-0">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator custom-control-material"></span>
+            </label>
+            <div class="media-body d-flex align-items-center pl-3 d-flex justify-content-between">
+              <p class="mb-0">Restock Proton Torpedos</p>
+              <span class="text-sm text-warning ">1 Jan 2017</span>
+            </div>
 
-          </table>
+          </div>
+
         </div>
       </div>
 
@@ -270,22 +299,16 @@
     </div>
     <div class="col-12 col-lg-4">
       <div class="card">
-        <img class="card-img-top" src="assets/img/mountains.jpeg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title mb-4">
-            The Beach Trip
+          <h5 class="card-title">
+            Revenue Share
           </h5>
-          <p>
-            We want to explore. We’re curious people. Look back over history, people have put their lives at stake to go out and explore.
-
+          <p class="text-secondary">
+            Month On Month
           </p>
-          <p>
-            Houston, Tranquillity Base here. The Eagle has landed.
-          </p>
-          <p>
-              The path of a cosmonaut is not an easy, triumphant march to glory.
-          </p>
-
+          <div class="chart-container" style="width:100%">
+            <div id="my-chart-4" [appC3]="demodata.charts[3]"></div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,16 +1,16 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-12">
-      <div class="bg-white card" style=" margin-bottom:0px;">
-        <div class="d-flex">
-          <div class="" style="width:17rem; min-width:17rem; min-height:95vh; border-right: 1px solid #eee">
-            <div class="pt-4 px-4 mr-1">
-              <h5 class="my-0">Simplify Email</h5>
+      <div class="bg-white card email-card" style=" margin-bottom:0px;">
+        <div class="d-flex email-container">
+          <div class="email-sidebar" [ngClass]="{expanded: menuToggle}">
+            <div class="pt-4 pl-4 mr-1 d-flex align-items-center justify-content-between btn-sm">
+              <h5 class="my-0">Simplify Email</h5><button class="btn btn-link text-secondary btn-sm email-toggle" (click)="menuToggle = !menuToggle"><i class="material-icons">menu</i></button>
             </div>
             <div class="py-4 px-4 mr-1">
               <button class="btn btn-outline-info btn-block">Compose</button>
             </div>
-            <div class="inbox-menu text-secondary">
+            <div class="inbox-menu">
               <ul class="list-nav sidebar-nav list-nav-light">
                   <li class="list-nav-item active">
                     <a class="list-nav-link d-flex align-items-center">
@@ -42,10 +42,10 @@
           </div>
           <div style="width: 100%" class="">
             <div class="d-flex py-3 align-items-center justify-content-between">
-              <div class="mr-1">
-                <h5 class="my-0 px-3 text-info">Inbox (12)</h5>
+              <div class="mr-1 pl-2 d-flex align-items-center">
+                <button class="btn btn-link text-secondary btn-sm email-toggle" (click)="menuToggle = !menuToggle"><i class="material-icons">menu</i></button><h5 class="my-0 px-3 text-info">Inbox (12)</h5>
               </div>
-              <div class="actions px-3" style="text-align: right;">
+              <div class="actions px-4" style="text-align: right;">
                 <span class="btn-group">
                   <button class="btn btn-sm btn-outline-secondary"><i class="fa fa-archive"></i></button>
                   <button class="btn btn-sm btn-outline-secondary"><i class="fa fa-archive"></i></button>
@@ -94,11 +94,11 @@
                   <tr class="text-secondary">
 
                     <td>
-                      <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
+                      <img src="/assets/img/face3.jpeg" alt="" class="img-thumb-xs mx-3" />
+                      Alice M
                     </td>
                     <td>
-                      How to drive a space ship after you lose your mind
+                      Astronomy compels the soul to look upward, and leads us from this world to another.
                     </td>
                     <td style="width: 3rem">
                       <label class="custom-control custom-checkbox mb-0">
@@ -112,10 +112,80 @@
 
                     <td>
                       <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
+                      Peter Brown
+                    </td>
+                    <td>
+                      Where ignorance lurks, so too do the frontiers of discovery and imagination.
+                    </td>
+                    <td style="width: 3rem">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="text-secondary">
+
+                    <td>
+                      <img src="/assets/img/face5.jpeg" alt="" class="img-thumb-xs mx-3" />
+                      Timothy Roge
+                    </td>
+                    <td>
+                      Buy why, some say, the moon?
+                    </td>
+                    <td style="width: 3rem">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="text-secondary">
+
+                    <td>
+                      <img src="/assets/img/face1.jpeg" alt="" class="img-thumb-xs mx-3" />
+                      Sarah Fowler
+                    </td>
+                    <td>
+                      You know, being a test pilot isn't always the healthiest
+                    </td>
+                    <td style="width: 3rem">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="text-secondary">
+
+                    <td>
+                      <img src="/assets/img/face2.jpeg" alt="" class="img-thumb-xs mx-3" />
                       James T. Kirk
                     </td>
                     <td>
-                      How to drive a space ship after you lose your mind
+                      Houston, Tranquillity Base here. The Eagle has landed.
+
+
+                    </td>
+                    <td style="width: 3rem">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="text-secondary">
+
+                    <td>
+                      <img src="/assets/img/face5.jpeg" alt="" class="img-thumb-xs mx-3" />
+                      J. K. Brewster
+                    </td>
+                    <td>
+                      If you could see the earth illuminated
                     </td>
                     <td style="width: 3rem">
                       <label class="custom-control custom-checkbox mb-0">
@@ -129,10 +199,27 @@
 
                     <td>
                       <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
+                      Carol Davis
                     </td>
                     <td>
-                      How to drive a space ship after you lose your mind
+                      Problems look mighty small from 150 miles up.
+                    </td>
+                    <td style="width: 3rem">
+                      <label class="custom-control custom-checkbox mb-0">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description"></span>
+                      </label>
+                    </td>
+                  </tr>
+                  <tr class="text-secondary">
+
+                    <td>
+                      <img src="/assets/img/face5.jpeg" alt="" class="img-thumb-xs mx-3" />
+                      J. K. Brewster
+                    </td>
+                    <td>
+                      Science cuts two ways, of course
                     </td>
                     <td style="width: 3rem">
                       <label class="custom-control custom-checkbox mb-0">
@@ -146,10 +233,10 @@
 
                     <td>
                       <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
+                      Alice Wondergirl
                     </td>
                     <td>
-                      How to drive a space ship after you lose your mind
+                      But there's no turning back from science.
                     </td>
                     <td style="width: 3rem">
                       <label class="custom-control custom-checkbox mb-0">
@@ -163,95 +250,10 @@
 
                     <td>
                       <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
+                      Nut Cracker
                     </td>
                     <td>
-                      How to drive a space ship after you lose your mind
-                    </td>
-                    <td style="width: 3rem">
-                      <label class="custom-control custom-checkbox mb-0">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="text-secondary">
-
-                    <td>
-                      <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
-                    </td>
-                    <td>
-                      How to drive a space ship after you lose your mind
-                    </td>
-                    <td style="width: 3rem">
-                      <label class="custom-control custom-checkbox mb-0">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="text-secondary">
-
-                    <td>
-                      <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
-                    </td>
-                    <td>
-                      How to drive a space ship after you lose your mind
-                    </td>
-                    <td style="width: 3rem">
-                      <label class="custom-control custom-checkbox mb-0">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="text-secondary">
-
-                    <td>
-                      <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
-                    </td>
-                    <td>
-                      How to drive a space ship after you lose your mind
-                    </td>
-                    <td style="width: 3rem">
-                      <label class="custom-control custom-checkbox mb-0">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="text-secondary">
-
-                    <td>
-                      <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
-                    </td>
-                    <td>
-                      How to drive a space ship after you lose your mind
-                    </td>
-                    <td style="width: 3rem">
-                      <label class="custom-control custom-checkbox mb-0">
-                        <input type="checkbox" class="custom-control-input">
-                        <span class="custom-control-indicator"></span>
-                        <span class="custom-control-description"></span>
-                      </label>
-                    </td>
-                  </tr>
-                  <tr class="text-secondary">
-
-                    <td>
-                      <img src="/assets/img/face4.jpeg" alt="" class="img-thumb-xs mx-3" />
-                      James T. Kirk
-                    </td>
-                    <td>
-                      How to drive a space ship after you lose your mind
+                      As we got further and further away
                     </td>
                     <td style="width: 3rem">
                       <label class="custom-control custom-checkbox mb-0">

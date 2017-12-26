@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { SettingsService } from '../helpers/settings.service';
+import 'rxjs/add/operator/filter';
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',

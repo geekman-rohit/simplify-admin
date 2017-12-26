@@ -8,10 +8,6 @@ import { TopbarComponent } from './topbar/topbar.component';
 import { HelpersModule } from './helpers/helpers.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { AgGridModule } from 'ag-grid-angular/main';
-import { AlertModule } from 'ngx-bootstrap';
-import { AccordionModule } from 'ngx-bootstrap';
-import { BsDropdownModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutComponent } from './layout/layout.component';
 @NgModule({
@@ -27,8 +23,6 @@ import { LayoutComponent } from './layout/layout.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AlertModule.forRoot(),
-    BsDropdownModule.forRoot(),
     NgbModule.forRoot(),
     HelpersModule,
     FormsModule

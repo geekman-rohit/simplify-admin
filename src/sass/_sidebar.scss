@@ -8,7 +8,7 @@
 
 }
 .sidebar-dark {
-  background: darken($dark,10%);
+  background: darken($dark,12%);
   border-right: 0;
 }
 .sidebar-brand {
@@ -33,12 +33,15 @@
     height: $sidebar-logo-size;
     width: $sidebar-logo-size;
     text-align: center;
-    line-height: $sidebar-logo-size;
     background-color: rgba(255,255,255,0.1);
     border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     .material-icons {
-      line-height: $sidebar-logo-size;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+      line-height: 1;
+
     }
   }
 }

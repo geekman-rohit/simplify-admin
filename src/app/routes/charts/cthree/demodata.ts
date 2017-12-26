@@ -1,3 +1,4 @@
+import { Color, colors } from '../../../helpers/colors';
 export const demodata= [
   {
     columns: [
@@ -7,7 +8,11 @@ export const demodata= [
     types: {
       'data1': 'line',
       'data2': 'spline'
-    }
+    },
+    colors: {
+        'data1': colors['purple'].alpha(0.9),
+        'data2': colors['blue'].alpha(0.9),
+    },
   },
   {
     columns: [
@@ -18,7 +23,11 @@ export const demodata= [
     types: {
       'data1': 'bar',
       'data2': 'bar'
-    }
+    },
+    colors: {
+        'data1': colors['blue'].alpha(0.9),
+        'data2': colors['orange'].alpha(0.9),
+    },
   },
   {
     columns: [
@@ -29,7 +38,11 @@ export const demodata= [
     types: {
       'data1': 'area-spline',
       'data2': 'area'
-    }
+    },
+    colors: {
+        'data1': colors['green'].alpha(0.9),
+        'data2': colors['blue'].alpha(0.9),
+    },
   },
   {
     columns: [
@@ -51,7 +64,14 @@ export const demodata= [
       ['data5', 10],
 
     ],
-    type: 'pie'
+    type: 'pie',
+    colors: {
+        'data1': colors['purple'].alpha(0.9),
+        'data2': colors['blue'].alpha(0.9),
+        'data3': colors['green'].alpha(0.9),
+        'data4': colors['orange'].alpha(0.9),
+        'data5': colors['red'].alpha(0.9),
+    },
   },
   {
     columns: [

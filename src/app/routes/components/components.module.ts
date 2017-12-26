@@ -16,18 +16,18 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 const routes: Routes = [
   { path: '', redirectTo: '/ui/buttons', pathMatch: 'full' },
-  { path: 'buttons', component: ButtonsComponent },
-  { path: 'cards', component: CardsComponent },
-  { path: 'progress', component: ProgressComponent },
-  { path: 'nav', component: NavComponent },
-  { path: 'dropdown', component: DropdownComponent },
-  { path: 'alert', component: AlertComponent },
-  { path: 'collapse', component: CollapseComponent },
-  { path: 'tooltip', component: TooltipComponent },
-  { path: 'accordian', component: AccordianComponent },
-  { path: 'pagination', component: PaginationComponent },
-  { path: 'carousel', component: CarouselComponent },
-  { path: 'modal', component: ModalComponent }
+  { path: 'buttons', component: ButtonsComponent, data: { title: 'Buttons' } },
+  { path: 'cards', component: CardsComponent, data: { title: 'Cards' } },
+  { path: 'progress', component: ProgressComponent, data: { title: 'Progress' } },
+  { path: 'nav', component: NavComponent, data: { title: 'Navigation & Tabs' } },
+  { path: 'dropdown', component: DropdownComponent, data: { title: 'Dropdown' } },
+  { path: 'alert', component: AlertComponent, data: { title: 'Alert' } },
+  { path: 'collapse', component: CollapseComponent, data: { title: 'Collapse' } },
+  { path: 'tooltip', component: TooltipComponent, data: { title: 'Tooltip' } },
+  { path: 'accordian', component: AccordianComponent, data: { title: 'Accordian' } },
+  { path: 'pagination', component: PaginationComponent, data: { title: 'Pagination' } },
+  { path: 'carousel', component: CarouselComponent, data: { title: 'Carousel' } },
+  { path: 'modal', component: ModalComponent, data: { title: 'Modal' } }
 ];
 @NgModule({
   imports: [

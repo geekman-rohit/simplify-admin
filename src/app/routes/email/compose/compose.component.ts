@@ -7,6 +7,7 @@ declare var $: any;
   styleUrls: ['./compose.component.scss']
 })
 export class ComposeComponent implements OnInit {
+  menuToggle = false;
   constructor() {
 
   }

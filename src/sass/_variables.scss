@@ -14,7 +14,7 @@ $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
 $gray-600: #868e96 !default;
-$gray-700: #4e5a66 !default;
+$gray-700: lighten(#4e5a66 ,2%)!default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
@@ -34,7 +34,7 @@ $grays: map-merge((
 
 $blue: #3a92ff !default;
 $indigo: #6610f2 !default;
-$purple: #8a75f2 !default;
+$purple: darken(#8a75f2,1%) !default;
 $pink: #e83e8c !default;
 $red: #eb4c5d !default;
 $orange: #fd780a !default;
@@ -92,7 +92,7 @@ $theme-colors: map-merge((
 
 
 $body-bg: $gray-100; //Modified
-$body-color: lighten($gray-700,2%);
+$body-color: lighten($gray-700,0%);
 $grid-gutter-width: 30px;
 
 
@@ -176,3 +176,9 @@ $spacers: (
   11: ($spacer * 2.75),
   12: ($spacer * 3)
 ) !default;
+$pagination-color: $secondary;
+$pagination-active-bg:              $info !default;
+$pagination-active-border-color:    $info !default;
+
+$tooltip-padding-y: 0.5rem !default;
+$tooltip-padding-x: 0.75rem!default;

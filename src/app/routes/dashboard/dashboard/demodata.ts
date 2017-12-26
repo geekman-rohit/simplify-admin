@@ -67,36 +67,28 @@ export const demodata = {
 
           labels: ['Jan', 'Feb', 'March', 'June', 'July', 'April'],
           datasets: [
-              {
-                type: 'line',
-                label: 'Revenue this year',
-                data: [6, 9, 4, 5, 12, 3],
-                lineTension: 0.4,
-                backgroundColor: colors['purple'].alpha(0.1),
-                borderColor: colors['purple'],
-                borderWidth: 2,
-                pointRadius: 1,
-                fill: true,
-            },
+
             {
               type: 'bar',
               label: 'Revenue last year',
-              data: [3, 10, 5, 9, 10, 4],
-              lineTension: 0.3,
-              backgroundColor: colors['blue'].alpha(0.8),
+              data: [3, 6, 5, 9, 4, 9.5],
+              lineTension: 0.4,
+              backgroundColor: colors['blue'].alpha(0.7),
               borderColor: colors['blue'],
               borderWidth: 2,
               pointRadius: 1,
+
           },
           {
             type: 'bar',
             label: 'Revenue last year',
-            data: [5, 9, 7, 11, 6, 4],
-            lineTension: 0.3,
-            backgroundColor: colors['green'].alpha(0.8),
-            borderColor: colors['green'],
+            data: [2, 3, 1, 5, 1, 4],
+            lineTension: 0.4,
+            backgroundColor: colors['purple'].alpha(0.7),
+            borderColor: colors['purple'],
             borderWidth: 2,
             pointRadius: 1,
+
           }
         ]
         },
@@ -157,5 +149,23 @@ export const demodata = {
           }
         }
       },
+      {
+         columns: [
+             ['Retweets', 150],
+             ['Shares', 100],
+             ['Sale', 50],
+             ['Revenue', 80],
+
+
+         ],
+         colors: {
+             'Retweets': colors['purple'].alpha(0.9),
+             'Shares': colors['blue'].alpha(0.9),
+             'Sale': colors['orange'].alpha(0.9),
+             'Revenue': colors['green'].alpha(0.9),
+
+         },
+         type: 'donut'
+     }
   ]
 };

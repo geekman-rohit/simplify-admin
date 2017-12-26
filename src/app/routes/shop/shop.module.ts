@@ -5,8 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HelpersModule } from '../../helpers/helpers.module';
 import { PricingComponent } from './pricing/pricing.component';
 const routes: Routes = [
-  { path: 'invoice', component: InvoiceComponent },
-  { path: 'pricing', component: PricingComponent }
+  { path: 'invoice', component: InvoiceComponent, data: { title: 'Invoice' }  },
+  { path: 'pricing', component: PricingComponent, data: { title: 'Pricing' }  }
 ];
 @NgModule({
   imports: [

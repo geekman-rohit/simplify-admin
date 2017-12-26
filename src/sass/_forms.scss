@@ -73,3 +73,10 @@
 .form-control:focus {
   border-color: $info;
 }
+.custom-control-indicator.custom-control-material {
+  border: 1px solid $gray-400;
+  background-color: transparent;
+}
+.custom-control-input:checked ~ .custom-control-indicator.custom-control-material {
+  border: 0;
+}

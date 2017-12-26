@@ -2,50 +2,51 @@
   <div class="row">
     <div class="col-12">
       <div class="bg-white card" style=" margin-bottom:0px;">
-        <div class="d-flex">
-          <div class="" style="width:17rem; min-width:17rem; min-height:95vh; border-right: 1px solid #eee">
-            <div class="pt-4 px-4 mr-1">
-              <h5 class="my-0">Simplify Email</h5>
+        <div class="d-flex email-containe">
+          <div class="email-sidebar" [ngClass]="{expanded: menuToggle}">
+            <div class="pt-4 pl-4 mr-1 d-flex align-items-center justify-content-between btn-sm">
+              <h5 class="my-0">Simplify Email</h5><button class="btn btn-link text-secondary btn-sm email-toggle" (click)="menuToggle = !menuToggle"><i class="material-icons">menu</i></button>
             </div>
             <div class="py-4 px-4 mr-1">
               <button class="btn btn-outline-info btn-block">Compose</button>
             </div>
-            <div class="inbox-menu text-secondary">
+            <div class="inbox-menu">
               <ul class="list-nav sidebar-nav list-nav-light">
-                  <li class="list-nav-item active">
-                    <a class="list-nav-link d-flex align-items-center">
-                        <i class="fa fa-inbox" style=""></i><span class="list-nav-label">Inbox</span>
-                    </a>
-                  </li>
-                  <li class="list-nav-item">
-                    <a class="list-nav-link d-flex align-items-center">
-                        <i class="fa fa-folder " style=""></i><span class="list-nav-label">Drafts</span>
-                    </a>
-                  </li>
-                  <li class="list-nav-item">
-                    <a class="list-nav-link d-flex align-items-center">
-                        <i class="fa fa-inbox" style=""></i><span class="list-nav-label">Spam</span>
-                    </a>
-                  </li>
-                  <li class="list-nav-item">
-                    <a class="list-nav-link d-flex align-items-center">
-                        <i class="fa fa-trash" style=""></i><span class="list-nav-label">Trash</span>
-                    </a>
-                  </li>
-                  <li class="list-nav-item">
-                    <a class="list-nav-link d-flex align-items-center">
-                        <i class="fa fa-calendar" style=""></i><span class="list-nav-label">Calendar</span>
-                    </a>
-                  </li>
+                <li class="list-nav-item active">
+                  <a class="list-nav-link d-flex align-items-center">
+                      <i class="fa fa-inbox" style=""></i><span class="list-nav-label">Inbox</span>
+                  </a>
+                </li>
+                <li class="list-nav-item">
+                  <a class="list-nav-link d-flex align-items-center">
+                      <i class="fa fa-folder " style=""></i><span class="list-nav-label">Drafts</span>
+                  </a>
+                </li>
+                <li class="list-nav-item">
+                  <a class="list-nav-link d-flex align-items-center">
+                      <i class="fa fa-inbox" style=""></i><span class="list-nav-label">Spam</span>
+                  </a>
+                </li>
+                <li class="list-nav-item">
+                  <a class="list-nav-link d-flex align-items-center">
+                      <i class="fa fa-trash" style=""></i><span class="list-nav-label">Trash</span>
+                  </a>
+                </li>
+                <li class="list-nav-item">
+                  <a class="list-nav-link d-flex align-items-center">
+                      <i class="fa fa-calendar" style=""></i><span class="list-nav-label">Calendar</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
           <div style="width: 100%" class="">
             <div class="d-flex py-3 align-items-center justify-content-between">
-              <div class="mr-1">
-                <h5 class="my-0 px-4 text-info">Compose</h5>
+              <div class="mr-1 pl-2 d-flex align-items-center">
+                <button class="btn btn-link text-secondary btn-sm email-toggle" (click)="menuToggle = !menuToggle"><i class="material-icons">menu</i></button>
+                <h5 class="my-0 px-3 text-info">Compose</h5>
               </div>
-              <div class="actions px-4" style="text-align: right;">
+              <div class="actions px-4 py-3" style="text-align: right;">
 
                   <button class="btn btn-sm btn-outline-danger mr-2"><i class="fa fa-send mr-2"></i> Send</button>
                   <button class="btn btn-sm btn-outline-info"><i class="fa fa-archive mr-2"></i> Draft</button>
