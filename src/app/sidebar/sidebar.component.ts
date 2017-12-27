@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { menu } from '../routes/menu';
+import { menu } from '../menu';
 import { SettingsService } from '../helpers/settings.service';
 @Component({
   selector: 'app-sidebar',

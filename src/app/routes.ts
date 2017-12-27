@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { NotFoundComponent } from '../error-pages/not-found/not-found.component';
-import { LayoutComponent } from '../layout/layout.component';
+import { NotFoundComponent } from './error-pages/not-found/not-found.component';
+import { LayoutComponent } from './layout/layout.component';
 export const routes: Routes = [
 
   /* Child Routing Modules to load with LazyLoading */

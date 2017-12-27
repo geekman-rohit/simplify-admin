@@ -13,7 +13,7 @@
     position: fixed;
     left: 0;
     @include media-breakpoint-sidebar-collapse() {
-    left: $sidebar-size;
+      left: $sidebar-size;
     }
     top:0;
     right: 0;

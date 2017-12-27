@@ -1,6 +1,6 @@
 <aside  class="sidebar sidebar-dark sidebar-left" [ngClass]="{collapsed: settings.sidebar.left.collapsed, visible: settings.sidebar.left.visible  }">
   <div [appScrollbar]="" style="height:100vh; overflow:hidden; position: relative">
-    <div class="sidebar-header bg-primary text-white">
+    <div class="sidebar-header bg-info text-white">
     <div class="sidebar-brand d-flex justify-content-between align-items-center">
       <div class="title text-truncate">
         Simplify Admin
@@ -8,13 +8,10 @@
       <div class="logo align-items-center justify-content-around">
         <i class="material-icons">all_inclusive</i>
       </div>
-
-
-
     </div>
   </div>
-  <div class="">
-    <ul class="list-nav sidebar-nav list-nav-dark" appCollapsibleNav>
+  <div class="sidebar-nav-container">
+    <ul class="list-nav sidebar-nav list-nav-dark list-nav-dark-info" appCollapsibleNav>
       <ng-container *ngFor="let item of menu">
         <li class="list-nav-group-title" *ngIf="item.isLabel">
             <span>
@@ -31,10 +28,8 @@
             <span class="list-nav-expand" *ngIf="item.children && item.children.length">
               <i class="material-icons">add</i>
             </span>
-
           </a>
           <a href="#" *ngIf="(item.children && item.children.length)" class="list-nav-link">
-
             <span class="list-nav-icon">
               <i class="{{ item.icon.class }}">{{ item.icon.content }}</i>
             </span>
@@ -42,7 +37,6 @@
             <span class="list-nav-expand" *ngIf="item.children && item.children.length">
               <i class="material-icons">add</i>
             </span>
-
           </a>
           <ul class="list-nav list-nav-child" *ngIf="item.children && item.children.length">
             <li class="list-nav-item list-nav-child-item" *ngFor="let subitem of item.children" routerLinkActive="active">
@@ -55,12 +49,8 @@
             </li>
           </ul>
         </li>
-
       </ng-container>
-
-
     </ul>
   </div>
   </div>
-
 </aside>

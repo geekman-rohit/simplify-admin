@@ -7,7 +7,6 @@ import { ScrollbarDirective } from './scrollbar/scrollbar.directive';
 import { FormsModule, EmailValidator } from '@angular/forms';
 import { DropzoneDirective } from './forms/dropzone.directive';
 import { SettingsService } from './settings.service';
-import { ResponsiveTableComponent } from './responsive-table/responsive-table.component';
 import { FullCalendarDirective } from './calendar/full-calendar.directive';
 import { FullCalendarEventDirective } from './calendar/full-calendar-event.directive';
 @NgModule({
@@ -21,7 +20,6 @@ import { FullCalendarEventDirective } from './calendar/full-calendar-event.direc
     CardDirective,
     ScrollbarDirective,
     DropzoneDirective,
-    ResponsiveTableComponent,
     FullCalendarDirective,
     FullCalendarEventDirective
 

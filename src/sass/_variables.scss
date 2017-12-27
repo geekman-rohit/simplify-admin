@@ -1,7 +1,3 @@
-$sidebar-size: 17rem;
-$topbar-size: 3.8rem;
-$sidebar-padding-y : 0.3rem;
-$sidebar-logo-size: 2.5rem;
 //
 // Color system
 //
@@ -94,7 +90,7 @@ $theme-colors: map-merge((
 $body-bg: $gray-100; //Modified
 $body-color: lighten($gray-700,0%);
 $grid-gutter-width: 30px;
-
+$separator-color: $gray-200;
 
 
 // Fonts
@@ -130,7 +126,6 @@ $headings-font-weight: 300 !default;
 
 
 
-
 // Buttons
 //
 // For each of Bootstrap's buttons, define text, background and border color.
@@ -157,7 +152,9 @@ $custom-control-indicator-bg: #ddd !default;
 
 $code-bg: $gray-100 !default;
 
-$border-radius: 2px;
+$border-radius: 2px !default;
+$border-radius-sm: 2px !default;
+$border-radius-lg: 2px !default;
 
 // Spacing
 $spacer: 1rem !default;
@@ -176,9 +173,25 @@ $spacers: (
   11: ($spacer * 2.75),
   12: ($spacer * 3)
 ) !default;
+
+//
+// Pagination
+//
 $pagination-color: $secondary;
 $pagination-active-bg:              $info !default;
 $pagination-active-border-color:    $info !default;
 
+//
+// Tooltip
+//
 $tooltip-padding-y: 0.5rem !default;
 $tooltip-padding-x: 0.75rem!default;
+
+//
+// Layout
+//
+$sidebar-size: 17rem;
+$topbar-size: 3.8rem;
+$sidebar-padding-y : 0.3rem;
+$sidebar-logo-size: 2.5rem;
+$sidebar-expand-breakpoint: 1200px;

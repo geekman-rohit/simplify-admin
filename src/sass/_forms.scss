@@ -4,33 +4,9 @@
   &::placeholder {
     color: $gray-500;
   }
-}
-.custom-control {
-  padding-left: 2rem;
-}
-.custom-control-input:checked ~ .custom-control-indicator {
-  &-warning {
-    background-color: $warning;
+  &:focus {
+    border-color: $info;
   }
-  &-success {
-    background-color: $success;
-  }
-  &-info {
-    background-color: $info;
-  }
-  &-danger {
-    background-color: $danger;
-  }
-  &-primary {
-    background-color: $primary;
-  }
-  &-dark {
-    background-color: $dark;
-  }
-  &-secondary {
-    background-color: $secondary;
-  }
-
 }
 .form-control-clear{
   border: 0;
@@ -38,15 +14,36 @@
     box-shadow: none;
   }
 }
+@include form-validation-state-ng("invalid", $form-feedback-invalid-color);
+@include form-validation-state-ng("valid", $form-feedback-valid-color);
+.custom-control {
+  padding-left: 2rem;
+}
+
+.custom-control-indicator.custom-control-material {
+  border: 1px solid $gray-400;
+  background-color: transparent;
+}
+.custom-control-input:checked ~ .custom-control-indicator.custom-control-material {
+  border: 0;
+}
+.custom-control-input:checked ~ .custom-control-indicator {
+  @each $color, $value in $theme-colors {
+    &-#{$color} {
+      background-color: $value;
+    }
+  }
+}
+
 .form-control.is-warning {
   border-color: $warning;
   &:focus {
     box-shadow: 0 0 0 .2rem rgba($warning,0.25);
   }
 }
-.ngb-tp .btn-link {
-  color: $primary;
-}
+
+
+/* Overwrite default medium editor style */
 .medium-editor-element {
   border: 1px solid $gray-400;
   padding: 1rem;
@@ -61,22 +58,59 @@
     font-size: 0.9em !important;
   }
 }
+/* Overwrite Dropzone defulat style */
 .dropzone {
   background: $gray-100 !important;
   border: 1px solid $gray-400 !important;
   min-height: 120px !important;
   text-transform: uppercase;
 }
-@include form-validation-state-ng("invalid", $form-feedback-invalid-color)
-@include form-validation-state-ng("valid", $form-feedback-valid-color)
 
-.form-control:focus {
-  border-color: $info;
+
+
+/* Date Picker */
+.ngb-dp-month .btn-light {
+  box-shadow: none;
+  border-radius: 2px !important;
+  font-size: 0.8rem;
+  color: $body-color;
 }
-.custom-control-indicator.custom-control-material {
-  border: 1px solid $gray-400;
-  background-color: transparent;
+.ngb-dp-weekday {
+  color: $primary !important;
 }
-.custom-control-input:checked ~ .custom-control-indicator.custom-control-material {
-  border: 0;
+.ngb-dp-header {
+  padding-top: 0.75rem !important;
+}
+ngb-datepicker {
+  border-radius: 0 !important;
+}
+.btn-link.ngb-dp-arrow-btn {
+  color: $primary !important;
+  font-size: 0.75rem !important;
+}
+@each $color, $value in $theme-colors {
+  .datepicker-#{$color} {
+    .ngb-dp-weekday {
+      color: $value !important;
+    }
+    .btn-link.ngb-dp-arrow-btn {
+      color: $value !important;
+    }
+    .btn-light.bg-primary.text-white {
+      background: $value !important;
+    }
+  }
+}
+
+
+/* Overwrite Timepicker style */
+.ngb-tp .btn-link {
+  color: $primary;
+}
+@each $color, $value in $theme-colors {
+  .timepicker-#{$color} {
+    .ngb-tp .btn-link {
+      color: $value;
+    }
+  }
 }
