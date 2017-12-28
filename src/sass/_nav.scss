@@ -1,3 +1,4 @@
+$nav-icon-size: 2.1rem;
 .list-nav {
   display: block;
   margin:0;
@@ -53,7 +54,7 @@
 
 .list-nav-link {
   display: flex;
-  line-height: 2.2rem;
+  line-height: $nav-icon-size;
   padding: 0.6rem 1rem;
   text-decoration: none;
   color: inherit;
@@ -85,15 +86,15 @@
   color: inherit;
   transition: background-color 0.5s ease;
   display: block;
-  width: 2.2rem;
-  height: 2.2rem;
-  min-width: 2.2rem;
-  line-height: 2.2rem;
+  width: $nav-icon-size;
+  height: $nav-icon-size;
+  min-width: $nav-icon-size;
+  line-height: $nav-icon-size;
   text-align: center;
   border-radius: 2px;
   background-color: rgba(100, 120, 140, 0.1);
   .material-icons {
-    font-size: 1.1em;
+    font-size: 1.05em;
   }
 }
 .list-nav-icon-sm {
@@ -104,11 +105,11 @@
   }
 }
 .list-nav-expand {
-  height: 2.2rem;
+  height: $nav-icon-size;
   color: inherit;
-  line-height: 2.2rem;
+  line-height: $nav-icon-size;
   padding-right: 0.25rem;
-  font-size: 0.7em;
+  font-size: 0.6em;
 
 }
 .list-nav-label {

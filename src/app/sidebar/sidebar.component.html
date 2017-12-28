@@ -1,9 +1,9 @@
 <aside  class="sidebar sidebar-left"
-  [ngClass]="{collapsed: settings.sidebar.left.collapsed,visible: settings.sidebar.left.visible}"
+  [ngClass]="{collapsed: settings.sidebar.left.collapsed,visible: settings.sidebar.left.visible, 'sidebar-fixed': settings.sidebar.left.fixed}"
   [class.sidebar-dark]=" settings.sidebar.left.background == 'dark'"
   [class.sidebar-light]=" settings.sidebar.left.background == 'light'">
 
-  <div [appScrollbar]="" style="height:100vh; overflow:hidden; position: relative">
+  <div [appScrollbar]="" class="scroll">
     <div class="sidebar-header text-white" [ngClass]="headerClass()">
     <div class="sidebar-brand d-flex justify-content-between align-items-center">
       <div class="title text-truncate">

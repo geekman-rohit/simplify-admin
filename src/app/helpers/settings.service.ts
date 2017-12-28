@@ -7,6 +7,7 @@ export class SettingsService {
     left:{
       visible: false,
       collapsed: false,
+      fixed: false,
       background: 'light',
       accent: 'teal'
     },
@@ -16,7 +17,7 @@ export class SettingsService {
     }
   };
   topbar = {
-    fixed: true
+    fixed: false
   }
   constructor() { }
 

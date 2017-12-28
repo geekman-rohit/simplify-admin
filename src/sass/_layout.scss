@@ -1,6 +1,14 @@
 .sidebar-left {
   width: $sidebar-size;
-  position: fixed;
+  position: absolute;
+  height: 100%;
+  &.sidebar-fixed {
+    position: fixed;
+    .scroll {
+      height:100vh; overflow:hidden; position: relative;
+    }
+  }
+
   left: 0;
   top: 0;
   transition: margin-left 0.3s, width 0.3s;
@@ -18,6 +26,9 @@
     }
   }
 
+}
+.full-page {
+  position: relative;
 }
 .sidebar-right {
   width: $sidebar-size;
@@ -37,7 +48,7 @@
   margin-left: 0;
   position: relative;
   transition: 0.3s margin-left;
-
+  padding-bottom: $topbar-size;
   @include media-breakpoint-sidebar-collapse() {
     margin-left: $sidebar-size;
     &.no-sidebar {
