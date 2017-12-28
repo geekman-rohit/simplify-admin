@@ -25,6 +25,11 @@ export const menu: MenuItem[] = [
     ]
   },
   {
+    path: '/ui/cards',
+    label: 'Cards',
+    icon: { class: 'material-icons', content: 'widgets' }
+  },
+  {
     label: 'PAGES',
     isLabel: true
   },
@@ -32,14 +37,6 @@ export const menu: MenuItem[] = [
     path: '/user/profile',
     label: 'User Profile',
     icon: { class: 'material-icons', content: 'person' }
-  },
-  {
-    label: 'Email',
-    icon: { class: 'material-icons', content: 'mail' },
-    children: [
-      { path: '/email/inbox', label: 'Email Inbox' },
-      { path: '/email/compose', label: 'Email Compose' }
-    ]
   },
   {
     path: '/email/chat',
@@ -65,6 +62,14 @@ export const menu: MenuItem[] = [
     ]
   },
   {
+    label: 'Email',
+    icon: { class: 'material-icons', content: 'mail' },
+    children: [
+      { path: '/email/inbox', label: 'Email Inbox' },
+      { path: '/email/compose', label: 'Email Compose' }
+    ]
+  },
+  {
     label: 'COMPONENTS',
     isLabel: true
   },
@@ -74,7 +79,6 @@ export const menu: MenuItem[] = [
     children: [
       { path: '/ui/buttons', label: 'Buttons' },
       { path: '/ui/progress', label: 'Progress Bars' },
-      { path: '/ui/cards', label: 'Cards' },
       { path: '/ui/nav', label: 'Navigation & Tabs' },
       { path: '/ui/dropdown', label: 'Dropdown' },
       { path: '/ui/alert', label: 'Alerts' },

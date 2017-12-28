@@ -1,6 +1,10 @@
-<aside  class="sidebar sidebar-dark sidebar-left" [ngClass]="{collapsed: settings.sidebar.left.collapsed, visible: settings.sidebar.left.visible  }">
+<aside  class="sidebar sidebar-left"
+  [ngClass]="{collapsed: settings.sidebar.left.collapsed,visible: settings.sidebar.left.visible}"
+  [class.sidebar-dark]=" settings.sidebar.left.background == 'dark'"
+  [class.sidebar-light]=" settings.sidebar.left.background == 'light'">
+
   <div [appScrollbar]="" style="height:100vh; overflow:hidden; position: relative">
-    <div class="sidebar-header bg-info text-white">
+    <div class="sidebar-header text-white" [ngClass]="headerClass()">
     <div class="sidebar-brand d-flex justify-content-between align-items-center">
       <div class="title text-truncate">
         Simplify Admin
@@ -11,7 +15,7 @@
     </div>
   </div>
   <div class="sidebar-nav-container">
-    <ul class="list-nav sidebar-nav list-nav-dark list-nav-dark-info" appCollapsibleNav>
+    <ul class="list-nav sidebar-nav" [ngClass]="navClass()" appCollapsibleNav>
       <ng-container *ngFor="let item of menu">
         <li class="list-nav-group-title" *ngIf="item.isLabel">
             <span>
@@ -38,7 +42,7 @@
               <i class="material-icons">add</i>
             </span>
           </a>
-          <ul class="list-nav list-nav-child" *ngIf="item.children && item.children.length">
+          <ul class="list-nav-child" *ngIf="item.children && item.children.length">
             <li class="list-nav-item list-nav-child-item" *ngFor="let subitem of item.children" routerLinkActive="active">
               <a routerLink="{{ subitem.path }}" class="list-nav-link">
                 <span class="list-nav-icon list-nav-icon-sm">

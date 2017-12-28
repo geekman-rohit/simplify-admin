@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { menu } from '../menu';
 import { SettingsService } from '../helpers/settings.service';
 @Component({
@@ -17,6 +17,15 @@ export class SidebarComponent implements OnInit {
   }
   toggleSidebarVisibility() {
     this.settings.sidebar.left.visible = !this.settings.sidebar.left.visible;
+  }
+  navClass() {
+    return [
+      "list-nav-" + this.settings.sidebar.left.background + "-" + this.settings.sidebar.left.accent,
+      "list-nav-" + this.settings.sidebar.left.background
+    ]
+  }
+  headerClass() {
+    return "bg-" + this.settings.sidebar.left.accent;
   }
 
 }

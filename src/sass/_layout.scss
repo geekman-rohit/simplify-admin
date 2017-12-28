@@ -19,7 +19,18 @@
   }
 
 }
-
+.sidebar-right {
+  width: $sidebar-size;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 11;
+  margin-right: -$sidebar-size;
+  transition: margin-right 0.3s;
+  &.visible {
+    margin-right: 0;
+  }
+}
 
 .page {
 
@@ -49,6 +60,7 @@
       margin-bottom: $grid-gutter-width/2;
     }
   }
+  padding-bottom: 30px;
 }
 /* Layout Utilities */
 

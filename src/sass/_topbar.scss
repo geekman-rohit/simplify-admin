@@ -17,7 +17,7 @@
     }
     top:0;
     right: 0;
-    box-shadow: 0 0px 1px 1px rgba(100,100,100,0.1);
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
   }
   transition: left 0.3s;
   @include media-breakpoint-down(xs) {
@@ -65,6 +65,9 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    .fa,.material-icons {
+      font-size: 1.5em;
+    }
     span.badge {
       float: right;
       position: relative;

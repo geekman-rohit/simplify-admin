@@ -32,5 +32,8 @@ export class TopbarComponent implements OnInit {
   toggleSidebarVisibility() {
     this.settings.sidebar.left.visible = !this.settings.sidebar.left.visible;
   }
+  toggleSettingsVisibility() {
+    this.settings.sidebar.right.visible = !this.settings.sidebar.right.visible;
+  }
 
 }

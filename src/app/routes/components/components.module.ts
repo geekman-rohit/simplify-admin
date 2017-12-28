@@ -14,6 +14,7 @@ import { AlertComponent } from './alert/alert.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
+import { ChartHelpersModule } from '../../helpers/chart-helpers/chart-helpers.module';
 const routes: Routes = [
   { path: '', redirectTo: '/ui/buttons', pathMatch: 'full' },
   { path: 'buttons', component: ButtonsComponent, data: { title: 'Buttons' } },
@@ -33,7 +34,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    HelpersModule
+    HelpersModule,
+    ChartHelpersModule
   ],
   exports: [
     RouterModule

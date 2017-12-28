@@ -6,8 +6,8 @@ import { Directive, Input, HostBinding, ElementRef } from '@angular/core';
 })
 export class CardDirective {
 
-  @HostBinding('class.collapsed') isCollapsed = false;
-  @HostBinding('class.fullscreen') isFullScreen = false;
+  @HostBinding('class.card-collapsed') isCollapsed = false;
+  @HostBinding('class.card-fullscreen') isFullScreen = false;
   @Input() initialCollapseState = false;
   @Input() initialFullScreenState = false;
 
@@ -16,7 +16,6 @@ export class CardDirective {
     this.isFullScreen = this.initialFullScreenState;
   }
   toggleCollapse() {
-    console.log('here');
     this.isCollapsed = !this.isCollapsed;
   }
   toggleFullScreen() {

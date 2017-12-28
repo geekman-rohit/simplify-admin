@@ -127,7 +127,7 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item dropdown no-caret mr-4" ngbDropdown placement="bottom-right">
+      <li class="nav-item dropdown no-caret" ngbDropdown placement="bottom-right">
         <a ngbDropdownToggle class="text-secondary text-center dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="material-icons">mail_outline</i>
           <span class="badge badge-warning">2</span>
@@ -179,9 +179,15 @@
           </ul>
         </div>
       </li>
-      <li class="nav-item dropdown no-caret" ngbDropdown  placement="bottom-right">
+      <li class="nav-item d-none d-md-block ml-3">
+        <a  class="nav-link text-secondary" (click)="toggleSettingsVisibility()" role="button">
+          <i class="material-icons">settings</i>
+        </a>
+
+      </li>
+      <li class="nav-item dropdown no-caret ml-4" ngbDropdown  placement="bottom-right">
         <a ngbDropdownToggle class="text-xs nav-link text-secondary dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img src="assets/img/face3.jpeg" class="img-thumb-sm mr-1 align-middle"  alt="">
+          <img src="assets/img/face3.jpeg" class="img-thumb-xs mr-1 align-middle"  alt="">
           <i class="material-icons">expand_more</i>
         </a>
         <div ngbDropdownMenu class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="navbarDropdown">
@@ -190,6 +196,7 @@
           <a class="dropdown-item empty-link">Security</a>
         </div>
       </li>
+
 
     </ul>
   </div>

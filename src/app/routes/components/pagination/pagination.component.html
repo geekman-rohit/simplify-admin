@@ -1,5 +1,24 @@
 <div class="container-fluid">
   <div class="row">
+    <div class="col-12 col-lg-8">
+      <div class="card">
+        <div class="card-header">
+          <h5>Pagination</h5>
+        </div>
+        <div class="card-body">
+          <p class="text-secondary">
+            You can use pagination with multiple color themes
+          </p>
+          <p class="text-secondary">
+            For the angular version use <code>ngb-pagination</code> directive provided by ng-bootstrap. Add class <code>.pagination-[variation]</code> to change color
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+
     <div class="col-12">
       <div class="card">
         <div class="card-body">
@@ -15,13 +34,13 @@
           </div>
 
           <div class="mb-3">
-            <div class="mb-2">Without Direction Links</div>
-            <ngb-pagination [collectionSize]="70" [(page)]="page" [directionLinks]="false"></ngb-pagination>
+            <div class="mb-2  text-secondary">Without Direction Links and Primary Color</div>
+            <ngb-pagination [collectionSize]="70" [(page)]="page" [directionLinks]="false" class="pagination-primary"></ngb-pagination>
 
           </div>
           <div class="mb-3">
-            <div class="mb-2">With Boundry Links</div>
-            <ngb-pagination [collectionSize]="70" [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
+            <div class="mb-2  text-secondary">With Boundry Links and Success Color</div>
+            <ngb-pagination [collectionSize]="70" [(page)]="page" [boundaryLinks]="true" class="pagination-success"></ngb-pagination>
           </div>
 
 

@@ -6,7 +6,9 @@ export class SettingsService {
   sidebar = {
     left:{
       visible: false,
-      collapsed: false
+      collapsed: false,
+      background: 'light',
+      accent: 'teal'
     },
     right: {
       visible: false,
@@ -47,6 +49,11 @@ export class SettingsService {
     if(direction == 'left' || direction == 'right') {
       this.sidebar[direction].collapsed = false;
     }
+  }
+  setSidebarTheme(bg, accent) {
+    this.sidebar.left.background = bg;
+    this.sidebar.left.accent = accent;
+
   }
 
 }

@@ -1,22 +1,279 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-6">
-      <div class="card" appCard #card="card">
+    <div class="col-12 col-lg-8">
+      <div class="card" appCard>
         <div class="card-header">
           <h5>
             Cards
           </h5>
         </div>
         <ul class="card-actions">
-          <li><button class="card-action"><i class="material-icons">fullscreen</i></button></li>
-          <li><button class="card-action" (click)= "card.toggleCollapse()"><i class="material-icons">expand_more</i></button></li>
+          <li><button class="card-action" appCardFullScreen><i class="material-icons">fullscreen</i></button></li>
+          <li><button class="card-action" appCardCollapse><i class="material-icons">expand_more</i></button></li>
         </ul>
         <div class="card-body pt-0">
           <p class="text-secondary">
             Most of your site content will go inside cards. Simplify Admin provides tons of card utilities to make your life easy.
           </p>
+          <p class="text-secondary">
+            Click on <i class="material-icons text-primary">fullscreen</i> to make a card full screen, <i class="material-icons text-info">expand_more</i> to make the body collpase
+
+          </p>
         </div>
       </div>
     </div>
   </div>
+  <h5 class="section-title">
+    Cards with Images
+  </h5>
+  <div class="row">
+    <div class="col-12 col-lg-3 col-sm-6">
+      <div class="card" appCard>
+        <ul class="card-actions">
+          <li><button class="card-action text-white text-lg" appCardFullScreen><i class="material-icons">fullscreen</i></button></li>
+        </ul>
+        <img class="card-img-top" src="assets/img/iss.jpeg" alt="Space Shuttle Launch">
+        <div class="card-body">
+          <h5 class="card-title">Into the Infinite</h5>
+          <p class="text-secondary">
+            Spaceflights cannot be stopped. This is not the work of any one man or even a group of men.
+            It is a historical process which mankind is carrying out in accordance with the natural laws of human development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-sm-6">
+      <div class="card" appCard>
+        <ul class="card-actions">
+          <li><button class="card-action text-white text-lg" appCardFullScreen><i class="material-icons">fullscreen</i></button></li>
+        </ul>
+        <img class="card-img-top" src="assets/img/arch.jpg" alt="Sky ">
+        <div class="card-body">
+          <h5 class="card-title">The Beauty of Galaxy</h5>
+          <p class="text-secondary">
+            Spaceflights cannot be stopped. This is not the work of any one man or even a group of men.
+            It is a historical process which mankind is carrying out in accordance with the natural laws of human development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-sm-6">
+      <div class="card" appCard>
+        <ul class="card-actions">
+          <li><button class="card-action text-white text-lg" appCardFullScreen><i class="material-icons">fullscreen</i></button></li>
+        </ul>
+        <img class="card-img-top" src="assets/img/streak.jpg" alt="Space Shuttle Launch">
+        <div class="card-body">
+          <h5 class="card-title">Light is Hope</h5>
+          <p class="text-secondary">
+            Spaceflights cannot be stopped. This is not the work of any one man or even a group of men.
+            It is a historical process which mankind is carrying out in accordance with the natural laws of human development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-3 col-sm-6">
+      <div class="card" appCard>
+        <ul class="card-actions">
+          <li><button class="card-action text-white text-lg" appCardFullScreen><i class="material-icons">fullscreen</i></button></li>
+        </ul>
+        <img class="card-img-top" src="assets/img/flight.jpg" alt="Space Shuttle Launch">
+        <div class="card-body">
+          <h5 class="card-title">To Infinity and Beyond</h5>
+          <p class="text-secondary">
+            Spaceflights cannot be stopped. This is not the work of any one man or even a group of men.
+            It is a historical process which mankind is carrying out in accordance with the natural laws of human development.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h5 class="section-title">
+    Cards with Charts
+  </h5>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-feature float-right">
+            <div class="media-box bg-primary text-white">
+              <i class="material-icons">file_download</i>
+            </div>
+          </div>
+          <h5 class="card-title">
+            SpaceProbes
+          </h5>
+          <h3 style="font-weight:300">200,000</h3>
+          <p class="text-secondary  mb-2">
+            Total Ships In the Galaxy
+          </p>
+
+          <div class="chart-container" style="width: 100%; height: 8.5rem">
+            <canvas id="myChart" width="400" height="120" [appChartjs]="demodata.charts[0]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-feature float-right">
+            <div class="media-box bg-warning text-white">
+              <i class="material-icons">attach_money</i>
+            </div>
+          </div>
+          <h5 class="card-title">
+            Federation Revenue
+          </h5>
+          <h3 style="font-weight:300">$11,000,000</h3>
+          <p class="text-secondary  mb-2">
+            Monthly Downloads Trend on App Store
+          </p>
+          <div class="chart-container" style="width: 100%; height: 8.5rem">
+            <canvas id="myChart" [appChartjs]="demodata.charts[2]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-feature float-right">
+            <div class="media-box bg-info text-white">
+              <i class="material-icons">trending_up</i>
+            </div>
+          </div>
+          <h5 class="card-title">
+            StarShip Performance
+          </h5>
+          <h3 style="font-weight:300">95%</h3>
+          <p class="text-secondary  mb-2">
+            Average Per Trip Performance
+          </p>
+          <div class="chart-container" style="width: 100%; height: 8.5rem">
+            <canvas id="myChart" [appChartjs]="demodata.charts[1]"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h5 class="section-title">
+    User Cards
+  </h5>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="media">
+            <img src="assets/img/face1.jpeg" class="img-thumb-lg" alt="">
+            <div class="media-body text-right">
+              <h4 class="font-weight-light">James Moon Armstrong</h4>
+              <h5 class="text-secondary">Captain</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="media">
+            <img src="assets/img/face2.jpeg" class="img-thumb-lg" alt="">
+            <div class="media-body text-right">
+              <h4 class="font-weight-light">Karen Spock</h4>
+              <h5 class="text-secondary">Science Officer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="media">
+            <img src="assets/img/face3.jpeg" class="img-thumb-lg" alt="">
+            <div class="media-body text-right">
+              <h4 class="font-weight-light">Harshey Peter</h4>
+              <h5 class="text-secondary">CoPilot</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="pt-6 pb-3 px-6 text-center">
+            <div class="mb-4">
+                <img src="assets/img/face3.jpeg" class="img-thumb-xl" alt="">
+            </div>
+            <div class="mb-4">
+              <h4 class="font-weight-light">Harshey Peters</h4>
+              <h5 class="text-secondary mb-0">Commander In Chief</h5>
+            </div>
+            <p class="mb-4 text-secondary">
+              Dinosaurs are extinct today because they lacked opposable thumbs and the brainpower to build a space program.
+            </p>
+            <div>
+              <button class="btn btn-flat-primary btn-fab mr-2"><i class="fa fa-facebook"></i></button>
+              <button class="btn btn-flat-info btn-fab mr-2"><i class="fa fa-twitter"></i></button>
+              <button class="btn btn-flat-danger btn-fab"><i class="fa fa-google"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="pt-6 pb-3 px-6 text-center">
+            <div class="mb-4">
+                <img src="assets/img/face5.jpeg" class="img-thumb-xl" alt="">
+            </div>
+            <div class="mb-4">
+              <h4 class="font-weight-light">Judas Karen</h4>
+              <h5 class="text-secondary mb-0">Space Pilot</h5>
+            </div>
+            <p class="mb-4 text-secondary">
+              Dinosaurs are extinct today because they lacked opposable thumbs and the brainpower to build a space program.
+            </p>
+            <div>
+              <button class="btn btn-flat-primary btn-fab mr-2"><i class="fa fa-facebook"></i></button>
+              <button class="btn btn-flat-info btn-fab mr-2"><i class="fa fa-twitter"></i></button>
+              <button class="btn btn-flat-danger btn-fab"><i class="fa fa-google"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="pt-6 px-6 pb-3 text-center">
+            <div class="mb-4">
+                <img src="assets/img/face4.jpeg" class="img-thumb-xl" alt="">
+            </div>
+            <div class="mb-4">
+              <h4 class="font-weight-light">Peters Lawson</h4>
+              <h5 class="text-secondary mb-0">Commander In Space</h5>
+            </div>
+            <p class="mb-4 text-secondary">
+              Dinosaurs are extinct today because they lacked opposable thumbs and the brainpower to build a space program.
+            </p>
+            <div>
+              <button class="btn btn-flat-primary btn-fab mr-2"><i class="fa fa-facebook"></i></button>
+              <button class="btn btn-flat-info btn-fab mr-2"><i class="fa fa-twitter"></i></button>
+              <button class="btn btn-flat-danger btn-fab"><i class="fa fa-google"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
 </div>

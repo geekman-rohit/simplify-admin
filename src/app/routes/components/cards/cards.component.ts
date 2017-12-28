@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { demodata } from './demodata';
+import { Color, colors } from '../../../helpers/colors';
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
@@ -8,8 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class CardsComponent implements OnInit {
 
   bodyVisible = true;
+  demodata;
 
-  constructor() { }
+  
+  constructor() {
+    this.demodata = demodata;
+  }
 
   ngOnInit() {
   }

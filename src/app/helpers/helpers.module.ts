@@ -9,6 +9,8 @@ import { DropzoneDirective } from './forms/dropzone.directive';
 import { SettingsService } from './settings.service';
 import { FullCalendarDirective } from './calendar/full-calendar.directive';
 import { FullCalendarEventDirective } from './calendar/full-calendar-event.directive';
+import { CardFullScreenDirective } from './card/card-full-screen.directive';
+import { CardCollapseDirective } from './card/card-collapse.directive';
 @NgModule({
   imports: [
     CommonModule,
@@ -21,7 +23,9 @@ import { FullCalendarEventDirective } from './calendar/full-calendar-event.direc
     ScrollbarDirective,
     DropzoneDirective,
     FullCalendarDirective,
-    FullCalendarEventDirective
+    FullCalendarEventDirective,
+    CardFullScreenDirective,
+    CardCollapseDirective
 
   ],
   exports: [
@@ -33,7 +37,9 @@ import { FullCalendarEventDirective } from './calendar/full-calendar-event.direc
     EmailValidator,
     DropzoneDirective,
     FullCalendarDirective,
-    FullCalendarEventDirective
+    FullCalendarEventDirective,
+    CardFullScreenDirective,
+    CardCollapseDirective
   ],
   providers: [
     SettingsService
