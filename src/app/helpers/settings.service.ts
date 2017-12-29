@@ -7,9 +7,9 @@ export class SettingsService {
     left:{
       visible: false,
       collapsed: false,
-      fixed: false,
-      background: 'light',
-      accent: 'teal'
+      fixed: true,
+      background: 'dark',
+      accent: 'info'
     },
     right: {
       visible: false,
@@ -17,7 +17,7 @@ export class SettingsService {
     }
   };
   topbar = {
-    fixed: false
+    fixed: true
   }
   constructor() { }
 
@@ -55,6 +55,23 @@ export class SettingsService {
     this.sidebar.left.background = bg;
     this.sidebar.left.accent = accent;
 
+  }
+  toggleFixedSidebar() {
+    if(this.sidebar.left.fixed) {
+      this.sidebar.left.fixed = false;
+      this.topbar.fixed = false;
+    } else {
+      this.sidebar.left.fixed = true;
+    }
+  }
+  toggleFixedTopbar() {
+    if(this.topbar.fixed) {
+      this.topbar.fixed = false;
+    } else {
+      if(this.sidebar.left.fixed) {
+        this.topbar.fixed = true;
+      }
+    }
   }
 
 }

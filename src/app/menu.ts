@@ -62,6 +62,11 @@ export const menu: MenuItem[] = [
     ]
   },
   {
+    path: '/404',
+    label: '404',
+    icon: { class: 'material-icons', content: 'error_outline' }
+  },
+  {
     label: 'Email',
     icon: { class: 'material-icons', content: 'mail' },
     children: [

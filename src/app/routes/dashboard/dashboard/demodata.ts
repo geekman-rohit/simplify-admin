@@ -151,18 +151,18 @@ export const demodata = {
       },
       {
          columns: [
-             ['Retweets', 150],
-             ['Shares', 100],
-             ['Sale', 50],
-             ['Revenue', 80],
+             ['Fusion', 150],
+             ['Fission', 100],
+             ['Dark Matter', 50],
+             ['Hydrogen', 80],
 
 
          ],
          colors: {
-             'Retweets': colors['purple'].alpha(0.9),
-             'Shares': colors['blue'].alpha(0.9),
-             'Sale': colors['orange'].alpha(0.9),
-             'Revenue': colors['green'].alpha(0.9),
+             'Fusion': colors['purple'].alpha(0.9),
+             'Fission': colors['blue'].alpha(0.9),
+             'Dark Matter': colors['orange'].alpha(0.9),
+             'Hydrogen': colors['green'].alpha(0.9),
 
          },
          type: 'donut'

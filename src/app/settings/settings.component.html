@@ -42,14 +42,14 @@
     <div class="px-6">
       <div class="mb-3">
         <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" checked>
+          <input type="checkbox" class="custom-control-input" [checked]="settings.sidebar.left.fixed" (change)="settings.toggleFixedSidebar()">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">Fixed Sidebar</span>
         </label>
       </div>
       <div class="mb-3">
         <label class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" checked>
+          <input type="checkbox" class="custom-control-input" [disabled]="!settings.sidebar.left.fixed" [checked]="settings.topbar.fixed" (change)="settings.toggleFixedTopbar()">
           <span class="custom-control-indicator"></span>
           <span class="custom-control-description">Fixed Topbar</span>
         </label>

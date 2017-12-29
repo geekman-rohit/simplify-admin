@@ -9,6 +9,10 @@ export const routes: Routes = [
     loadChildren: 'app/front/front.module#FrontModule'
   },
   {
+    path: '404',
+    component: NotFoundComponent
+  },
+  {
     path: '',
     component: LayoutComponent,
     children: [

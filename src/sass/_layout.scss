@@ -48,7 +48,8 @@
   margin-left: 0;
   position: relative;
   transition: 0.3s margin-left;
-  padding-bottom: $topbar-size;
+  
+  padding-top: $topbar-size;
   @include media-breakpoint-sidebar-collapse() {
     margin-left: $sidebar-size;
     &.no-sidebar {
@@ -61,7 +62,7 @@
   padding-bottom: 0;
 
   position: relative;
-  top: $topbar-size;
+
   .card {
     margin-bottom: $grid-gutter-width;
   }

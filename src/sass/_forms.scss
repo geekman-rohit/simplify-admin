@@ -35,7 +35,7 @@
   }
 }
 .custom-control-indicator {
-  top: ((($line-height-base * $font-size-base) - $custom-control-indicator-size) / 2);
+  top:0;
 }
 .form-control.is-warning {
   border-color: $warning;
