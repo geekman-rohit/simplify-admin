@@ -88,7 +88,7 @@ $theme-colors: map-merge((
 
 
 $body-bg: $gray-100; //Modified
-$body-color: lighten($gray-700,0%);
+$body-color: lighten($gray-700,2%);
 $grid-gutter-width: 30px;
 $separator-color: $gray-200;
 
@@ -140,8 +140,8 @@ $input-btn-padding-y-sm: .4rem; //Modified
 $input-btn-padding-x-sm: 1rem; //Modified
 
 
-$input-btn-padding-y-lg: 0.8rem; //Modified
-$input-btn-padding-x-lg: 2.4rem; //Modified
+$input-btn-padding-y-lg: 0.6rem; //Modified
+$input-btn-padding-x-lg: 2.25rem; //Modified
 
 
 
@@ -171,7 +171,11 @@ $spacers: (
   9: ($spacer * 2.25),
   10: ($spacer * 2.5),
   11: ($spacer * 2.75),
-  12: ($spacer * 3)
+  12: ($spacer * 3),
+  13: ($spacer * 3.5),
+  14: ($spacer * 4),
+  15: ($spacer * 5),
+  16: ($spacer * 6),
 ) !default;
 
 //

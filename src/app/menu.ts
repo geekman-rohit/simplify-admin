@@ -67,11 +67,17 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'error_outline' }
   },
   {
+    path: '/front/website',
+    label: 'Landing Page',
+    icon: { class: 'material-icons', content: 'public' }
+  },
+  {
     label: 'Email',
     icon: { class: 'material-icons', content: 'mail' },
     children: [
       { path: '/email/inbox', label: 'Email Inbox' },
-      { path: '/email/compose', label: 'Email Compose' }
+      { path: '/email/compose', label: 'Email Compose' },
+      { path: '/email/full', label: 'View Email' }
     ]
   },
   {
@@ -121,8 +127,7 @@ export const menu: MenuItem[] = [
       { path: '/forms/basic', label: 'Form Elements' },
       { path: '/forms/custom', label: 'Custom Elements' },
       { path: '/forms/date', label: 'Date & Time Picker' },
-      { path: '/forms/typeahead', label: 'Typeahead' },
-      { path: '/forms/templates', label: 'Readymade Templates' },
+      { path: '/forms/typeahead', label: 'Typeahead' }
     ]
   },
   {

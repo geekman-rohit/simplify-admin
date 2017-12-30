@@ -42,53 +42,43 @@
           </div>
           <div style="width: 100%" class="">
             <div class="d-flex py-3 align-items-center justify-content-between">
-              <div class="mr-1 pl-2 d-flex align-items-center">
+              <div class="mr-1 pl-3 pt-3 d-flex align-items-center">
                 <button class="btn btn-link text-secondary btn-sm email-toggle" (click)="menuToggle = !menuToggle"><i class="material-icons">menu</i></button>
-                <h5 class="my-0 px-3 text-info">Compose</h5>
-              </div>
-              <div class="actions px-4 py-3" style="text-align: right;">
-
-                  <button class="btn btn-sm btn-outline-danger mr-2"><i class="fa fa-send mr-2"></i> Send</button>
-                  <button class="btn btn-sm btn-outline-info"><i class="fa fa-archive mr-2"></i> Draft</button>
-
-
+                <h5 class="my-0 px-3 text-info">Inbox</h5>
               </div>
             </div>
-
-            <div class="email-compose px-4 py-2">
-              <form>
-                <div>
-                  <input type="text" class="form-control mb-4" placeholder="To">
-                </div>
-                <div>
-                  <input type="text" class="form-control mb-4" placeholder="Subject" value="Space Shuttle Driving License Test Test Slot">
-                </div>
-                <div class="editor-wrapper">
-                  <div class="mb-4">
-                    <textarea name="name" rows="8" cols="80" class="editable" placeholder="Subject">
-                      <p>The Space Shuttle Driving License Test team is pleased to Inform you that you can take the test on <strong>Sunday 12 Jan</strong></p>
-                      <strong>Select Message Text to Format it</strong><br><br><strong>You can also drag and drop images into the message</strong>
-                    </textarea>
+            <div class="email-message py-2">
+              <div class="media px-4 py-4 border-top border-bottom">
+                <img src="assets/img/face3.jpeg" alt="" class="img-thumb-sm">
+                <div class="media-body ml-3">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <h5 class="mb-0">Alex Kirk</h5>
+                      <p class="text-secondary mb-0">alex@federation.space</p>
+                    </div>
+                    <div class="btn-group">
+                      <button class="btn btn-sm btn-flat-secondary"><i class="fa fa-archive"></i></button>
+                      <button class="btn btn-sm btn-flat-secondary"><i class="fa fa-times"></i></button>
+                    </div>
                   </div>
 
                 </div>
-              </form>
-              <h5 class="py-3 px-1">
-                Attachments:
-              </h5>
-              <form action="/file-upload" class="filedrop dropzone" appDropzone>
-                <div class="fallback">
-                  <input name="file" type="file" multiple />
-                </div>
-              </form>
+              </div>
+              <div class="message-content px-8 py-4">
+                <h5 class="mb-4">Your Space Ship Drive Test Appointment</h5>
+                <p class="" style="max-width: 90%">
+                  Buy why, some say, the moon? Why choose this as our goal? And they may as well ask why climb the highest mountain?
+                  <br><br>
+                  I don't know what you could say about a day in which you have seen four beautiful sunsets.
+                  <br><br>
+                  Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.
+                  <br><br>
+                  Cheers,<br>
+                  Alex Dunkirk
+                </p>
+              </div>
             </div>
-            <div class="actions px-4 py-4" style="text-align: left;">
 
-                <button class="btn btn-outline-danger mr-2"><i class="fa fa-send mr-2"></i> Send</button>
-                <button class="btn btn-outline-info"><i class="fa fa-archive mr-2"></i> Draft</button>
-
-
-            </div>
           </div>
         </div>
       </div>

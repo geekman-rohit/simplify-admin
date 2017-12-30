@@ -9,7 +9,6 @@ export class PlotlyDirective implements OnInit {
   el: ElementRef;
   native: any;
   @Input() appPlotly;
-  @Input() data;
   @Input() layout;
   constructor (el: ElementRef) {
     this.el = el;

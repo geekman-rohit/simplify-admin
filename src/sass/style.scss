@@ -13,6 +13,8 @@
 * Simplify Admin Modifies and extends Bootstrap.
 */
 
+
+
 /****** Table Of Content *******
 *. Functions
 *. Variables
@@ -191,4 +193,8 @@
 @import "calendar";
 
 /* Email */
-@import "pages/email"
+@import "pages/email";
+.bg-graded {
+  background: #7f00ff; /* fallback for old browsers */
+  background: linear-gradient(to right bottom, #7f00ff, #9F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

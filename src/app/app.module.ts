@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutComponent } from './layout/layout.component';
 import { SettingsComponent } from './settings/settings.component';
+import {SlimLoadingBarModule} from 'ng2-slim-loading-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { SettingsComponent } from './settings/settings.component';
     AppRoutingModule,
     NgbModule.forRoot(),
     HelpersModule,
-    FormsModule
+    FormsModule,
+    SlimLoadingBarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
