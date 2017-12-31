@@ -169,6 +169,7 @@
 
 /* Carousel */
 @import "../../node_modules/bootstrap/scss/carousel";
+@import "carousel";
 
 /* Utilites */
 @import "../../node_modules/bootstrap/scss/utilities";
@@ -194,7 +195,3 @@
 
 /* Email */
 @import "pages/email";
-.bg-graded {
-  background: #7f00ff; /* fallback for old browsers */
-  background: linear-gradient(to right bottom, #7f00ff, #9F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}

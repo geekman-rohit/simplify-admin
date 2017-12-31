@@ -32,7 +32,7 @@
   <div class="pt-10 border-bottom">
     <div class="text-center mt-8">
       <h2 class="mb-4">
-        Simplify Admin
+        <span class="d-none d-md-inline">Kickstart Development with </span>Simplify Admin
       </h2>
       <h4 class="text-secondary font-weight-light mb-6">
         Responsive, Ready to use UI and Amin Template
@@ -158,16 +158,41 @@
       <h3 style="">People Talk About Us!</h3>
     </div>
     <div class="container mt-10">
-      <div class="text-center px-8 px-lg-14">
-        <img src="assets/img/face1.jpeg" alt="" class="img-thumb mb-4" style="width: 3.25rem; height: 3.25rem;">
-        <p class="text-secondary">
-          Never in all their history have men been able truly to conceive of the world as one,
-           a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals.
+      <div class="text-center">
+        <ngb-carousel class="carousel-light carousel-slim">
+          <ng-template ngbSlide>
+            <div class="px-8 px-lg-14 pb-8">
+              <img src="assets/img/face1.jpeg" alt="" class="img-thumb mb-4" style="width: 3.25rem; height: 3.25rem;">
+              <p class="text-secondary">
+                Never in all their history have men been able truly to conceive of the world as one,
+                 a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals.
 
-        </p>
-        <h5 class="">
-          - Peter Parker
-        </h5>
+              </p>
+              <h5 class="">
+                - Peter Parker
+              </h5>
+            </div>
+
+          </ng-template>
+
+          <ng-template ngbSlide>
+            <div class="px-8 px-lg-14 pb-8">
+              <img src="assets/img/face2.jpeg" alt="" class="img-thumb mb-4" style="width: 3.25rem; height: 3.25rem;">
+              <p class="text-secondary">
+                Never in all their history have men been able truly to conceive of the world as one,
+                 a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals.
+
+              </p>
+              <h5 class="">
+                - Richard Parker
+              </h5>
+            </div>
+
+          </ng-template>
+
+
+        </ngb-carousel>
+
       </div>
 
     </div>
