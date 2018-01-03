@@ -1,12 +1,33 @@
 <div class="container-fluid">
-  <h5 class="px-2 mb-3">Alerts</h5>
   <div class="row">
-    <div class="col-12">
+    <div class="col-12 col-lg-8">
       <div class="card">
+        <div class="card-header">
+          <h5>Alerts</h5>
+        </div>
         <div class="card-body">
-          <h5 class="card-title">
+          <p class="text-secondary">
+            Use alerts to draw attention to a block of text that needs it. Create dissmissable alerts with <code>ng-bootstrap</code>
+          </p>
+          <p class="text-secondary">
+            Simplify admin provides more colors for you alerts
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <h5 class="section-title">Alerts</h5>
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h5 class="">
             Basic Alerts
           </h5>
+        </div>
+        <div class="card-body">
+
           <p class="secondary-text">
             Use <code>.alert</code> with a variation <code>.alert-[variation]</code> for themed alerts
           </p>
@@ -38,6 +59,49 @@
           </div>
         </div>
 
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h5>Dismissable Alerts</h5>
+        </div>
+        <div class="card-body">
+          <p class="text-secondary">
+            Use <code>ng-bootstrap</code>'s <code>ngb-alert</code> to generate dismissable alerts
+          </p>
+          <p>
+            <code>ngb-alert</code> fires a close event that your controller can handle to close the alert and do any server side tasks.
+          </p>
+          <div class="demo">
+            <div>
+              <ngb-alert type="danger" *ngIf="isAlert" [dismissible]="true" (close)="isAlert = false">
+                <strong>Danger!</strong> Drive Overheating!
+              </ngb-alert>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h5>More Colors</h5>
+        </div>
+        <div class="card-body">
+          <p class="secondary-text">
+            Use  <code>.alert-[variation]</code> for themed alerts
+          </p>
+          <div class="demo">
+            <div class="alert alert-indigo" role="alert">
+              This is a Indigo alert—check it out!
+            </div>
+            <div class="alert alert-teal" role="alert">
+              This is a Teal alert—check it out!
+            </div>
+            <div class="alert alert-cyan" role="alert">
+              This is a Cyan alert—check it out!
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -134,5 +134,12 @@ export const menu: MenuItem[] = [
     path: '/calendar/full',
     label: 'Calendar',
     icon: { class: 'material-icons', content: 'event' }
-  }
+  },
+  {
+    label: 'Utilities',
+    icon: { class: 'material-icons', content: 'code' },
+    children: [
+      { path: '/utilities/spacing', label: 'Box Model' },
+    ]
+  },
 ];

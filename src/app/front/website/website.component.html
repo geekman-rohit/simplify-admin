@@ -1,9 +1,9 @@
-<div class="website">
-  <div class="bg-light">
+<div class="website" id="fullpage">
+  <div class="bg-gradient">
   <div class="topbar-container">
-    <nav class="navbar navbar-expand-lg bg-white border-bottom navbar-light py-1">
+    <nav class="navbar navbar-expand-lg border-bottom-0 navbar-dark py-1">
       <div class="container">
-        <a class="navbar-brand text-dark" href="#" style="font-size: 1.2rem;">Geekman</a>
+        <a class="navbar-brand font-fancy" href="#" style="font-size: 1.2rem;">Geekman</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -11,13 +11,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mr-4">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" routerLink="/front/website">Home</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" routerLink="/front/website" fragment="features">Features</a>
             </li>
             <li class="nav-item mr-4">
-              <a class="nav-link" href="#">Project</a>
+              <a class="nav-link" routerLink="/front/website" fragment="project">Project</a>
             </li>
 
 
@@ -29,7 +29,7 @@
 
   </div>
 
-  <div class="pt-10 border-bottom">
+  <div class="pt-10 border-bottom" id="features">
     <div class="text-center mt-8">
       <h2 class="mb-4">
         <span class="d-none d-md-inline">Kickstart Development with </span>Simplify Admin
@@ -38,17 +38,17 @@
         Responsive, Ready to use UI and Amin Template
       </h4>
       <div class="mb-8 py-2 ">
-        <button class="btn btn-primary mr-4">Angular Preview</button> <button class="btn btn-success mr-4">HTML &amp; jQuery</button>
+        <a class="btn btn-primary mr-4" routerLink="/dashboard/pro">Angular Preview</a> <button class="btn btn-success mr-4">HTML &amp; jQuery</button>
       </div>
       <div class="mock-image mb-10">
-        <img src="assets/img/mock2.png" alt="" class="img-fluid" style="max-width:38rem; width: 100%">
+        <img src="assets/img/mac.png" alt="" class="img-fluid" style="max-width:38rem; width: 100%">
       </div>
     </div>
   </div>
   </div>
 
-  <div class="pt-10 pb-14 border-bottom" style="background: #fff">
-    <div class="container mt-8 ">
+  <div class="pt-14 pb-14 border-bottom" style="background: #fff">
+    <div class="container ">
       <div class="row">
 
         <div class="col-lg-6">
@@ -106,10 +106,10 @@
         <div class="col-lg-6 d-flex justify-content-around align-items-center">
           <div>
             <div class="mock-image text-center mt-4">
-              <img src="assets/img/mock2.png" alt="" class="img-fluid" style="max-width:25rem; width: 100%">
+              <img src="assets/img/charts.png" alt="" class="img-fluid" style="max-width:26rem; width: 100%">
             </div>
             <div class="pb-10 py-2 mt-6  text-center">
-              <button class="btn btn-primary mr-4">Angular 5</button> <button class="btn btn-success mb-1">HTML &amp; jQuery</button>
+              <a class="btn btn-primary mr-4" routerLink="/dashboard/pro">Angular 5</a> <button class="btn btn-success mb-1">HTML &amp; jQuery</button>
             </div>
           </div>
 
@@ -121,15 +121,15 @@
     </div>
   </div>
 
-  <div class="py-14 bg-light">
+  <div class="py-14 pb-14 bg-light" id="project">
     <div class="text-center">
       <h3 style="">New Pages Every Month!</h3>
     </div>
     <div class="container mt-12">
       <div class="row ">
         <div class="col-12 col-lg-6">
-          <div class="px-8 text-center mt-2 mb-8">
-            <img src="assets/img/mock2.png" alt="" class="img-fluid" style="max-width:25rem; width: 100%">
+          <div class="px-8 text-center mt-0 mb-0">
+            <img src="assets/img/maci.png" alt="" class="img-fluid" style="max-width:24rem; width: 100%;">
           </div>
         </div>
         <div class="col-12 col-lg-6">
@@ -145,7 +145,7 @@
               Want to showcase a Pinned Priority task? Or maybe not?
             </p>
             <div class="py-2  ">
-              <button class="btn btn-primary no-shadow mr-4">Angular 5</button> <button class="btn btn-success mr-4">HTML &amp; jQuery</button>
+              <a class="btn btn-primary no-shadow mr-4" routerLink="/projects/single">Angular 5</a> <button class="btn btn-success mr-4">HTML &amp; jQuery</button>
             </div>
           </div>
         </div>
@@ -153,7 +153,138 @@
       </div>
     </div>
   </div>
-  <div class="py-14 bg-white">
+  <div class="py-14 pb-10 bg-white" id="pages">
+    <div class="text-center">
+      <h3 style="">So many Pages!</h3>
+    </div>
+    <div class="container mt-12">
+      <div class="row ">
+        <div class="col-12 col-lg-4 px-8 py-8">
+          <div class="page-demo">
+            <div class="page-demo-image mb-8 text-center" style="position:relative">
+              <img src="assets/img/dash.png" alt="" class="img-fluid border" style="max-width:24rem; width: 100%;">
+
+            </div>
+            <div class="page-demo-text text-center">
+              <h4>Dashboard</h4>
+              <p class="text-secondary">
+                Show charts and Important Cards on this Dashboard Page
+
+              </p>
+              <div class="py-2 text-center ">
+                <a class="btn btn-flat-primary mr-0" routerLink="/dashboard/pro">ANGULAR</a>
+                <button class="btn btn-flat-info mr-0">HTML 5</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 px-8 py-8">
+          <div class="page-demo">
+            <div class="page-demo-image mb-8 text-center">
+              <img src="assets/img/project.png" alt="" class="img-fluid border" style="max-width:24rem; width: 100%;">
+            </div>
+            <div class="page-demo-text text-center">
+              <h4>Project</h4>
+              <p class="text-secondary">
+                Use this Page for your project landing. Showcase priority tasks and subtasks.
+
+              </p>
+              <div class="py-2 text-center ">
+                <a class="btn btn-flat-primary mr-0" routerLink="/projects/single">ANGULAR</a>
+                <button class="btn btn-flat-info mr-0">HTML 5</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 px-8 py-8">
+          <div class="page-demo">
+            <div class="page-demo-image mb-8 text-center">
+              <img src="assets/img/chat.png" alt="" class="img-fluid border" style="max-width:24rem; width: 100%;">
+            </div>
+            <div class="page-demo-text text-center">
+              <h4>Chat</h4>
+              <p class="text-secondary">
+                Teamplate for easy User Friendly conversations Page
+
+              </p>
+              <div class="py-2 text-center ">
+                <a class="btn btn-flat-primary mr-0" routerLink="/email/chat">ANGULAR</a>
+                <button class="btn btn-flat-info mr-0">HTML 5</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 px-8 py-8">
+          <div class="page-demo">
+            <div class="page-demo-image mb-8 text-center">
+              <img src="assets/img/login.png" alt="" class="img-fluid border" style="max-width:24rem; width: 100%;">
+            </div>
+            <div class="page-demo-text text-center">
+              <h4>Login</h4>
+              <p class="text-secondary">
+                Simple and Elegant Login Card, Pair with a light or solid background, or an Image
+
+              </p>
+              <div class="py-2 text-center ">
+                <a class="btn btn-flat-primary mr-0" routerLink="/front/login">ANGULAR</a>
+                <button class="btn btn-flat-info mr-0">HTML 5</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 px-8 py-8">
+          <div class="page-demo">
+            <div class="page-demo-image mb-8 text-center">
+              <img src="assets/img/calendar.png" alt="" class="img-fluid border" style="max-width:24rem; width: 100%;">
+            </div>
+            <div class="page-demo-text text-center">
+              <h4>Calendar</h4>
+              <p class="text-secondary">
+                Showcase Important Events and Dates on this Calendar Page
+
+              </p>
+              <div class="py-2 text-center ">
+                <a class="btn btn-flat-primary mr-0" routerLink="/calendar/full">ANGULAR</a>
+                <button class="btn btn-flat-info mr-0">HTML 5</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-12 col-lg-4 px-8 py-8">
+          <div class="page-demo">
+            <div class="page-demo-image mb-8 text-center">
+              <img src="assets/img/profile.png" alt="" class="img-fluid border" style="max-width:24rem; width: 100%;">
+            </div>
+            <div class="page-demo-text text-center">
+              <h4>Profile</h4>
+              <p class="text-secondary">
+                Perfect for User Profile and Employee Page, showcase their latest Posts
+
+              </p>
+              <div class="py-2 text-center ">
+                <a class="btn btn-flat-primary mr-0" routerLink="/user/profile">ANGULAR</a>
+                <button class="btn btn-flat-info mr-0">HTML 5</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="py-14 bg-light">
     <div class="text-center">
       <h3 style="">People Talk About Us!</h3>
     </div>
@@ -198,7 +329,7 @@
     </div>
   </div>
 
-  <div class="py-8 bg-light border-top">
+  <div class="py-6 bg-white border-top">
     <div class="text-center">
       <h5 class="mb-0 text-secondary">Copyright geekman.site</h5>
     </div>

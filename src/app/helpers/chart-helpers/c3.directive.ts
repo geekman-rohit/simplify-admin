@@ -12,7 +12,6 @@ export class C3Directive implements OnInit {
     this.native = ele.nativeElement;
   }
   ngOnInit() {
-    console.log(this.appC3);
     const chart = c3.generate({
       bindto: this.native,
       data: this.appC3

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./expand.component.scss']
 })
 export class ExpandComponent implements OnInit {
+  menuToggle = false;
 
   constructor() { }
 

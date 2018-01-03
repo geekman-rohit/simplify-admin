@@ -12,6 +12,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LayoutComponent } from './layout/layout.component';
 import { SettingsComponent } from './settings/settings.component';
 import {SlimLoadingBarModule} from 'ng2-slim-loading-bar';
+import { HammerGestureConfig, HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+import { AppHammerConfig } from './app-hammer-config';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,12 @@ import {SlimLoadingBarModule} from 'ng2-slim-loading-bar';
     FormsModule,
     SlimLoadingBarModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: AppHammerConfig
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,11 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './alert.component.html',
   styleUrls: ['./alert.component.scss']
 })
+
 export class AlertComponent implements OnInit {
 
-  constructor() { }
+  isAlert = true;
+  constructor() {
+
+  }
 
   ngOnInit() {
+  }
+  public closeAlert() {
+    this.isAlert = false;
+
   }
 
 }

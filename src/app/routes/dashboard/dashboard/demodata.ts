@@ -1,31 +1,5 @@
 import { Color, colors } from '../../../helpers/colors';
 export const demodata = {
-  people: [
-    {
-      name: 'Kaleb',
-      title: 'Chief of Staff',
-      photo: '/assets/img/face1.jpeg',
-      team: 'Mysteries'
-    },
-    {
-      name: 'Joanna',
-      title: 'Minister of Magic',
-      photo: '/assets/img/face2.jpeg',
-      team: 'Muggle Affairs'
-    },
-    {
-      name: 'Vince',
-      title: 'Chief Warlock',
-      photo: '/assets/img/face3.jpeg',
-      team: 'Justice'
-    },
-    {
-      name: 'Kara',
-      title: 'Headmaster',
-      photo: '/assets/img/face4.jpeg',
-      team: 'Education'
-    }
-  ],
   charts: [
     {
       type: 'line',

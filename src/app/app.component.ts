@@ -15,6 +15,8 @@ export class AppComponent {
     this.router.events.subscribe((event: any) => {
       this.handleNavigation(event);
     });
+
+
   }
   handleNavigation(event: any) {
     if(event instanceof NavigationStart) {
@@ -22,6 +24,13 @@ export class AppComponent {
     }
     else if(event instanceof NavigationEnd) {
       this.completeLoading();
+      const tree = this.router.parseUrl(this.router.url);
+      if (tree.fragment) {
+        const element = document.querySelector("#" + tree.fragment);
+        if (element) { element.scrollIntoView(); }
+      } else {
+        window.scrollTo(0, 0);
+      }
 
     }
   }

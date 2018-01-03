@@ -56,6 +56,10 @@ export const routes: Routes = [
         path: 'calendar',
         loadChildren: 'app/routes/calendar/calendar.module#CalendarModule'
       },
+      {
+        path: 'utilities',
+        loadChildren: 'app/routes/utilities/utilities.module#UtilitiesModule'
+      },
       { path: '', redirectTo: '/dashboard/pro', pathMatch: 'full' },
       /* 404 Error Page */
       { path: '**', component: NotFoundComponent, }
