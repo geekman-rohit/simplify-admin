@@ -11,6 +11,7 @@ import { FullCalendarDirective } from './calendar/full-calendar.directive';
 import { FullCalendarEventDirective } from './calendar/full-calendar-event.directive';
 import { CardFullScreenDirective } from './card/card-full-screen.directive';
 import { CardCollapseDirective } from './card/card-collapse.directive';
+import { EditorDirective } from './editor/editor.directive';
 @NgModule({
   imports: [
     CommonModule,
@@ -25,7 +26,8 @@ import { CardCollapseDirective } from './card/card-collapse.directive';
     FullCalendarDirective,
     FullCalendarEventDirective,
     CardFullScreenDirective,
-    CardCollapseDirective
+    CardCollapseDirective,
+    EditorDirective
 
   ],
   exports: [
@@ -39,7 +41,8 @@ import { CardCollapseDirective } from './card/card-collapse.directive';
     FullCalendarDirective,
     FullCalendarEventDirective,
     CardFullScreenDirective,
-    CardCollapseDirective
+    CardCollapseDirective,
+    EditorDirective
   ],
   providers: [
     SettingsService
