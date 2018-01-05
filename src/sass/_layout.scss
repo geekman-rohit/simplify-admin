@@ -55,6 +55,7 @@
 }
 .full-page {
   position: relative;
+  min-height: 99vh;
 }
 .sidebar-right {
   width: $sidebar-size;
