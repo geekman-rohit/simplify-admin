@@ -50,3 +50,6 @@ $ct-series-colors: (
 .ct-label {
   fill: white;
 }
+.js-plotly-plot .plotly .modebar {
+  z-index: 8 !important;
+}

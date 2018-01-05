@@ -23,7 +23,6 @@
 
 }
 .email-card {
-  min-width: 50rem;
   overflow: auto;
 }
 .email-toggle {
@@ -32,5 +31,14 @@
 @include media-breakpoint-down(md) {
   .email-toggle {
     display: block;
+  }
+}
+.email-list {
+  min-width: 25rem;
+  overflow-x: auto;
+  table {
+    td:first-child {
+      white-space: nowrap;
+    }
   }
 }
