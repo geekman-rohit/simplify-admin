@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { SettingsService } from '../helpers/settings.service';
 import 'rxjs/add/operator/filter';
+declare var $:any;
 @Component({
   selector: 'app-topbar',
   templateUrl: './topbar.component.html',
   styleUrls: ['./topbar.component.scss']
 })
 export class TopbarComponent implements OnInit {
-
+  searchCollapsed = true;
   title = "Home";
   constructor(private router: Router, private activatedRoute: ActivatedRoute, public settings: SettingsService) {
   }
@@ -34,6 +35,14 @@ export class TopbarComponent implements OnInit {
   }
   toggleSettingsVisibility() {
     this.settings.sidebar.right.visible = !this.settings.sidebar.right.visible;
+  }
+  toggleSearch() {
+    this.searchCollapsed = !this.searchCollapsed;
+    if(!this.searchCollapsed) {
+      $('.topbar-search').focus();
+    } else {
+      $('.topbar-search').blur();
+    }
   }
 
 }

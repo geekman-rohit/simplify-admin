@@ -9,6 +9,22 @@
   left: 0;
   top:0;
   right: 0;
+
+  .topbar-search {
+    transition: width 0.3s, padding 0.3s, right 0.3s;
+    width: 15rem;
+    padding-right: 2.25rem;
+    &.collapsed {
+      width: 0;
+      padding-left: 0;
+      padding-right: 0;
+      right: 0;
+    }
+
+    position: relative;
+
+    right: -2.25rem;
+  }
   &.fixed {
     position: fixed;
     left: 0;
@@ -67,6 +83,7 @@
     cursor: pointer;
     .fa,.material-icons {
       font-size: 1.5em;
+      bottom:0;
     }
     span.badge {
       float: right;
