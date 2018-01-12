@@ -1,4 +1,4 @@
-<nav class="navbar bg-white navbar-expand-sm py-0 topbar" [ngClass]="{fixed: settings.topbar.fixed}">
+<nav class="navbar bg-white text-secondary navbar-expand-sm py-0 topbar" [ngClass]="{fixed: settings.topbar.fixed}">
 
   <button class="btn btn-flat-secondary btn-sm btn-icon mr-1  no-shadow d-none d-xl-block" (click)="toggleSidebar()">
     <i class="material-icons">menu</i>
@@ -8,7 +8,7 @@
   </button>
 
   <div class="navbar-text ml-3 d-none d-sm-block">
-    <h5 class="m-0">{{ title }}</h5>
+    <h5 class="m-0 text-dark">{{ title }}</h5>
   </div>
   <div class="ml-auto d-sm-flex">
     <div class="d-none d-sm-flex align-items-center">
@@ -18,12 +18,12 @@
     </div>
     <ul class="navbar-nav">
       <li class="nav-item mr-3 d-none d-sm-block">
-        <a class="text-secondary nav-link text-center topbar-search-toggle" role="button" (click)="toggleSearch()">
+        <a class="nav-link text-center topbar-search-toggle" role="button" (click)="toggleSearch()">
           <i class="material-icons">search</i>
         </a>
       </li>
       <li class="nav-item dropdown no-caret mr-3" ngbDropdown placement="bottom-right">
-        <a ngbDropdownToggle class="text-secondary dropdown-toggle nav-link text-center" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a ngbDropdownToggle class="dropdown-toggle nav-link text-center" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="material-icons">notifications_none</i>
           <span class="badge badge-warning">2</span>
         </a>
@@ -75,7 +75,7 @@
         </div>
       </li>
       <li class="nav-item dropdown no-caret mr-3" ngbDropdown placement="bottom-right">
-        <a ngbDropdownToggle class="text-secondary text-center dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a ngbDropdownToggle class="text-center dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="material-icons">person_outline</i>
           <span class="badge badge-warning">2</span>
         </a>
@@ -137,7 +137,7 @@
         </div>
       </li>
       <li class="nav-item dropdown no-caret" ngbDropdown placement="bottom-right">
-        <a ngbDropdownToggle class="text-secondary text-center dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a ngbDropdownToggle class="text-center dropdown-toggle nav-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="material-icons">mail_outline</i>
           <span class="badge badge-warning">2</span>
         </a>
@@ -189,13 +189,13 @@
         </div>
       </li>
       <li class="nav-item d-none d-md-block ml-3">
-        <a  class="nav-link text-secondary" (click)="toggleSettingsVisibility()" role="button">
+        <a  class="nav-link" (click)="toggleSettingsVisibility()" role="button">
           <i class="material-icons">settings</i>
         </a>
 
       </li>
       <li class="nav-item dropdown no-caret ml-4" ngbDropdown  placement="bottom-right">
-        <a ngbDropdownToggle class="text-xs nav-link text-secondary dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a ngbDropdownToggle class="text-xs nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="assets/img/face3.jpeg" class="img-thumb-xs mr-1 align-middle"  alt="">
           <i class="material-icons">expand_more</i>
         </a>
