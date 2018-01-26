@@ -5,9 +5,11 @@ import { DataComponent } from './data/data.component';
 import { RouterModule, Routes } from '@angular/router';
 import { HelpersModule } from '../../helpers/helpers.module';
 import { DataTablesModule } from 'angular-datatables';
+import { ResponsiveComponent } from './responsive/responsive.component';
 const routes: Routes = [
-  { path: 'data', component: DataComponent },
-  { path: 'basic', component: BasicComponent },
+  { path: 'data', component: DataComponent, data: { title: 'Datatable' } },
+  { path: 'responsive', component: ResponsiveComponent, data: { title: 'Responsive Table' } },
+  { path: 'basic', component: BasicComponent, data: { title: 'Basic Tables' } },
 
 ];
 @NgModule({
@@ -17,6 +19,6 @@ const routes: Routes = [
     HelpersModule,
     DataTablesModule
   ],
-  declarations: [BasicComponent, DataComponent]
+  declarations: [BasicComponent, DataComponent, ResponsiveComponent]
 })
 export class TablesModule { }

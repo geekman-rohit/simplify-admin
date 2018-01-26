@@ -117,6 +117,7 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'view_column' },
     children: [
       { path: '/tables/basic', label: 'Basic' },
+      { path: '/tables/responsive', label: 'Responsive Tables' },
       { path: '/tables/data', label: 'Datatable' }
     ]
   },
