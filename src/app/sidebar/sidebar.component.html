@@ -5,15 +5,15 @@
 
   <div [appScrollbar]="" class="scroll">
     <div class="sidebar-header text-white" [ngClass]="headerClass()">
-    <div class="sidebar-brand d-flex justify-content-between align-items-center">
-      <div class="title text-truncate">
-        Simplify Admin
-      </div>
-      <div class="logo align-items-center justify-content-around">
-        <i class="material-icons">all_inclusive</i>
+      <div class="sidebar-brand d-flex justify-content-between align-items-center">
+        <div class="title text-truncate">
+          Simplify Admin
+        </div>
+        <div class="logo align-items-center justify-content-around">
+          <i class="material-icons">all_inclusive</i>
+        </div>
       </div>
     </div>
-  </div>
   <div class="sidebar-nav-container">
     <ul class="list-nav sidebar-nav" [ngClass]="navClass()" appCollapsibleNav>
       <ng-container *ngFor="let item of menu">

@@ -14,7 +14,7 @@
             <div class="search-results-people border-bottom pt-6">
               <h5 class="text-secondary">People</h5>
 
-              <div class="search-person py-8">
+              <div class="search-person py-6">
                 <div class="media">
                   <img src="assets/img/face1.jpeg" class="img-thumb-xl img-thumb-sq">
                   <div class="media-body ml-4">
@@ -25,7 +25,7 @@
                     <p class="text-secondary mb-2">
                       UN Spaceship - Houston Base.
                     </p>
-                    <p class="text-info">
+                    <p class="text-info mb-0">
                       109 Common Friends
                     </p>
                   </div>
@@ -34,7 +34,7 @@
 
               </div>
 
-              <div class="search-person border-top py-8">
+              <div class="search-person border-top py-6">
                 <div class="media">
                   <img src="assets/img/face4.jpeg" class="img-thumb-xl img-thumb-sq">
                   <div class="media-body ml-4">
@@ -45,7 +45,7 @@
                     <p class="text-secondary mb-2">
                       EU Spaceship - Peterson Base.
                     </p>
-                    <p class="text-info">
+                    <p class="text-info mb-0">
                       19 Common Friends
                     </p>
                   </div>
@@ -151,6 +151,10 @@
 
               </div>
 
+            </div>
+
+            <div class="py-6 d-flex justify-content-around">
+              <ngb-pagination [collectionSize]="50" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
             </div>
           </div>
 
