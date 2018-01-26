@@ -72,6 +72,13 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'public' }
   },
   {
+    label: 'Bonus Pages',
+    icon: { class: 'material-icons', content: 'pages' },
+    children: [
+      { path: '/pages/search', label: 'Search Results' },
+    ]
+  },
+  {
     label: 'Email',
     icon: { class: 'material-icons', content: 'mail' },
     children: [

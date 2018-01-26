@@ -57,6 +57,10 @@ export const routes: Routes = [
         loadChildren: 'app/routes/calendar/calendar.module#CalendarModule'
       },
       {
+        path: 'pages',
+        loadChildren: 'app/routes/pages/pages.module#PagesModule'
+      },
+      {
         path: 'utilities',
         loadChildren: 'app/routes/utilities/utilities.module#UtilitiesModule'
       },
