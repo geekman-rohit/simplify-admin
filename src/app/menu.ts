@@ -40,6 +40,11 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'person' }
   },
   {
+    path: '/user/timeline',
+    label: 'Timeline',
+    icon: { class: 'material-icons', content: 'timeline' }
+  },
+  {
     path: '/email/chat',
     label: 'Chat',
     icon: { class: 'material-icons', content: 'chat_bubble_outline' }
@@ -72,11 +77,7 @@ export const menu: MenuItem[] = [
     label: 'Landing Page',
     icon: { class: 'material-icons', content: 'public' }
   },
-  {
-    path: '/ui/timeline',
-    label: 'Timeline',
-    icon: { class: 'material-icons', content: 'timeline' }
-  },
+
   {
     label: 'Bonus Pages',
     icon: { class: 'material-icons', content: 'pages' },

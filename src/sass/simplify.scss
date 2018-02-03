@@ -48,6 +48,11 @@
 *. Popover
 *. Carousel
 *. Utilities
+*. Icons
+*. Layout
+*. Sidebar
+*. Topbar
+*. Timeline
 
 /* Bootstrap Functions */
 @import "../../node_modules/bootstrap/scss/functions";
@@ -187,8 +192,13 @@
 /* Topbar */
 @import "topbar";
 
+/* Timeline Component */
+@import "timeline";
+
 /* Charts */
 @import "charts";
+
+
 
 /* Calendar */
 @import "calendar";
@@ -196,5 +206,3 @@
 /* Email */
 @import "pages/email";
 @import "pages/website";
-
-@import "timeline";

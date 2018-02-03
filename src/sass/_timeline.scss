@@ -1,11 +1,9 @@
-$dot-size: 12px;
-$dot-size-large: 18px;
 .timeline {
   position: relative;
   margin: 0;
   padding: 0;
   display: block;
-  margin-left: $dot-size-large/2;
+  margin-left: $timeline-outline-size/2;
   margin-right: 2rem;
 
 
@@ -15,7 +13,7 @@ $dot-size-large: 18px;
     height: 100%;
     position: absolute;
     top:0;
-    padding-top: $dot-size-large;
+    padding-top: $timeline-outline-size;
     left:0;
     bottom:0;
     &:after {
@@ -53,10 +51,10 @@ $dot-size-large: 18px;
     position: absolute;
     left: 0;
     top:0;
-    margin-left: -$dot-size/2;
-    width: $dot-size;
-    height: $dot-size;
-    margin-top: ((($dot-size-large - $dot-size)/2));
+    margin-left: -$timeline-dot-size/2;
+    width: $timeline-dot-size;
+    height: $timeline-dot-size;
+    margin-top: ((($timeline-outline-size - $timeline-dot-size)/2));
     content: " ";
     border-radius: 50%;
     background: $info;
@@ -69,9 +67,9 @@ $dot-size-large: 18px;
     position: absolute;
     left: 0;
     top:0;
-    margin-left: (-$dot-size-large/2);
-    width: $dot-size-large;
-    height: $dot-size-large;
+    margin-left: (-$timeline-outline-size/2);
+    width: $timeline-outline-size;
+    height: $timeline-outline-size;
     content: " ";
     border-radius: 50%;
     background: transparent;
@@ -83,9 +81,9 @@ $dot-size-large: 18px;
   &.single-dot {
     &:after {
       margin-top: 0;
-      margin-left: -$dot-size-large/2;
-      width: $dot-size-large;
-      height: $dot-size-large;
+      margin-left: -$timeline-outline-size/2;
+      width: $timeline-outline-size;
+      height: $timeline-outline-size;
     }
 
     &:before {
@@ -101,29 +99,27 @@ $dot-size-large: 18px;
 }
 
 .timeline-lg {
-  $dot-size: 18px;
-  $dot-size-large: 24px;
   .timeline-line {
-    padding-top: $dot-size-large;
+    padding-top: $timeline-lg-outline-size;
   }
   .timeline-event {
 
     &:after {
-      margin-left: -$dot-size/2;
-      width: $dot-size;
-      height: $dot-size;
-      margin-top: ((($dot-size-large - $dot-size)/2));
+      margin-left: -$timeline-lg-dot-size/2;
+      width: $timeline-lg-dot-size;
+      height: $timeline-lg-dot-size;
+      margin-top: ((($timeline-lg-outline-size - $timeline-lg-dot-size)/2));
     }
     &:before {
-      margin-left: (-$dot-size-large/2);
-      width: $dot-size-large;
-      height: $dot-size-large;
+      margin-left: (-$timeline-lg-outline-size/2);
+      width: $timeline-lg-outline-size;
+      height: $timeline-lg-outline-size;
     }
     &.single-dot {
       &:after {
-        margin-left: -$dot-size-large/2;
-        width: $dot-size-large;
-        height: $dot-size-large;
+        margin-left: -$timeline-lg-outline-size/2;
+        width: $timeline-lg-outline-size;
+        height: $timeline-lg-outline-size;
       }
     }
 
