@@ -15,6 +15,7 @@ import { CollapseComponent } from './collapse/collapse.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ModalComponent } from './modal/modal.component';
 import { ChartHelpersModule } from '../../helpers/chart-helpers/chart-helpers.module';
+import { TimelineComponent } from './timeline/timeline.component';
 const routes: Routes = [
   { path: '', redirectTo: '/ui/buttons', pathMatch: 'full' },
   { path: 'buttons', component: ButtonsComponent, data: { title: 'Buttons' } },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'accordian', component: AccordianComponent, data: { title: 'Accordian' } },
   { path: 'pagination', component: PaginationComponent, data: { title: 'Pagination' } },
   { path: 'carousel', component: CarouselComponent, data: { title: 'Carousel' } },
-  { path: 'modal', component: ModalComponent, data: { title: 'Modal' } }
+  { path: 'modal', component: ModalComponent, data: { title: 'Modal' } },
+  { path: 'timeline', component: TimelineComponent, data: { title: 'Timeline Component' } }
 ];
 @NgModule({
   imports: [
@@ -40,6 +42,6 @@ const routes: Routes = [
   exports: [
     RouterModule
   ],
-  declarations: [ButtonsComponent, ProgressComponent, CardsComponent, DropdownComponent, NavComponent, AccordianComponent, PaginationComponent, TooltipComponent, AlertComponent, CollapseComponent, CarouselComponent, ModalComponent ]
+  declarations: [ButtonsComponent, ProgressComponent, CardsComponent, DropdownComponent, NavComponent, AccordianComponent, PaginationComponent, TooltipComponent, AlertComponent, CollapseComponent, CarouselComponent, ModalComponent, TimelineComponent ]
 })
 export class ComponentsModule { }

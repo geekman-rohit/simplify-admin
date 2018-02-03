@@ -33,6 +33,7 @@ export const menu: MenuItem[] = [
     label: 'PAGES',
     isLabel: true
   },
+
   {
     path: '/user/profile',
     label: 'User Profile',
@@ -92,11 +93,13 @@ export const menu: MenuItem[] = [
     label: 'COMPONENTS',
     isLabel: true
   },
+
   {
     label: 'UI Components',
     icon: { class: 'material-icons', content: 'toys' },
     children: [
       { path: '/ui/buttons', label: 'Buttons' },
+      { path: '/ui/timeline', label: 'Timeline' },
       { path: '/ui/progress', label: 'Progress Bars' },
       { path: '/ui/nav', label: 'Navigation & Tabs' },
       { path: '/ui/dropdown', label: 'Dropdown' },
@@ -106,9 +109,14 @@ export const menu: MenuItem[] = [
       { path: '/ui/accordian', label: 'Accordians' },
       { path: '/ui/pagination', label: 'Pagination' },
       { path: '/ui/carousel', label: 'Carousel' },
-      { path: '/ui/modal', label: 'Modals' },
+      { path: '/ui/modal', label: 'Modals' }
 
     ]
+  },
+  {
+    path: '/ui/timeline',
+    label: 'Timeline',
+    icon: { class: 'material-icons', content: 'timeline' }
   },
   {
     label: 'Charts',

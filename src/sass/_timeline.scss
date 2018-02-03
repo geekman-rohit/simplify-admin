@@ -1,0 +1,144 @@
+$dot-size: 12px;
+$dot-size-large: 18px;
+.timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-left: $dot-size-large/2;
+  margin-right: 2rem;
+
+
+  .timeline-line {
+    display: block;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top:0;
+    padding-top: $dot-size-large;
+    left:0;
+    bottom:0;
+    &:after {
+      position: relative;
+      display: block;
+      height: 100%;
+      border: 1px solid $gray-300;
+      width: 1px;
+      content: " ";
+    }
+
+  }
+
+}
+.timeline-event-card {
+  padding: 1rem 1rem;
+
+}
+.timeline-event {
+
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+
+
+  &:before {
+
+  }
+  &:after {
+
+    position: absolute;
+    left: 0;
+    top:0;
+    margin-left: -$dot-size/2;
+    width: $dot-size;
+    height: $dot-size;
+    margin-top: ((($dot-size-large - $dot-size)/2));
+    content: " ";
+    border-radius: 50%;
+    background: $info;
+    z-index:2;
+
+
+  }
+
+  &:before {
+    position: absolute;
+    left: 0;
+    top:0;
+    margin-left: (-$dot-size-large/2);
+    width: $dot-size-large;
+    height: $dot-size-large;
+    content: " ";
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid $info;
+    z-index:1;
+    box-sizing: border-box;
+
+  }
+  &.single-dot {
+    &:after {
+      margin-top: 0;
+      margin-left: -$dot-size-large/2;
+      width: $dot-size-large;
+      height: $dot-size-large;
+    }
+
+    &:before {
+      display: none;
+
+    }
+  }
+  &.single-circle {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.timeline-lg {
+  $dot-size: 18px;
+  $dot-size-large: 24px;
+  .timeline-line {
+    padding-top: $dot-size-large;
+  }
+  .timeline-event {
+
+    &:after {
+      margin-left: -$dot-size/2;
+      width: $dot-size;
+      height: $dot-size;
+      margin-top: ((($dot-size-large - $dot-size)/2));
+    }
+    &:before {
+      margin-left: (-$dot-size-large/2);
+      width: $dot-size-large;
+      height: $dot-size-large;
+    }
+    &.single-dot {
+      &:after {
+        margin-left: -$dot-size-large/2;
+        width: $dot-size-large;
+        height: $dot-size-large;
+      }
+    }
+
+  }
+
+}
+@each $color, $value in $theme-colors {
+
+  .timeline-event-#{$color} {
+    &:after {
+      background: $value;
+    }
+    &:before {
+      border: 2px solid $value;
+    }
+  }
+
+}
