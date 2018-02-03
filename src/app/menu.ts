@@ -73,6 +73,11 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'public' }
   },
   {
+    path: '/ui/timeline',
+    label: 'Timeline',
+    icon: { class: 'material-icons', content: 'timeline' }
+  },
+  {
     label: 'Bonus Pages',
     icon: { class: 'material-icons', content: 'pages' },
     children: [
@@ -99,7 +104,6 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'toys' },
     children: [
       { path: '/ui/buttons', label: 'Buttons' },
-      { path: '/ui/timeline', label: 'Timeline' },
       { path: '/ui/progress', label: 'Progress Bars' },
       { path: '/ui/nav', label: 'Navigation & Tabs' },
       { path: '/ui/dropdown', label: 'Dropdown' },
@@ -113,11 +117,7 @@ export const menu: MenuItem[] = [
 
     ]
   },
-  {
-    path: '/ui/timeline',
-    label: 'Timeline',
-    icon: { class: 'material-icons', content: 'timeline' }
-  },
+
   {
     label: 'Charts',
     icon: { class: 'material-icons', content: 'multiline_chart' },
