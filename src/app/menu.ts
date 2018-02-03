@@ -76,6 +76,7 @@ export const menu: MenuItem[] = [
     icon: { class: 'material-icons', content: 'pages' },
     children: [
       { path: '/pages/search', label: 'Search Results' },
+      { path: '/pages/account', label: 'Account Settings' }
     ]
   },
   {

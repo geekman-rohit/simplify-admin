@@ -19,7 +19,19 @@
     font-size: 0.75rem;
   }
 }
+.image-with-text {
+  position: relative;
+  .image-text  {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 0.7rem;
+    background: rgba(0,0,0,0.2);
 
+  }
+
+}
 .img-thumb-sq {
   border-radius: 2px !important;
 }
